@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProPhotoSkills Photoguide Next Level – Professionelles Entwicklungssystem für Fotografen</title>
+<meta name="description" content="Photoguide Next Level: das professionelle Entwicklungssystem für Fotografen – KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO als geschlossenes System.">
+<link rel="canonical" href="https://nextlevel.prophotoskills.com/">
+</head>
+<body>
+<!-- ============================================================
+     ProPhotoSkills · Photoguide Next Level — VERSION 3
+     Master-Design (von OnLocation v7) übernommen: Hero zeigt nur noch den
+     zentrierten Textblock (Eyebrow, Headline, Lead, CTA), kein Bild mehr im
+     Hero. System-Abschnitt jetzt zweispaltig: links das Buch-Cover
+     (https://nextlevel.prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp,
+     Schatten-Card, aspect-ratio 300/415, als Background-Div statt <img>),
+     rechts Eyebrow "Das System" + Überschrift + Intro-Text. Die
+     KNOWLEDGE/TECHNIK/PROGRESS/SKILL/PSYCHO-Spine-Liste bleibt darunter
+     unverändert linksbündig. "Weitere Optionen"-Karten bekommen denselben
+     Schatten wie das Cover, rote Vollumrandung der aktuellen Karte entfernt.
+     Abstände insgesamt enger gezogen (Section-Padding, FAQ-Liste).
+     Vorgängerversionen: nextlevel-code-modul.html, -v2.html (bleiben erhalten)
+     Code-Modul-Inhalt ohne Header/Footer (für WPCode / Divi Code-Modul)
+     Farben: offizielle PPS-Palette · Schrift: Inter durchgängig
+     Wrapper-Klasse "pps-nl" kapselt alle Styles, kollidiert nicht mit Theme
+     ============================================================ -->
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+.pps-nl {
+  /* --- offizielle PPS-Farben --- */
+  --bg: #F9F9F9;          /* Grau Webseite Hintergrund */
+  --bg-card: #FFFFFF;
+  --ink: #0A1211;          /* Schwarz */
+  --ink-dim: #3C3D41;       /* Footer-Grau, hier als gedämpfte Textfarbe */
+  --accent: #D73C1C;       /* Photoguide Rot */
+  --accent-soft: rgba(215,60,28,0.08);
+  --yellow: #F8E800;       /* PPS Gelb */
+  --dot: #E8E8E8;          /* Grau gepunktet 1 */
+  --dot-strong: #DBDBDB;   /* Grau gepunktet 2 */
+
+  font-family: 'Inter', sans-serif;
+  color: var(--ink);
+  background: var(--bg) !important;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+.pps-nl * { box-sizing: border-box; }
+.pps-nl a { color: inherit; text-decoration: none; }
+.pps-nl img { max-width: 100%; display: block; }
+.pps-nl .wrap { max-width: 1120px; margin: 0 auto; padding: 0 28px; }
+.pps-nl h1, .pps-nl h2, .pps-nl h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  margin: 0;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+}
+.pps-nl .eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.pps-nl section { padding: 36px 0; background: var(--bg); }
+.pps-nl section + section { border-top: 1px dotted var(--dot-strong); }
+
+/* ---------- HERO ---------- */
+.pps-nl .hero-top {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto;
+}
+.pps-nl .hero h1 {
+  font-size: clamp(32px, 4.2vw, 50px);
+  line-height: 1.12;
+  margin-top: 14px;
+  width: 100%;
+}
+.pps-nl .hero h1 em { color: var(--accent); font-style: normal; }
+.pps-nl .hero .lead {
+  margin: 18px auto 0;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--ink-dim);
+  max-width: 56ch;
+}
+.pps-nl .hero .lead strong { color: var(--ink); font-weight: 700; }
+.pps-nl .cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 22px;
+  padding: 15px 28px;
+  background: var(--accent);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 15px;
+  border-radius: 3px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pps-nl .cta:hover { transform: translateY(-2px); box-shadow: 0 10px 24px -8px rgba(215,60,28,0.40); }
+.pps-nl .cta-meta { margin-top: 12px; font-size: 13px; color: var(--ink-dim); }
+
+/* ---------- SYSTEM / SPINE ---------- */
+.pps-nl .system-row {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 36px;
+}
+.pps-nl .system-cover {
+  aspect-ratio: 300/415;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 6px;
+  box-shadow: 0 30px 50px -22px rgba(10,18,17,0.18);
+  border: 1px solid var(--dot-strong);
+  background-color: #fff;
+  background-image: var(--cover-img);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.pps-nl .system-cover .sr-img {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.pps-nl .system h2 { font-size: clamp(26px, 3vw, 36px); margin-top: 10px; }
+.pps-nl .system .intro {
+  margin-top: 18px;
+  max-width: 64ch;
+  color: var(--ink-dim);
+  font-size: 16px;
+}
+.pps-nl .spine { margin-top: 24px; position: relative; padding-left: 44px; }
+.pps-nl .spine::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 6px;
+  bottom: 6px;
+  width: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to bottom,
+    #7D453A 0%,   #7D453A 19%,
+    #2FBBD9 21%,  #2FBBD9 39%,
+    #95BE2F 41%,  #95BE2F 59%,
+    #E65559 61%,  #E65559 79%,
+    #F09B61 81%,  #F09B61 100%);
+}
+.pps-nl .module { position: relative; padding: 0 0 26px 28px; }
+.pps-nl .module:last-child { padding-bottom: 0; }
+.pps-nl .module::before {
+  content: attr(data-n);
+  position: absolute;
+  left: -44px;
+  top: -2px;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--mcolor, var(--accent));
+  color: var(--mcolor, var(--accent));
+  font-size: 11px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pps-nl .module h3 { font-size: 19px; font-weight: 800; display: inline; }
+.pps-nl .module h3 a {
+  color: var(--mcolor, var(--accent));
+  border-bottom: 2px solid var(--mcolor, var(--accent));
+  padding-bottom: 1px;
+}
+.pps-nl .module p {
+  margin: 8px 0 0;
+  color: var(--ink-dim);
+  font-size: 15.5px;
+  max-width: 66ch;
+}
+.pps-nl .system-close {
+  margin-top: 24px;
+  padding-left: 44px;
+  color: var(--ink-dim);
+  font-size: 15px;
+  font-style: italic;
+}
+
+/* ---------- CROSS-SELL ---------- */
+.pps-nl .crosssell h2 { font-size: clamp(22px, 2.6vw, 30px); }
+.pps-nl .crosssell .intro-line {
+  margin-top: 14px;
+  font-size: 15.5px;
+  color: var(--ink-dim);
+}
+.pps-nl .cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.pps-nl .card { display: block; cursor: pointer; background: var(--bg-card);
+  border: 1px dotted var(--dot-strong);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 30px 50px -22px rgba(10,18,17,0.18);
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+.pps-nl .card:hover {
+  border-color: var(--accent);
+  border-style: solid;
+  transform: translateY(-3px);
+  box-shadow: 0 22px 40px -16px rgba(10,18,17,0.28);
+}
+.pps-nl .card img { width: 100%; aspect-ratio: 300/415; object-fit: contain; background: #fff; pointer-events: none; }
+.pps-nl .card-label { padding: 14px 16px 18px; font-size: 14px; font-weight: 700; }
+.pps-nl .card-label span {
+  display: block;
+  margin-top: 4px;
+  font-weight: 400;
+  font-size: 12.5px;
+  color: var(--ink-dim);
+}
+.pps-nl .card.is-current .card-label span { color: var(--accent); font-weight: 600; }
+
+/* ---------- FAQ ---------- */
+.pps-nl .faq-head { max-width: 64ch; }
+.pps-nl .faq h2 { font-size: clamp(26px, 3vw, 36px); }
+.pps-nl .faq .desc { margin-top: 10px; color: var(--ink-dim); font-size: 15px; }
+.pps-nl .faq-list { margin-top: 18px; border-top: 1px dotted var(--dot-strong); }
+.pps-nl .faq-item { border-bottom: 1px dotted var(--dot-strong); }
+.pps-nl .faq-q {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink);
+}
+.pps-nl .faq-q:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.pps-nl .faq-icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: transform 0.2s ease;
+}
+.pps-nl .faq-item[data-open="true"] .faq-icon { transform: rotate(45deg); }
+.pps-nl .faq-a { overflow: hidden; max-height: 0; transition: max-height 0.25s ease; }
+.pps-nl .faq-item[data-open="true"] .faq-a { max-height: 240px; }
+.pps-nl .faq-a-inner { padding: 0 0 22px; color: var(--ink-dim); font-size: 15px; max-width: 66ch; }
+.pps-nl .faq-a-inner a { color: var(--accent); border-bottom: 1px solid var(--accent); }
+.pps-nl .price-badge {
+  display: inline-block;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 700;
+  font-size: 13px;
+  padding: 2px 8px;
+  border-radius: 3px;
+  margin-left: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) { .pps-nl * { transition: none !important; } }
+
+@media (max-width: 880px) {
+  .pps-nl .system-row { grid-template-columns: 1fr; text-align: center; }
+  .pps-nl .system-cover { max-width: 220px; margin: 0 auto; }
+  .pps-nl .cards { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 560px) {
+  .pps-nl section { padding: 24px 0; }
+  .pps-nl .wrap { padding: 0 20px; }
+  .pps-nl .cards { grid-template-columns: 1fr; }
+  .pps-nl .spine, .pps-nl .system-close { padding-left: 32px; }
+  .pps-nl .module { padding-left: 24px; }
+  .pps-nl .module::before { left: -32px; }
+}
+</style>
+
+<div class="pps-nl" style="background:#F9F9F9;">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-top">
+        <div class="eyebrow">Photoguide · Entwicklungssystem für Fotografen</div>
+        <h1>ProPhotoSkills Photoguide <em>Next Level</em></h1>
+        <p class="lead">
+          Steht für ein professionelles Weiterbildungssystem für Fotografen, das
+          <strong>Strategie, Technik, Mentalität und unternehmerisches Denken</strong> verbindet
+          – auf über A5 / 250 Seiten mit vielen Beispielen und Tipps.
+        </p>
+        <a class="cta" href="https://www.digistore24.com/product/612113">Ebook · 230 € · EPUB / PDF · A5</a>
+        <div class="cta-meta">Sofortiger Zugriff nach Kauf · Digistore24 Käuferschutz</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SYSTEM -->
+  <section class="system">
+    <div class="wrap">
+      <div class="system-row">
+        <div class="system-cover" role="img" aria-label="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung" style="--cover-img: url('https://nextlevel.prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp');">
+          <img class="sr-img"
+            src="https://nextlevel.prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp"
+            alt="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung"
+            loading="lazy" width="300" height="415">
+        </div>
+        <div class="system-text">
+          <div class="eyebrow">Das System</div>
+          <h2>Professionelle Fotografie auf strategischem Niveau</h2>
+          <p class="intro">
+            <em>Next Level</em> ist kein klassisches Fotografie-Buch über Kameratechnik. Es ist eine
+            strukturierte Weiterbildung für Fotografen, die ihr Handwerk, ihre Denkweise und ihre
+            berufliche Entwicklung bewusst auf ein professionelles Niveau bringen wollen. Dieses Buch
+            vereint fünf zentrale Bereiche professioneller Fotografie: KNOWLEDGE, TECHNIK, PROGRESS,
+            SKILL und PSYCHO.
+          </p>
+        </div>
+      </div>
+
+      <div class="spine">
+        <div class="module" data-n="01" style="--mcolor:#7D453A;">
+          <h3><a href="https://prophotoskills.com/knowledge/">KNOWLEDGE</a></h3>
+          <p>Im Bereich KNOWLEDGE entwickelst du ein tiefes Verständnis für Fotografie als
+            Gesamtdisziplin – von Bildanalyse über visuelle Wahrnehmung bis hin zu strategischem
+            Denken.</p>
+        </div>
+        <div class="module" data-n="02" style="--mcolor:#2FBBD9;">
+          <h3><a href="https://prophotoskills.com/technik/">TECHNIK</a></h3>
+          <p>TECHNIK steht für sichere Entscheidungen am Set: Lichtführung, Workflow, Struktur und
+            technische Klarheit. Technik ist hier kein Selbstzweck, sondern Werkzeug für
+            professionelle Umsetzung.</p>
+        </div>
+        <div class="module" data-n="03" style="--mcolor:#95BE2F;">
+          <h3><a href="https://prophotoskills.com/progress/">PROGRESS</a></h3>
+          <p>PROGRESS beschäftigt sich mit deiner langfristigen Entwicklung als Fotograf.
+            Positionierung, Wachstum und nachhaltiger Karriereaufbau stehen im Mittelpunkt.</p>
+        </div>
+        <div class="module" data-n="04" style="--mcolor:#E65559;">
+          <h3><a href="https://prophotoskills.com/skill/">SKILL</a></h3>
+          <p>SKILL vertieft deine praktischen Fähigkeiten: Führung, Kommunikation, Organisation und
+            souveränes Auftreten am Set.</p>
+        </div>
+        <div class="module" data-n="05" style="--mcolor:#F09B61;">
+          <h3><a href="https://prophotoskills.com/psycho/">PSYCHO</a></h3>
+          <p>PSYCHO richtet den Blick auf mentale Stabilität, Drucksituationen und innere Klarheit –
+            weil professionelle Fotografie immer auch Kopfsache ist.</p>
+        </div>
+      </div>
+
+      <p class="system-close">Next Level verbindet diese Bereiche zu einem strukturierten Gesamtsystem für professionelle Fotografen.</p>
+    </div>
+  </section>
+
+  <!-- CROSS-SELL -->
+  <section class="crosssell">
+    <div class="wrap">
+      <div class="eyebrow">Weitere Optionen</div>
+      <h2>Hier weitere Option</h2>
+      <p class="intro-line">Das ProPhotoSkills System im Überblick – MemberAbo, OnLocation, der kostenlose Beginner Guide und Next Level selbst.</p>
+      <div class="cards">
+        <a class="card" href="https://memberabo.prophotoskills.com/">
+          <img src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_MB.webp" alt="ProPhotoSkills Membership Bereich als Zugang zu exklusiven Fotografie-Inhalten, Guides und professionellem Wissen für Fotograf:innen" loading="lazy">
+          <div class="card-label">MemberAbo<span>Voller Systemzugang · 300 € / 6 Monate</span></div>
+        </a>
+        <a class="card" href="https://onlocation.prophotoskills.com/">
+          <img src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_OL.webp" alt="Photoguide On Location von ProPhotoSkills – Guide für Outdoor Fotografie, Reisen, Planung und professionelle Shootings vor Ort" loading="lazy">
+          <div class="card-label">Photoguide OnLocation<span>Für mobile Produktionen · 120 €</span></div>
+        </a>
+        <a class="card" href="https://prophotoskills.com/pps_photoguide_beginner/">
+          <img src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_BG.webp" alt="Kostenloser Photoguide für Einsteiger von ProPhotoSkills mit Fokus auf Fotografie Grundlagen" loading="lazy">
+          <div class="card-label">Photoguide Beginner<span>Einstieg in die Grundlagen · kostenlos</span></div>
+        </a>
+        <a class="card is-current" href="https://nextlevel.prophotoskills.com/">
+          <img src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp" alt="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung" loading="lazy">
+          <div class="card-label">Photoguide Next Level<span>Du befindest dich hier · 230 €</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="wrap">
+      <div class="faq-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Häufige Fragen zu Photoguide Next Level</h2>
+        <p class="desc">Das professionelle Entwicklungssystem für Fotografen – KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO kompakt erklärt.</p>
+      </div>
+
+      <div class="faq-list" id="pps-nl-faq">
+        <div class="faq-item" data-open="true">
+          <button class="faq-q" aria-expanded="true">Was ist Photoguide Next Level?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem für Fotografen – fünf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Womit beginnt professionelle Fotografie wirklich?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Nicht mit der Kamera, sondern mit dem Kopf. Jedes starke Bild beginnt mit einer Entscheidung, bevor der erste Klick passiert.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Warum passieren 70 % des Fotojobs vor dem ersten Klick?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Weil Vorbereitung, Konzept und Entscheidungen den größten Teil des Ergebnisses bestimmen – nicht der Moment des Auslösens.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Was unterscheidet Next Level von OnLocation?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Next Level ist das umfassende Wissenssystem für Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System für mobile Produktionen – Travel, Location, Insurance und Equipment.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Warum reicht Technik allein nicht aus?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Technik erzeugt Qualität – aber Haltung, Kommunikation und Führung entscheiden über die Wirkung eines Bildes.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Was bedeutet TECHNIK in Photoguide Next Level?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich – Selbstoptimierung, mentale Stärke, Präsenz und Belastbarkeit als Fotograf.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Macht besseres Equipment bessere Fotos?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Nein. Equipment verstärkt dein Können – es ersetzt es nicht.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Warum ist Kommunikation am Set so wichtig?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Weil Atmosphäre und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Ist Fotografie Talent oder trainierbar?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Fotografie ist trainierbar. Skills entstehen durch Wiederholung, Erfahrung und bewusste Entwicklung.</div></div>
+        </div>
+        <div class="faq-item" data-open="false">
+          <button class="faq-q" aria-expanded="false">Was kostet Photoguide Next Level?<span class="faq-icon">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">230 EUR<span class="price-badge">230 €</span>. Erhältlich über <a href="https://www.digistore24.com/product/612113">Digistore24</a>.</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var items = document.querySelectorAll('#pps-nl-faq .faq-item');
+  items.forEach(function (item) {
+    var btn = item.querySelector('.faq-q');
+    btn.addEventListener('click', function () {
+      var isOpen = item.getAttribute('data-open') === 'true';
+      items.forEach(function (i) {
+        i.setAttribute('data-open', 'false');
+        i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.setAttribute('data-open', 'true');
+        btn.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+})();
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was ist Photoguide Next Level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem für Fotografen – fünf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Womit beginnt professionelle Fotografie wirklich?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nicht mit der Kamera, sondern mit dem Kopf. Jedes starke Bild beginnt mit einer Entscheidung, bevor der erste Klick passiert."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum passieren 70 % des Fotojobs vor dem ersten Klick?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weil Vorbereitung, Konzept und Entscheidungen den größten Teil des Ergebnisses bestimmen – nicht der Moment des Auslösens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was unterscheidet Next Level von OnLocation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Next Level ist das umfassende Wissenssystem für Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System für mobile Produktionen – Travel, Location, Insurance und Equipment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum reicht Technik allein nicht aus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technik erzeugt Qualität – aber Haltung, Kommunikation und Führung entscheiden über die Wirkung eines Bildes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was bedeutet TECHNIK in Photoguide Next Level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich – Selbstoptimierung, mentale Stärke, Präsenz und Belastbarkeit als Fotograf."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Macht besseres Equipment bessere Fotos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Equipment verstärkt dein Können – es ersetzt es nicht."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Warum ist Kommunikation am Set so wichtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weil Atmosphäre und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist Fotografie Talent oder trainierbar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fotografie ist trainierbar. Skills entstehen durch Wiederholung, Erfahrung und bewusste Entwicklung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet Photoguide Next Level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "230 EUR. Erhältlich über Digistore24 (https://www.digistore24.com/product/612113)."
+      }
+    }
+  ]
+}
+</script>
+</body>
+</html>
