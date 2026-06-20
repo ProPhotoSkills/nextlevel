@@ -1,0 +1,33 @@
+{
+  "name": "Photoguide – Next Level",
+  "short_name": "Next Level",
+  "description": "Professionelle Fotografie als Wissenssystem. KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO.",
+  "start_url": "https://nextlevel.prophotoskills.com/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1F3864",
+  "lang": "de",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "https://nextlevel.prophotoskills.com/wp-content/uploads/2026/05/PPS_BookCover_4000x3200_NL-scaled-1.webp",
+      "sizes": "512x512",
+      "type": "image/webp",
+      "purpose": "any maskable"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "categories": [
+    "education",
+    "photography",
+    "productivity"
+  ],
+  "keywords": [
+    "Professionelle Fotografie",
+    "Photoguide Next Level",
+    "Photography Weiterbildung",
+    "ProPhotoSkills",
+    "Fotografie Wissenssystem"
+  ]
+}

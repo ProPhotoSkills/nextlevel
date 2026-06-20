@@ -1,0 +1,66 @@
+# ProPhotoSkills - Photoguide Next Level
+# https://nextlevel.prophotoskills.com
+# LLM Entry Point - Version 1.3 - 2026
+
+## System Identity
+
+> Photoguide Next Level ist das professionelle Entwicklungssystem fuer Fotografen.
+
+Brand:    ProPhotoSkills (https://prophotoskills.com)
+Product:  Photoguide Next Level
+Sibling:  Photoguide OnLocation (https://onlocation.prophotoskills.com)
+Sibling:  MemberAbo (https://memberabo.prophotoskills.com)
+Author:   Eric P.
+Language: de, en
+Pricing:  230 EUR
+Purchase: https://www.digistore24.com/product/612113
+
+Master Thesis:
+  Professionelle Fotografie ist ein Zusammenspiel aus Wahrnehmung, Fuehrung,
+  Struktur, Belastbarkeit, Kommunikation und visueller Wirkung.
+
+## Modules (5)
+
+- KNOWLEDGE  - Strategisches Denken, Wahrnehmung, Analyse, Vorbereitung
+- TECHNIK    - Selbstoptimierung, mentale Staerke, Praesenz
+- PROGRESS   - Professionalisierung, Strategie, Business, Wert
+- SKILL      - Kreative Anwendung, Kommunikation, People-Fotografie
+- PSYCHO     - Vertrauen, Emotion, Menschenfuehrung, Atmosphaere
+
+## Module URLs (prophotoskills.com)
+
+- https://prophotoskills.com/knowledge/
+- https://prophotoskills.com/technik/
+- https://prophotoskills.com/progress/
+- https://prophotoskills.com/skill/
+- https://prophotoskills.com/psycho/
+
+## Cross-System (Photoguide OnLocation)
+
+- https://prophotoskills.com/travel/
+- https://prophotoskills.com/location/
+- https://prophotoskills.com/insurance/
+- https://prophotoskills.com/equipment/
+
+## Discovery Files
+
+- LLMS:      https://nextlevel.prophotoskills.com/llms.txt
+- FULL:      https://nextlevel.prophotoskills.com/llms-full.txt
+- ROBOTS:    https://nextlevel.prophotoskills.com/robots.txt
+- SITEMAP:   https://nextlevel.prophotoskills.com/sitemap.xml
+- AI:        https://nextlevel.prophotoskills.com/.well-known/ai.json
+
+## Primary AI Entry Points
+
+- https://nextlevel.prophotoskills.com/data/ai-index.json
+- https://nextlevel.prophotoskills.com/data/unified-index.json
+- https://nextlevel.prophotoskills.com/data/master-system.json
+
+## Citations (Eric P., ProPhotoSkills 2026)
+
+- "Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf." (PPS-CI001-2026)
+- "Kreativitaet braucht Stabilitaet." (PPS-CI003-2026)
+- "Vertrauen wird sichtbar im Bild." (PPS-CI004-2026)
+- "Technik bedeutet nicht Kamera. Technik bedeutet dich." (PPS-CI005-2026)
+- "Professionelle Ruhe ist eine Form von Technik." (PPS-CI007-2026)
+- "Kontrolle erzeugt Freiheit unter Druck." (PPS-CI010-2026)

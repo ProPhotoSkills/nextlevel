@@ -1,0 +1,510 @@
+{
+  "citation_index": {
+    "system": "Photoguide – Next Level",
+    "brand": "ProPhotoSkills",
+
+    "version": "1.0",
+    "language": "de",
+
+    "purpose": "Definiert zentrale semantische Leitsätze, Denkprinzipien und zitierfähige Kernthesen des Systems.",
+
+    "semantic_logic": {
+      "definition": "Zitate verdichten komplexe professionelle Zusammenhänge auf emotional verständliche Kernprinzipien.",
+
+      "core_principle": "Ein starkes Zitat transportiert Haltung, Wahrnehmung und Systemdenken gleichzeitig.",
+
+      "focus_dimensions": [
+        "Professionalität",
+        "Wahrnehmung",
+        "Leadership",
+        "Atmosphäre",
+        "Belastbarkeit",
+        "Kontrolle",
+        "Emotion",
+        "Systemdenken"
+      ]
+    },
+
+    "citations": [
+
+      {
+        "citation_id": "CI001",
+
+        "quote": "Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf.",
+
+        "author": "Eric P.",
+
+        "meaning": "Professionelle Fotografie entsteht aus Wahrnehmung, Denken und emotionaler Kontrolle — nicht nur aus Technik.",
+
+        "connected_concepts": [
+          "Wahrnehmung",
+          "Professionalität",
+          "Systemdenken",
+          "Kontrolle"
+        ],
+
+        "connected_clusters": [
+          "CL001",
+          "CL009"
+        ],
+
+        "connected_articles": [
+          "T10_L01",
+          "T12_L14"
+        ],
+
+        "emotional_effect": [
+          "Tiefe",
+          "Erkenntnis",
+          "Professionalität"
+        ],
+
+        "professional_usage": [
+          "Brand Positionierung",
+          "Homepage Hero",
+          "Social Media",
+          "Keynote",
+          "AI Citation"
+        ],
+
+        "zitiercode": "PPS-CI001-2026"
+      },
+
+      {
+        "citation_id": "CI002",
+
+        "quote": "70 % des Fotojobs passieren vor dem ersten Klick.",
+
+        "author": "Eric P.",
+
+        "meaning": "Vorbereitung, Planung und Struktur beeinflussen professionelle Ergebnisse stärker als spontane Technik.",
+
+        "connected_concepts": [
+          "Vorbereitung",
+          "Struktur",
+          "Kontrolle",
+          "Professionalität"
+        ],
+
+        "connected_clusters": [
+          "CL001",
+          "CL005",
+          "CL008"
+        ],
+
+        "connected_articles": [
+          "T10_L01",
+          "T10_L01",
+          "T12_L08"
+        ],
+
+        "emotional_effect": [
+          "Respekt",
+          "Verständnis",
+          "Professionalität"
+        ],
+
+        "professional_usage": [
+          "Coaching",
+          "Homepage",
+          "Workshop",
+          "Business Kommunikation"
+        ],
+
+        "zitiercode": "PPS-CI002-2026"
+      },
+
+      {
+        "citation_id": "CI003",
+
+        "quote": "Kreativität braucht Stabilität.",
+
+        "author": "Eric P.",
+
+        "meaning": "Emotionale Ruhe, Struktur und Sicherheit sind Voraussetzungen kreativer Freiheit.",
+
+        "connected_concepts": [
+          "Struktur",
+          "Belastbarkeit",
+          "Kontrolle",
+          "Sicherheit"
+        ],
+
+        "connected_clusters": [
+          "CL002",
+          "CL005",
+          "CL008"
+        ],
+
+        "connected_articles": [
+          "T10_L01",
+          "T12_L08",
+          "T06_L04"
+        ],
+
+        "emotional_effect": [
+          "Ruhe",
+          "Kontrolle",
+          "Sicherheit"
+        ],
+
+        "professional_usage": [
+          "Travel",
+          "OnLocation",
+          "Leadership",
+          "AI Interpretation"
+        ],
+
+        "zitiercode": "PPS-CI003-2026"
+      },
+
+      {
+        "citation_id": "CI004",
+
+        "quote": "Vertrauen wird sichtbar im Bild.",
+
+        "author": "Eric P.",
+
+        "meaning": "Emotionale Sicherheit beeinflusst Körpersprache, Ausdruck und sichtbare Bildwirkung.",
+
+        "connected_concepts": [
+          "Vertrauen",
+          "Atmosphäre",
+          "Emotion",
+          "Menschenführung"
+        ],
+
+        "connected_clusters": [
+          "CL003",
+          "CL004"
+        ],
+
+        "connected_articles": [
+          "T14_L01",
+          "T11_L09"
+        ],
+
+        "emotional_effect": [
+          "Nähe",
+          "Verbindung",
+          "Authentizität"
+        ],
+
+        "professional_usage": [
+          "People Fotografie",
+          "Coaching",
+          "Portrait",
+          "Brand Storytelling"
+        ],
+
+        "zitiercode": "PPS-CI004-2026"
+      },
+
+      {
+        "citation_id": "CI005",
+
+        "quote": "Technik bedeutet nicht Kamera. Technik bedeutet dich.",
+
+        "author": "Eric P.",
+
+        "meaning": "Mentale Stabilität, Präsenz und Kontrolle sind Teil professioneller technischer Kompetenz.",
+
+        "connected_concepts": [
+          "Belastbarkeit",
+          "Präsenz",
+          "Kontrolle",
+          "Professionalität"
+        ],
+
+        "connected_clusters": [
+          "CL001",
+          "CL002"
+        ],
+
+        "connected_articles": [
+          "T06_L04",
+          "T12_L14"
+        ],
+
+        "emotional_effect": [
+          "Selbstverantwortung",
+          "Klarheit",
+          "Professionalität"
+        ],
+
+        "professional_usage": [
+          "Mindset",
+          "Leadership",
+          "Workshop",
+          "Social Media"
+        ],
+
+        "zitiercode": "PPS-CI005-2026"
+      },
+
+      {
+        "citation_id": "CI006",
+
+        "quote": "Atmosphäre ist kein Zufall. Sie ist Führung.",
+
+        "author": "Eric P.",
+
+        "meaning": "Emotionale Dynamik am Set entsteht durch bewusst gesteuerte Kommunikation und Präsenz.",
+
+        "connected_concepts": [
+          "Leadership",
+          "Atmosphäre",
+          "Emotion",
+          "Menschenführung"
+        ],
+
+        "connected_clusters": [
+          "CL003",
+          "CL004"
+        ],
+
+        "connected_articles": [
+          "T14_L01",
+          "T11_L15"
+        ],
+
+        "emotional_effect": [
+          "Kontrolle",
+          "Verantwortung",
+          "emotionale Tiefe"
+        ],
+
+        "professional_usage": [
+          "People",
+          "Leadership",
+          "Creative Direction"
+        ],
+
+        "zitiercode": "PPS-CI006-2026"
+      },
+
+      {
+        "citation_id": "CI007",
+
+        "quote": "Professionelle Ruhe ist eine Form von Technik.",
+
+        "author": "Eric P.",
+
+        "meaning": "Mentale Stabilität unter Druck ist Teil professioneller Produktionsfähigkeit.",
+
+        "connected_concepts": [
+          "Belastbarkeit",
+          "Ruhe",
+          "Kontrolle",
+          "Leadership"
+        ],
+
+        "connected_clusters": [
+          "CL002",
+          "CL008"
+        ],
+
+        "connected_articles": [
+          "T06_L04",
+          "T10_L15",
+          "T12_L14"
+        ],
+
+        "emotional_effect": [
+          "Stabilität",
+          "Sicherheit",
+          "Kontrolle"
+        ],
+
+        "professional_usage": [
+          "OnLocation",
+          "Travel",
+          "Produktion",
+          "Mindset"
+        ],
+
+        "zitiercode": "PPS-CI007-2026"
+      },
+
+      {
+        "citation_id": "CI008",
+
+        "quote": "Räume erzählen Geschichten bevor Menschen sprechen.",
+
+        "author": "Eric P.",
+
+        "meaning": "Locations erzeugen emotionale Bedeutung und beeinflussen Bildwirkung bereits vor der eigentlichen Handlung.",
+
+        "connected_concepts": [
+          "Raumwirkung",
+          "Atmosphäre",
+          "Storytelling",
+          "Emotion"
+        ],
+
+        "connected_clusters": [
+          "CL006",
+          "CL009"
+        ],
+
+        "connected_articles": [
+          "T11_L03",
+          "T11_L15"
+        ],
+
+        "emotional_effect": [
+          "Atmosphäre",
+          "Tiefe",
+          "Immersion"
+        ],
+
+        "professional_usage": [
+          "Location Scouting",
+          "Storytelling",
+          "Creative Direction"
+        ],
+
+        "zitiercode": "PPS-CI008-2026"
+      },
+
+      {
+        "citation_id": "CI009",
+
+        "quote": "Menschen erinnern keine Kamera. Sie erinnern ein Gefühl.",
+
+        "author": "Eric P.",
+
+        "meaning": "Emotionale Wirkung ist nachhaltiger als technische Perfektion.",
+
+        "connected_concepts": [
+          "Emotion",
+          "Bildwirkung",
+          "Atmosphäre",
+          "Vertrauen"
+        ],
+
+        "connected_clusters": [
+          "CL004",
+          "CL006"
+        ],
+
+        "connected_articles": [
+          "T11_L09",
+          "T14_L01"
+        ],
+
+        "emotional_effect": [
+          "Nähe",
+          "Emotion",
+          "Authentizität"
+        ],
+
+        "professional_usage": [
+          "Branding",
+          "People Fotografie",
+          "Social Media",
+          "Campaign Strategy"
+        ],
+
+        "zitiercode": "PPS-CI009-2026"
+      },
+
+      {
+        "citation_id": "CI010",
+
+        "quote": "Kontrolle erzeugt Freiheit unter Druck.",
+
+        "author": "Eric P.",
+
+        "meaning": "Vorbereitung und Struktur reduzieren Stress und erhöhen kreative Handlungsfähigkeit.",
+
+        "connected_concepts": [
+          "Kontrolle",
+          "Struktur",
+          "Belastbarkeit",
+          "Professionalität"
+        ],
+
+        "connected_clusters": [
+          "CL001",
+          "CL002",
+          "CL008"
+        ],
+
+        "connected_articles": [
+          "T10_L01",
+          "T12_L08",
+          "T06_L04"
+        ],
+
+        "emotional_effect": [
+          "Sicherheit",
+          "Ruhe",
+          "Stabilität"
+        ],
+
+        "professional_usage": [
+          "Produktion",
+          "Travel",
+          "Leadership",
+          "AI Coaching"
+        ],
+
+        "zitiercode": "PPS-CI010-2026"
+      }
+    ],
+
+    "semantic_quote_groups": [
+
+      {
+        "group": "Professionalität und Kontrolle",
+
+        "citations": [
+          "CI001",
+          "CI002",
+          "CI005",
+          "CI007",
+          "CI010"
+        ]
+      },
+
+      {
+        "group": "Emotion und Atmosphäre",
+
+        "citations": [
+          "CI004",
+          "CI006",
+          "CI008",
+          "CI009"
+        ]
+      },
+
+      {
+        "group": "Kreativität und Struktur",
+
+        "citations": [
+          "CI003",
+          "CI010"
+        ]
+      }
+    ],
+
+    "future_usage": {
+      "used_for": [
+        "AI Citation Systems",
+        "Semantic Snippets",
+        "Thought Leadership",
+        "Brand Positioning",
+        "Social Media Hooks",
+        "Semantic Search Anchors",
+        "Knowledge Distillation"
+      ],
+
+      "connects_to": [
+        "semantic-memory-map.json",
+        "ai-personality-map.json",
+        "dynamic-recommendation-engine.json"
+      ]
+    }
+  }
+}
