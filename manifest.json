@@ -10,8 +10,8 @@
   "orientation": "portrait",
   "icons": [
     {
-      "src": "https://nextlevel.prophotoskills.com/wp-content/uploads/2026/05/PPS_BookCover_4000x3200_NL-scaled-1.webp",
-      "sizes": "512x512",
+      "src": "https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_NL.webp",
+      "sizes": "300x415",
       "type": "image/webp",
       "purpose": "any maskable"
     }
