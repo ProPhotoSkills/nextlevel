@@ -7,84 +7,43 @@
 <meta name="description" content="Photoguide Next Level: das professionelle Entwicklungssystem für Fotografen – KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO als geschlossenes System.">
 <link rel="canonical" href="https://nextlevel.prophotoskills.com/">
 
-<!-- ===================== COOKIE CONSENT (vanilla-cookieconsent von orestbida, via CDN) ===================== -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.css">
-<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.0.1/dist/cookieconsent.umd.js"></script>
+<!-- ═Pinterrest ═════ -->
+<meta name="p:domain_verify" content="cd05523b1ec88d255178e3802c59df98"/>
 
+<!-- ═ GTranslate Spracherkennung ═════ -->
 <script>
-  function loadGoogleAnalytics() {
-    if (window.gaLoaded) return;
-    window.gaLoaded = true;
-    var s = document.createElement('script');
-    s.async = true;
-    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-SKFBEQ35XC';
-    document.head.appendChild(s);
-    window.dataLayer = window.dataLayer || [];
-    window.gtag = function(){ dataLayer.push(arguments); };
-    gtag('js', new Date());
-    gtag('config', 'G-SKFBEQ35XC');
+document.addEventListener("DOMContentLoaded", function() {
+  var ORIGINAL = "de";
+  var supported = ["de","en","fr","es","pt","el","ja"];
+  function detectLang() {
+    var browserLang = navigator.language || "en";
+    return browserLang.toLowerCase().split("-")[0];
   }
+  var lang = detectLang();
+  if (!supported.includes(lang)) lang = "en";
+  if (lang === ORIGINAL) return;
+  // GTranslate-kompatible Speicherung
+  document.cookie = "googtrans=/auto/" + lang + "; path=/";
+  localStorage.setItem("googtrans", "/auto/" + lang);
+});
+</script>
 
-  window.addEventListener('load', function () {
-    CookieConsent.run({
-      guiOptions: {
-        consentModal: {
-          layout: 'box',
-          position: 'bottom right',
-          transition: 'slide'
-        },
-        preferencesModal: {
-          layout: 'box'
-        }
-      },
-      categories: {
-        necessary: { readOnly: true },
-        analytics: {}
-      },
-      language: {
-        default: 'de',
-        translations: {
-          de: {
-            consentModal: {
-              title: 'Wir verwenden Cookies',
-              description: 'Diese Website verwendet Cookies, um dir das beste Erlebnis zu bieten. Notwendige Cookies sind immer aktiv.',
-              acceptAllBtn: 'Alle akzeptieren',
-              acceptNecessaryBtn: 'Nur notwendige',
-              showPreferencesBtn: 'Einstellungen verwalten'
-            },
-            preferencesModal: {
-              title: 'Cookie-Einstellungen',
-              acceptAllBtn: 'Alle akzeptieren',
-              acceptNecessaryBtn: 'Nur notwendige',
-              savePreferencesBtn: 'Einstellungen speichern',
-              closeIconLabel: 'Schließen',
-              sections: [
-                {
-                  title: 'Notwendige Cookies',
-                  description: 'Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.',
-                  linkedCategory: 'necessary'
-                },
-                {
-                  title: 'Analytische Cookies',
-                  description: 'Helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics).',
-                  linkedCategory: 'analytics'
-                }
-              ]
-            }
-          }
-        }
-      },
-      onFirstConsent: function () {
-        if (CookieConsent.acceptedCategory('analytics')) loadGoogleAnalytics();
-      },
-      onConsent: function () {
-        if (CookieConsent.acceptedCategory('analytics')) loadGoogleAnalytics();
-      },
-      onChange: function () {
-        if (CookieConsent.acceptedCategory('analytics')) loadGoogleAnalytics();
-      }
-    });
-  });
+<!-- ═ ai einstieg ═════ -->
+<link rel="alternate" type="text/plain" href="https://nextlevel.prophotoskills.com/llms.txt" title="">
+<link rel="alternate" type="text/plain" href="https://nextlevel.prophotoskills.com/llms-full.txt" title="">
+<link rel="alternate" type="application/json" href="https://nextlevel.prophotoskills.com/data/unified-index.json">
+
+<!-- ===================== COOKIE CONSENT (CCM19, Script-Loader-Methode) ===================== -->
+<!-- Muss so weit oben wie möglich im head stehen: nur Skripte NACH diesem Snippet werden geblockt -->
+<script src="https://cloud.ccm19.de/app.js?apiKey=c4ea4fcbb72c4dca75e0322569e89f7dc94b828befeff62d&amp;domain=69bd3056d290f7fc120004f2" referrerpolicy="origin"></script>
+
+<!-- Google Analytics – per CCM19 blockiert, bis Consent für "Analytics" erteilt wird -->
+<script type="text/x-ccm-loader" data-ccm-loader-src="https://www.googletagmanager.com/gtag/js?id=G-SKFBEQ35XC"></script>
+<script type="text/x-ccm-loader">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){ dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', 'G-SKFBEQ35XC');
 </script>
 <!-- ===================== ENDE COOKIE CONSENT ===================== -->
 
