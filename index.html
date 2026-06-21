@@ -123,10 +123,17 @@
 .pps-site-header nav a:hover { text-decoration: underline; }
 .pps-site-header .login-btn { display: flex; align-items: center; }
 .pps-site-header .login-btn img { height: 20px; width: 20px; display: block; }
-.pps-site-header .flags { display: flex; align-items: center; gap: 5px; }
+.pps-site-header .flags {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
 .pps-site-header .flags img { height: 14px; width: 20px; display: block; border-radius: 2px; }
 @media (max-width: 900px) {
   .pps-site-header nav { display: none; }
+  .pps-site-header .flags { margin-left: auto; }
 }
 
 /* ===================== FOOTER ===================== */
@@ -204,15 +211,15 @@
       <a href="https://prophotoskills.com/location/">LOCATION</a>
       <a href="https://prophotoskills.com/insurance/">INSURANCE</a>
       <a href="https://prophotoskills.com/equipment/">EQUIPMENT</a>
-      <span class="flags">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/en.svg" alt="EN">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/de.svg" alt="DE">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/fr.svg" alt="FR">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/es.svg" alt="ES">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/pt.svg" alt="PT">
-        <img src="https://prophotoskills.com/wp-content/plugins/gtranslate/flags/svg/it.svg" alt="IT">
-      </span>
     </nav>
+    <span class="flags" aria-label="Sprachen">
+      <img src="https://prophotoskills.github.io/pps-assets/images/en.svg" alt="EN" width="20" height="14">
+      <img src="https://prophotoskills.github.io/pps-assets/images/de.svg" alt="DE" width="20" height="14">
+      <img src="https://prophotoskills.github.io/pps-assets/images/fr.svg" alt="FR" width="20" height="14">
+      <img src="https://prophotoskills.github.io/pps-assets/images/es.svg" alt="ES" width="20" height="14">
+      <img src="https://prophotoskills.github.io/pps-assets/images/pt.svg" alt="PT" width="20" height="14">
+      <img src="https://prophotoskills.github.io/pps-assets/images/it.svg" alt="IT" width="20" height="14">
+    </span>
   </div>
 </header>
 
