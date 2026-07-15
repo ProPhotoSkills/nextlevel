@@ -53,10 +53,30 @@ function ppsApplyTranslation(lang) {
 }
 
 function ppsUpdateActiveFlag(lang) {
-  document.querySelectorAll(".pps-flags .flag-btn").forEach(function (btn) {
+  document.querySelectorAll(".flags .flag-btn").forEach(function (btn) {
     btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
   });
 }
+
+function ppsToggleNav() {
+  var nav = document.querySelector(".pps-site-header nav");
+  var btn = document.querySelector(".pps-site-header .nav-toggle");
+  var isOpen = nav.classList.toggle("open");
+  btn.classList.toggle("open", isOpen);
+  btn.setAttribute("aria-expanded", isOpen ? "true" : "false");
+  btn.setAttribute("aria-label", isOpen ? "Menü schließen" : "Menü öffnen");
+}
+
+document.addEventListener("click", function (e) {
+  var nav = document.querySelector(".pps-site-header nav");
+  var btn = document.querySelector(".pps-site-header .nav-toggle");
+  if (!nav || !nav.classList.contains("open")) return;
+  if (nav.contains(e.target) || btn.contains(e.target)) return;
+  nav.classList.remove("open");
+  btn.classList.remove("open");
+  btn.setAttribute("aria-expanded", "false");
+  btn.setAttribute("aria-label", "Menü öffnen");
+});
 
 function ppsDetectLang() {
   var stored = localStorage.getItem("pps_lang") || ppsGetCookie("googtrans");
@@ -91,17 +111,74 @@ function googleTranslateElementInit() {
 body { top: 0 !important; }
 .goog-te-gadget-icon { display: none !important; }
 
-/* PPS Flag-Bar */
-.pps-flags {
+/* ===================== HEADER ===================== */
+.pps-site-header {
+  background: #F8E800;
+  padding: 14px 0;
+}
+.pps-site-header .wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 28px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: clamp(10px, 2vw, 24px);
+  flex-wrap: nowrap;
+}
+.pps-site-header .logo { flex-shrink: 0; }
+.pps-site-header .logo img { height: 36px; display: block; }
+.pps-site-header nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 1.3vw, 18px);
+  flex-wrap: nowrap;
+  font-family: 'Inter', sans-serif;
+  min-width: 0;
+}
+.pps-site-header nav a {
+  font-size: clamp(11px, 0.95vw, 13px);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #0A1211;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.pps-site-header nav a:hover { text-decoration: underline; }
+.pps-site-header .login-btn { display: flex; align-items: center; flex-shrink: 0; }
+.pps-site-header .login-btn img { height: 20px; width: 20px; display: block; }
+.pps-site-header .nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  flex-shrink: 0;
+}
+.pps-site-header .nav-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #0A1211;
+  border-radius: 2px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.pps-site-header .nav-toggle.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.pps-site-header .nav-toggle.open span:nth-child(2) { opacity: 0; }
+.pps-site-header .nav-toggle.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.pps-site-header .flags {
   display: flex;
   align-items: center;
   gap: 5px;
-  justify-content: center;
-  padding: 6px 0;
-  background: #F8E800;
+  flex-shrink: 0;
 }
-.pps-flags img { height: 14px; width: 20px; display: block; border-radius: 2px; }
-.pps-flags .flag-btn {
+.pps-site-header .flags img { height: 14px; width: 20px; display: block; border-radius: 2px; }
+.pps-site-header .flags .flag-btn {
   background: none;
   border: none;
   padding: 2px;
@@ -112,10 +189,39 @@ body { top: 0 !important; }
   opacity: 0.55;
   transition: opacity 0.15s ease, box-shadow 0.15s ease;
 }
-.pps-flags .flag-btn:hover { opacity: 0.85; }
-.pps-flags .flag-btn.active { opacity: 1; box-shadow: 0 0 0 2px #1F3864; }
-.pps-flags .flag-btn:focus-visible { outline: 2px solid #1F3864; outline-offset: 1px; }
+.pps-site-header .flags .flag-btn:hover { opacity: 0.85; }
+.pps-site-header .flags .flag-btn.active {
+  opacity: 1;
+  box-shadow: 0 0 0 2px var(--accent, #1F3864);
+}
+.pps-site-header .flags .flag-btn:focus-visible {
+  outline: 2px solid var(--accent, #1F3864);
+  outline-offset: 1px;
+}
+@media (max-width: 980px) {
+  .pps-site-header .wrap { position: relative; flex-wrap: wrap; }
+  .pps-site-header .nav-toggle { display: flex; order: 2; }
+  .pps-site-header .flags { order: 3; margin-left: auto; }
+  .pps-site-header nav {
+    display: none;
+    order: 4;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #F8E800;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px 28px 24px;
+    gap: 14px;
+    box-shadow: 0 10px 18px rgba(0,0,0,0.14);
+    z-index: 50;
+  }
+  .pps-site-header nav.open { display: flex; }
+  .pps-site-header nav a { font-size: 14px; }
+}
 </style>
+
 <div id="google_translate_element"></div>
 <style>
 /* ===================== FOOTER (aus NL-index-v9 übernommen) ===================== */
@@ -129,11 +235,12 @@ body { top: 0 !important; }
 .pps-site-footer .wrap { max-width: 1280px; margin: 0 auto; padding: 0 28px; }
 .pps-site-footer .footer-grid {
   display: grid;
-  grid-template-columns: 1.7fr 1fr 1.3fr 1.3fr;
+  grid-template-columns: 300px 190px 220px 190px;
   grid-template-areas: "logo links products system";
-  gap: 32px;
+  justify-content: center;
+  gap: 48px;
 }
-.pps-site-footer .footer-grid img { height: 28px; margin-bottom: 14px; }
+.pps-site-footer .footer-grid img { height: 42px; margin-bottom: 14px; display: block; }
 .pps-site-footer .tagline { color: #e65559; font-size: 14px; font-weight: 700; margin: 0 0 10px; }
 .pps-site-footer .email a { color: #fff; font-size: 12px; text-decoration: none; }
 .pps-site-footer h4 {
@@ -176,7 +283,8 @@ body { top: 0 !important; }
 @media (max-width: 980px) {
   /* iPad: Logo (mit Follow Us) volle Breite oben, darunter 3 gleich breite Spalten */
   .pps-site-footer .footer-grid {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 220px 220px 220px;
+    justify-content: center;
     grid-template-areas:
       "logo    logo     logo"
       "links   products system";
@@ -184,11 +292,14 @@ body { top: 0 !important; }
   .pps-site-footer .tagline { font-size: 20px; }
   .pps-site-footer .links a { font-size: 16px; }
   .pps-site-footer h4 { font-size: 15px; }
+  .pps-site-footer .footer-grid img { height: 28px; }
 }
 @media (max-width: 767px) {
   /* Mobil: 2 Spalten (Logo+Links), 2 Spalten (Products+System) */
   .pps-site-footer .footer-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 160px 160px;
+    justify-content: center;
+    gap: 24px;
     grid-template-areas:
       "logo     links"
       "products system";
@@ -805,70 +916,72 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
 	<div id="page-container">
 <div id="et-boc" class="et-boc">
 			
-		<header class="et-l et-l--header">
-		<span class="pps-flags" aria-label="Sprachen">
-			<button type="button" class="flag-btn" data-lang="en" onclick="ppsSetLanguage('en')" aria-label="English"><img src="https://prophotoskills.github.io/pps-assets/images/en.svg" alt="EN"></button>
-			<button type="button" class="flag-btn" data-lang="de" onclick="ppsSetLanguage('de')" aria-label="Deutsch"><img src="https://prophotoskills.github.io/pps-assets/images/de.svg" alt="DE"></button>
-			<button type="button" class="flag-btn" data-lang="fr" onclick="ppsSetLanguage('fr')" aria-label="Français"><img src="https://prophotoskills.github.io/pps-assets/images/fr.svg" alt="FR"></button>
-			<button type="button" class="flag-btn" data-lang="es" onclick="ppsSetLanguage('es')" aria-label="Español"><img src="https://prophotoskills.github.io/pps-assets/images/es.svg" alt="ES"></button>
-			<button type="button" class="flag-btn" data-lang="pt" onclick="ppsSetLanguage('pt')" aria-label="Português"><img src="https://prophotoskills.github.io/pps-assets/images/pt.svg" alt="PT"></button>
-			<button type="button" class="flag-btn" data-lang="it" onclick="ppsSetLanguage('it')" aria-label="Italiano"><img src="https://prophotoskills.github.io/pps-assets/images/it.svg" alt="IT"></button>
-			<button type="button" class="flag-btn" data-lang="el" onclick="ppsSetLanguage('el')" aria-label="Ελληνικά"><img src="https://prophotoskills.github.io/pps-assets/images/el.svg" alt="EL"></button>
-			<button type="button" class="flag-btn" data-lang="ja" onclick="ppsSetLanguage('ja')" aria-label="日本語"><img src="https://prophotoskills.github.io/pps-assets/images/ja.svg" alt="JA"></button>
-		</span>
-			<div class="et_builder_inner_content">
-		<div class="et_pb_section_0_tb_header et_pb_section et_section_regular et_flex_section">
-<div class="et_pb_row_0_tb_header et_pb_row et_flex_row">
-<div class="et_pb_column_0_tb_header et_pb_column et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_column_8_24 et_flex_column_8_24_tablet et_flex_column_24_24_phone">
-<div class="et_pb_image_0_tb_header et_pb_image et_pb_module et_flex_module"><a href="https://prophotoskills.com/"><span class="et_pb_image_wrap"><img decoding="async" src="./images/ProPhotoSkills_Logo.png" alt="ProPhotoSkills - Photoguide - Next Level" title="ProPhotoSkills_Logo" class="wp-image-224772"></span></a></div>
-</div>
+<header class="pps-site-header">
+  <div class="wrap">
+    <a class="logo" href="https://prophotoskills.com/">
+      <img src="https://prophotoskills.github.io/pps-assets/images/ProPhotoSkills_Logo.png" alt="Pro Photo Skills">
+    </a>
+    <nav>
+      <a class="login-btn" href="https://prophotoskills.com/login-web/" aria-label="Login">
+        <img src="https://prophotoskills.github.io/pps-assets/images/login_website.png" alt="">
+      </a>
+      <a href="https://prophotoskills.com/knowledge/">KNOWLEDGE</a>
+      <a href="https://prophotoskills.com/technik/">TECHNIK</a>
+      <a href="https://prophotoskills.com/progress/">PROGRESS</a>
+      <a href="https://prophotoskills.com/skill/">SKILL</a>
+      <a href="https://prophotoskills.com/psycho/">PSYCHO</a>
+      <a href="https://prophotoskills.com/travel/">TRAVEL</a>
+      <a href="https://prophotoskills.com/location/">LOCATION</a>
+      <a href="https://prophotoskills.com/insurance/">INSURANCE</a>
+      <a href="https://prophotoskills.com/equipment/">EQUIPMENT</a>
+    </nav>
+    <button type="button" class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false" onclick="ppsToggleNav()">
+      <span></span><span></span><span></span>
+    </button>
+    <span class="flags" aria-label="Sprachen">
+      <button type="button" class="flag-btn" data-lang="en" onclick="ppsSetLanguage('en')" aria-label="English">
+        <img src="https://prophotoskills.github.io/pps-assets/images/en.svg" alt="EN" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="de" onclick="ppsSetLanguage('de')" aria-label="Deutsch">
+        <img src="https://prophotoskills.github.io/pps-assets/images/de.svg" alt="DE" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="fr" onclick="ppsSetLanguage('fr')" aria-label="Français">
+        <img src="https://prophotoskills.github.io/pps-assets/images/fr.svg" alt="FR" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="es" onclick="ppsSetLanguage('es')" aria-label="Español">
+        <img src="https://prophotoskills.github.io/pps-assets/images/es.svg" alt="ES" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="pt" onclick="ppsSetLanguage('pt')" aria-label="Português">
+        <img src="https://prophotoskills.github.io/pps-assets/images/pt.svg" alt="PT" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="it" onclick="ppsSetLanguage('it')" aria-label="Italiano">
+        <img src="https://prophotoskills.github.io/pps-assets/images/it.svg" alt="IT" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="el" onclick="ppsSetLanguage('el')" aria-label="Ελληνικά">
+        <img src="https://prophotoskills.github.io/pps-assets/images/el.svg" alt="EL" width="20" height="14">
+      </button>
+      <button type="button" class="flag-btn" data-lang="ja" onclick="ppsSetLanguage('ja')" aria-label="日本語">
+        <img src="https://prophotoskills.github.io/pps-assets/images/ja.svg" alt="JA" width="20" height="14">
+      </button>
+    </span>
+  </div>
+</header>
 
-<div class="et_pb_column_1_tb_header et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_column_16_24 et_flex_column_16_24_tablet et_flex_column_24_24_phone">
-<div class="et_pb_menu_0_tb_header et_pb_menu et_pb_menu--with-logo et_pb_menu--style-left_aligned et_dropdown_animation_fade et_pb_bg_layout_light et_pb_text_align_center et_pb_text_align_right-tablet et_pb_text_align_left-phone et_pb_module et_flex_module et_flex_column_17_24_tablet"><div class="et_pb_menu_inner_container et_flex_module"><div class="et_pb_menu__logo-wrap"><div class="et_pb_menu__logo"><a href="https://prophotoskills.com/login-web/"><img decoding="async" src="./images/login_website_b.png" title="login_website" class="wp-image-223719 wp-image-224024"></a></div></div><div class="et_pb_menu__wrap"><div class="et_pb_menu__menu"><nav class="et-menu-nav"><ul id="menu-nextlevel-book" class="et-menu nav downwards"><li class="et_pb_menu_page_id-42 menu-item menu-item-type-custom menu-item-object-custom menu-item-42"><a href="https://prophotoskills.com/knowledge/">KNOWLEDGE</a></li>
-<li class="et_pb_menu_page_id-43 menu-item menu-item-type-custom menu-item-object-custom menu-item-43"><a href="https://prophotoskills.com/technik/">TECHNIK</a></li>
-<li class="et_pb_menu_page_id-44 menu-item menu-item-type-custom menu-item-object-custom menu-item-44"><a href="https://prophotoskills.com/progress/">PROGRESS</a></li>
-<li class="et_pb_menu_page_id-45 menu-item menu-item-type-custom menu-item-object-custom menu-item-45"><a href="https://prophotoskills.com/skill/">SKILL</a></li>
-<li class="et_pb_menu_page_id-46 menu-item menu-item-type-custom menu-item-object-custom menu-item-46"><a href="https://prophotoskills.com/psycho/">PSYCHO</a></li>
-<li class="et_pb_menu_page_id-47 menu-item menu-item-type-custom menu-item-object-custom menu-item-47"><a href="https://prophotoskills.com/travel/">TRAVEL</a></li>
-<li class="et_pb_menu_page_id-48 menu-item menu-item-type-custom menu-item-object-custom menu-item-48"><a href="https://prophotoskills.com/location/">LOCATION</a></li>
-<li class="et_pb_menu_page_id-49 menu-item menu-item-type-custom menu-item-object-custom menu-item-49"><a href="https://prophotoskills.com/insurance/">INSURANCE</a></li>
-<li class="et_pb_menu_page_id-50 menu-item menu-item-type-custom menu-item-object-custom menu-item-50"><a href="https://prophotoskills.com/equipment/">EQUIPMENT</a></li>
-</ul></nav></div><div class="et_mobile_nav_menu"><div class="mobile_nav closed"><span class="mobile_menu_bar"></span></div></div></div></div></div>
-</div>
-</div>
-</div>
-		</div>
-	</header>
-	<div id="et-main-area">
-	
-<div id="main-content">
-
-
-			
-				<article id="post-8" class="post-8 page type-page status-publish hentry">
-
-				
-					<div class="entry-content">
-					<div class="et-l et-l--post">
-			<div class="et_builder_inner_content">
-		<div class="et_pb_section_0 et_pb_section et_section_regular et_flex_section">
-<div class="et_pb_row_0 et_pb_row et_flex_row">
-<div class="et_pb_column_0 et_pb_column et-last-child et_flex_column et_pb_css_mix_blend_mode_passthrough et_flex_column_24_24 et_flex_column_24_24_tablet et_flex_column_24_24_phone">
-<div class="et_pb_code_0 et_pb_code et_pb_module"><div class="et_pb_code_inner"><!-- ============================================================
-     ProPhotoSkills &middot; Photoguide Next Level &mdash; VERSION 3
-     Master-Design (von OnLocation v7) &uuml;bernommen: Hero zeigt nur noch den
+<!-- ============================================================
+     ProPhotoSkills · Photoguide Next Level — VERSION 3
+     Master-Design (von OnLocation v7) übernommen: Hero zeigt nur noch den
      zentrierten Textblock (Eyebrow, Headline, Lead, CTA), kein Bild mehr im
      Hero. System-Abschnitt jetzt zweispaltig: links das Buch-Cover
-     (/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp,
+     (zentrales Asset-Repo: https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_NL.webp,
      Schatten-Card, aspect-ratio 300/415, als Background-Div statt <img>),
-     rechts Eyebrow "Das System" + &Uuml;berschrift + Intro-Text. Die
+     rechts Eyebrow "Das System" + Überschrift + Intro-Text. Die
      KNOWLEDGE/TECHNIK/PROGRESS/SKILL/PSYCHO-Spine-Liste bleibt darunter
-     unver&auml;ndert linksb&uuml;ndig. "Weitere Optionen"-Karten bekommen denselben
+     unverändert linksbündig. "Weitere Optionen"-Karten bekommen denselben
      Schatten wie das Cover, rote Vollumrandung der aktuellen Karte entfernt.
-     Abst&auml;nde insgesamt enger gezogen (Section-Padding, FAQ-Liste).
-     Vorg&auml;ngerversionen: nextlevel-code-modul.html, -v2.html (bleiben erhalten)
-     Code-Modul-Inhalt ohne Header/Footer (f&uuml;r WPCode / Divi Code-Modul)
-     Farben: offizielle PPS-Palette &middot; Schrift: Inter durchg&auml;ngig
+     Abstände insgesamt enger gezogen (Section-Padding, FAQ-Liste).
+     Vorgängerversionen: nextlevel-code-modul.html, -v2.html (bleiben erhalten)
+     Code-Modul-Inhalt ohne Header/Footer (für WPCode / Divi Code-Modul)
+     Farben: offizielle PPS-Palette · Schrift: Inter durchgängig
      Wrapper-Klasse "pps-nl" kapselt alle Styles, kollidiert nicht mit Theme
      ============================================================ -->
 
@@ -880,7 +993,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
   --bg: #F9F9F9;          /* Grau Webseite Hintergrund */
   --bg-card: #FFFFFF;
   --ink: #0A1211;          /* Schwarz */
-  --ink-dim: #3C3D41;       /* Footer-Grau, hier als ged&auml;mpfte Textfarbe */
+  --ink-dim: #3C3D41;       /* Footer-Grau, hier als gedämpfte Textfarbe */
   --accent: #D73C1C;       /* Photoguide Rot */
   --accent-soft: rgba(215,60,28,0.08);
   --yellow: #F8E800;       /* PPS Gelb */
@@ -1154,15 +1267,15 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
   <section class="hero">
     <div class="wrap">
       <div class="hero-top">
-        <div class="eyebrow">Photoguide &middot; Entwicklungssystem f&uuml;r Fotografen</div>
+        <div class="eyebrow">Photoguide · Entwicklungssystem für Fotografen</div>
         <h1>ProPhotoSkills Photoguide <em>Next Level</em></h1>
         <p class="lead">
-          Steht f&uuml;r ein professionelles Weiterbildungssystem f&uuml;r Fotografen, das
-          <strong>Strategie, Technik, Mentalit&auml;t und unternehmerisches Denken</strong> verbindet
-          &ndash; auf &uuml;ber A5 / 250 Seiten mit vielen Beispielen und Tipps.
+          Steht für ein professionelles Weiterbildungssystem für Fotografen, das
+          <strong>Strategie, Technik, Mentalität und unternehmerisches Denken</strong> verbindet
+          – auf über A5 / 250 Seiten mit vielen Beispielen und Tipps.
         </p>
-        <a class="cta" href="https://www.digistore24.com/product/612113" target="_blank" rel="noopener">Ebook &middot; 230 &euro; &middot; EPUB / PDF &middot; A5</a>
-        <div class="cta-meta">Sofortiger Zugriff nach Kauf &middot; Digistore24 K&auml;uferschutz</div>
+        <a class="cta" href="https://www.digistore24.com/product/612113">Ebook · 230 € · EPUB / PDF · A5</a>
+        <div class="cta-meta">Sofortiger Zugriff nach Kauf · Digistore24 Käuferschutz</div>
       </div>
     </div>
   </section>
@@ -1171,17 +1284,20 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
   <section class="system">
     <div class="wrap">
       <div class="system-row">
-        <div class="system-cover" role="img" aria-label="Photoguide Next Level von ProPhotoSkills als Buch &ndash; strategischer Guide f&uuml;r professionelle Fotografie, Bildwirkung und Set-F&uuml;hrung" style="--cover-img: url('./images/PPS_BookCover_300x415_NL.webp');">
-          <img decoding="async" class="sr-img" src="./images/PPS_BookCover_300x415_NL.webp" alt="Photoguide Next Level von ProPhotoSkills als Buch &ndash; strategischer Guide f&uuml;r professionelle Fotografie, Bildwirkung und Set-F&uuml;hrung" loading="lazy" width="300" height="415">
+        <div class="system-cover" role="img" aria-label="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung" style="--cover-img: url('https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_NL.webp');">
+          <img class="sr-img"
+            src="https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_NL.webp"
+            alt="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung"
+            loading="lazy" width="300" height="415">
         </div>
         <div class="system-text">
           <div class="eyebrow">Das System</div>
           <h2>Professionelle Fotografie auf strategischem Niveau</h2>
           <p class="intro">
-            <em>Next Level</em> ist kein klassisches Fotografie-Buch &uuml;ber Kameratechnik. Es ist eine
-            strukturierte Weiterbildung f&uuml;r Fotografen, die ihr Handwerk, ihre Denkweise und ihre
+            <em>Next Level</em> ist kein klassisches Fotografie-Buch über Kameratechnik. Es ist eine
+            strukturierte Weiterbildung für Fotografen, die ihr Handwerk, ihre Denkweise und ihre
             berufliche Entwicklung bewusst auf ein professionelles Niveau bringen wollen. Dieses Buch
-            vereint f&uuml;nf zentrale Bereiche professioneller Fotografie: KNOWLEDGE, TECHNIK, PROGRESS,
+            vereint fünf zentrale Bereiche professioneller Fotografie: KNOWLEDGE, TECHNIK, PROGRESS,
             SKILL und PSYCHO.
           </p>
         </div>
@@ -1190,34 +1306,34 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       <div class="spine">
         <div class="module" data-n="01" style="--mcolor:#7D453A;">
           <h3><a href="https://prophotoskills.com/knowledge/">KNOWLEDGE</a></h3>
-          <p>Im Bereich KNOWLEDGE entwickelst du ein tiefes Verst&auml;ndnis f&uuml;r Fotografie als
-            Gesamtdisziplin &ndash; von Bildanalyse &uuml;ber visuelle Wahrnehmung bis hin zu strategischem
+          <p>Im Bereich KNOWLEDGE entwickelst du ein tiefes Verständnis für Fotografie als
+            Gesamtdisziplin – von Bildanalyse über visuelle Wahrnehmung bis hin zu strategischem
             Denken.</p>
         </div>
         <div class="module" data-n="02" style="--mcolor:#2FBBD9;">
           <h3><a href="https://prophotoskills.com/technik/">TECHNIK</a></h3>
-          <p>TECHNIK steht f&uuml;r sichere Entscheidungen am Set: Lichtf&uuml;hrung, Workflow, Struktur und
-            technische Klarheit. Technik ist hier kein Selbstzweck, sondern Werkzeug f&uuml;r
+          <p>TECHNIK steht für sichere Entscheidungen am Set: Lichtführung, Workflow, Struktur und
+            technische Klarheit. Technik ist hier kein Selbstzweck, sondern Werkzeug für
             professionelle Umsetzung.</p>
         </div>
         <div class="module" data-n="03" style="--mcolor:#95BE2F;">
           <h3><a href="https://prophotoskills.com/progress/">PROGRESS</a></h3>
-          <p>PROGRESS besch&auml;ftigt sich mit deiner langfristigen Entwicklung als Fotograf.
+          <p>PROGRESS beschäftigt sich mit deiner langfristigen Entwicklung als Fotograf.
             Positionierung, Wachstum und nachhaltiger Karriereaufbau stehen im Mittelpunkt.</p>
         </div>
         <div class="module" data-n="04" style="--mcolor:#E65559;">
           <h3><a href="https://prophotoskills.com/skill/">SKILL</a></h3>
-          <p>SKILL vertieft deine praktischen F&auml;higkeiten: F&uuml;hrung, Kommunikation, Organisation und
-            souver&auml;nes Auftreten am Set.</p>
+          <p>SKILL vertieft deine praktischen Fähigkeiten: Führung, Kommunikation, Organisation und
+            souveränes Auftreten am Set.</p>
         </div>
         <div class="module" data-n="05" style="--mcolor:#F09B61;">
           <h3><a href="https://prophotoskills.com/psycho/">PSYCHO</a></h3>
-          <p>PSYCHO richtet den Blick auf mentale Stabilit&auml;t, Drucksituationen und innere Klarheit &ndash;
+          <p>PSYCHO richtet den Blick auf mentale Stabilität, Drucksituationen und innere Klarheit –
             weil professionelle Fotografie immer auch Kopfsache ist.</p>
         </div>
       </div>
 
-      <p class="system-close">Next Level verbindet diese Bereiche zu einem strukturierten Gesamtsystem f&uuml;r professionelle Fotografen.</p>
+      <p class="system-close">Next Level verbindet diese Bereiche zu einem strukturierten Gesamtsystem für professionelle Fotografen.</p>
     </div>
   </section>
 
@@ -1226,23 +1342,23 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
     <div class="wrap">
       <div class="eyebrow">Weitere Optionen</div>
       <h2>Hier weitere Option</h2>
-      <p class="intro-line">Das ProPhotoSkills System im &Uuml;berblick &ndash; MemberAbo, OnLocation, der kostenlose Beginner Guide und Next Level selbst.</p>
+      <p class="intro-line">Das ProPhotoSkills System im Überblick – MemberAbo, OnLocation, der kostenlose Beginner Guide und Next Level selbst.</p>
       <div class="cards">
         <a class="card" href="https://memberabo.prophotoskills.com/">
-          <img decoding="async" src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_MB.webp" alt="ProPhotoSkills Membership Bereich als Zugang zu exklusiven Fotografie-Inhalten, Guides und professionellem Wissen f&uuml;r Fotograf:innen" loading="lazy">
-          <div class="card-label">MemberAbo<span>Voller Systemzugang &middot; 300 &euro; / 6 Monate</span></div>
+          <img src="https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_MB.webp" alt="ProPhotoSkills Membership Bereich als Zugang zu exklusiven Fotografie-Inhalten, Guides und professionellem Wissen für Fotograf:innen" loading="lazy">
+          <div class="card-label">MemberAbo<span>Voller Systemzugang · 300 € / 6 Monate</span></div>
         </a>
         <a class="card" href="https://onlocation.prophotoskills.com/">
-          <img decoding="async" src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_OL.webp" alt="Photoguide On Location von ProPhotoSkills &ndash; Guide f&uuml;r Outdoor Fotografie, Reisen, Planung und professionelle Shootings vor Ort" loading="lazy">
-          <div class="card-label">Photoguide OnLocation<span>F&uuml;r mobile Produktionen &middot; 120 &euro;</span></div>
+          <img src="https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_OL.webp" alt="Photoguide On Location von ProPhotoSkills – Guide für Outdoor Fotografie, Reisen, Planung und professionelle Shootings vor Ort" loading="lazy">
+          <div class="card-label">Photoguide OnLocation<span>Für mobile Produktionen · 120 €</span></div>
         </a>
         <a class="card" href="https://prophotoskills.com/pps_photoguide_beginner/">
-          <img decoding="async" src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_BG.webp" alt="Kostenloser Photoguide f&uuml;r Einsteiger von ProPhotoSkills mit Fokus auf Fotografie Grundlagen" loading="lazy">
-          <div class="card-label">Photoguide Beginner<span>Einstieg in die Grundlagen &middot; kostenlos</span></div>
+          <img src="https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_BG.webp" alt="Kostenloser Photoguide für Einsteiger von ProPhotoSkills mit Fokus auf Fotografie Grundlagen" loading="lazy">
+          <div class="card-label">Photoguide Beginner<span>Einstieg in die Grundlagen · kostenlos</span></div>
         </a>
-        <a class="card is-current" href="./">
-          <img decoding="async" src="https://prophotoskills.com/wp-content/uploads/2026/06/PPS_BookCover_300x415_NL.webp" alt="Photoguide Next Level von ProPhotoSkills als Buch &ndash; strategischer Guide f&uuml;r professionelle Fotografie, Bildwirkung und Set-F&uuml;hrung" loading="lazy">
-          <div class="card-label">Photoguide Next Level<span>Du befindest dich hier &middot; 230 &euro;</span></div>
+        <a class="card is-current" href="https://nextlevel.prophotoskills.com/">
+          <img src="https://prophotoskills.github.io/pps-assets/images/PPS_BookCover_300x415_NL.webp" alt="Photoguide Next Level von ProPhotoSkills als Buch – strategischer Guide für professionelle Fotografie, Bildwirkung und Set-Führung" loading="lazy">
+          <div class="card-label">Photoguide Next Level<span>Du befindest dich hier · 230 €</span></div>
         </a>
       </div>
     </div>
@@ -1253,14 +1369,14 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
     <div class="wrap">
       <div class="faq-head">
         <div class="eyebrow">FAQ</div>
-        <h2>H&auml;ufige Fragen zu Photoguide Next Level</h2>
-        <p class="desc">Das professionelle Entwicklungssystem f&uuml;r Fotografen &ndash; KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO kompakt erkl&auml;rt.</p>
+        <h2>Häufige Fragen zu Photoguide Next Level</h2>
+        <p class="desc">Das professionelle Entwicklungssystem für Fotografen – KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO kompakt erklärt.</p>
       </div>
 
       <div class="faq-list" id="pps-nl-faq">
         <div class="faq-item" data-open="true">
           <button class="faq-q" aria-expanded="true">Was ist Photoguide Next Level?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem f&uuml;r Fotografen &ndash; f&uuml;nf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem für Fotografen – fünf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Womit beginnt professionelle Fotografie wirklich?<span class="faq-icon">+</span></button>
@@ -1268,27 +1384,27 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Warum passieren 70 % des Fotojobs vor dem ersten Klick?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Weil Vorbereitung, Konzept und Entscheidungen den gr&ouml;&szlig;ten Teil des Ergebnisses bestimmen &ndash; nicht der Moment des Ausl&ouml;sens.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Weil Vorbereitung, Konzept und Entscheidungen den größten Teil des Ergebnisses bestimmen – nicht der Moment des Auslösens.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Was unterscheidet Next Level von OnLocation?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Next Level ist das umfassende Wissenssystem f&uuml;r Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System f&uuml;r mobile Produktionen &ndash; Travel, Location, Insurance und Equipment.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Next Level ist das umfassende Wissenssystem für Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System für mobile Produktionen – Travel, Location, Insurance und Equipment.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Warum reicht Technik allein nicht aus?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Technik erzeugt Qualit&auml;t &ndash; aber Haltung, Kommunikation und F&uuml;hrung entscheiden &uuml;ber die Wirkung eines Bildes.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Technik erzeugt Qualität – aber Haltung, Kommunikation und Führung entscheiden über die Wirkung eines Bildes.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Was bedeutet TECHNIK in Photoguide Next Level?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich &ndash; Selbstoptimierung, mentale St&auml;rke, Pr&auml;senz und Belastbarkeit als Fotograf.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich – Selbstoptimierung, mentale Stärke, Präsenz und Belastbarkeit als Fotograf.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Macht besseres Equipment bessere Fotos?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Nein. Equipment verst&auml;rkt dein K&ouml;nnen &ndash; es ersetzt es nicht.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Nein. Equipment verstärkt dein Können – es ersetzt es nicht.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Warum ist Kommunikation am Set so wichtig?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">Weil Atmosph&auml;re und Vertrauen direkt sichtbar im Bild werden &ndash; Kommunikation ist ein zentrales Werkzeug am Set.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">Weil Atmosphäre und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set.</div></div>
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Ist Fotografie Talent oder trainierbar?<span class="faq-icon">+</span></button>
@@ -1296,7 +1412,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
         </div>
         <div class="faq-item" data-open="false">
           <button class="faq-q" aria-expanded="false">Was kostet Photoguide Next Level?<span class="faq-icon">+</span></button>
-          <div class="faq-a"><div class="faq-a-inner">230 EUR<span class="price-badge">230 &euro;</span>. Erh&auml;ltlich &uuml;ber <a href="https://www.digistore24.com/product/612113" target="_blank" rel="noopener">Digistore24</a>.</div></div>
+          <div class="faq-a"><div class="faq-a-inner">230 EUR<span class="price-badge">230 €</span>. Erhältlich über <a href="https://www.digistore24.com/product/612113">Digistore24</a>.</div></div>
         </div>
       </div>
     </div>
@@ -1334,7 +1450,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Was ist Photoguide Next Level?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem f&uuml;r Fotografen &ndash; f&uuml;nf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO."
+        "text": "Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem für Fotografen – fünf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO."
       }
     },
     {
@@ -1350,7 +1466,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Warum passieren 70 % des Fotojobs vor dem ersten Klick?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Weil Vorbereitung, Konzept und Entscheidungen den gr&ouml;&szlig;ten Teil des Ergebnisses bestimmen &ndash; nicht der Moment des Ausl&ouml;sens."
+        "text": "Weil Vorbereitung, Konzept und Entscheidungen den größten Teil des Ergebnisses bestimmen – nicht der Moment des Auslösens."
       }
     },
     {
@@ -1358,7 +1474,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Was unterscheidet Next Level von OnLocation?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Next Level ist das umfassende Wissenssystem f&uuml;r Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System f&uuml;r mobile Produktionen &ndash; Travel, Location, Insurance und Equipment."
+        "text": "Next Level ist das umfassende Wissenssystem für Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System für mobile Produktionen – Travel, Location, Insurance und Equipment."
       }
     },
     {
@@ -1366,7 +1482,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Warum reicht Technik allein nicht aus?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Technik erzeugt Qualit&auml;t &ndash; aber Haltung, Kommunikation und F&uuml;hrung entscheiden &uuml;ber die Wirkung eines Bildes."
+        "text": "Technik erzeugt Qualität – aber Haltung, Kommunikation und Führung entscheiden über die Wirkung eines Bildes."
       }
     },
     {
@@ -1374,7 +1490,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Was bedeutet TECHNIK in Photoguide Next Level?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich &ndash; Selbstoptimierung, mentale St&auml;rke, Pr&auml;senz und Belastbarkeit als Fotograf."
+        "text": "TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich – Selbstoptimierung, mentale Stärke, Präsenz und Belastbarkeit als Fotograf."
       }
     },
     {
@@ -1382,7 +1498,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Macht besseres Equipment bessere Fotos?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nein. Equipment verst&auml;rkt dein K&ouml;nnen &ndash; es ersetzt es nicht."
+        "text": "Nein. Equipment verstärkt dein Können – es ersetzt es nicht."
       }
     },
     {
@@ -1390,7 +1506,7 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Warum ist Kommunikation am Set so wichtig?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Weil Atmosph&auml;re und Vertrauen direkt sichtbar im Bild werden &ndash; Kommunikation ist ein zentrales Werkzeug am Set."
+        "text": "Weil Atmosphäre und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set."
       }
     },
     {
@@ -1406,30 +1522,12 @@ window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(argumen
       "name": "Was kostet Photoguide Next Level?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "230 EUR. Erh&auml;ltlich &uuml;ber Digistore24 (https://www.digistore24.com/product/612113)."
+        "text": "230 EUR. Erhältlich über Digistore24 (https://www.digistore24.com/product/612113)."
       }
     }
   ]
 }
-</script></div></div>
-</div>
-</div>
-</div>
-
-
-
-
-		</div>
-	</div>
-						</div>
-
-				
-				</article>
-
-			
-
-</div>
-
+</script>
 <footer class="pps-site-footer">
   <div class="wrap">
     <div class="footer-grid">
