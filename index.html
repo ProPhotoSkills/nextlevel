@@ -257,7 +257,7 @@ body { top: 0 !important; }
 }
 .pps-site-footer .col-logo h4 { margin-top: 18px; }
 .pps-site-footer .links { display: flex; flex-direction: column; gap: 4px; line-height: 1.5; }
-.pps-site-footer .links a { color: #fff; font-size: 14.5px; text-decoration: none; opacity: 0.92; }
+.pps-site-footer .links a { color: #fff; font-size: 14.5px; text-decoration: none; opacity: 0.92; white-space: nowrap; }
 .pps-site-footer .links a:hover { text-decoration: underline; }
 .pps-site-footer .links span { color: #fff; font-size: 14.5px; opacity: 0.92; }
 .pps-site-footer .links span a { opacity: 1; }
@@ -307,16 +307,16 @@ body { top: 0 !important; }
 @media (max-width: 767px) {
   /* Mobil: 2 Spalten (Logo+Links), 2 Spalten (Products+System) */
   .pps-site-footer .footer-grid {
-    grid-template-columns: 150px 150px;
+    grid-template-columns: 200px 150px;
     justify-content: center;
-    gap: 56px;
+    gap: 68px;
     grid-template-areas:
       "logo     links"
       "products system";
   }
   .pps-site-footer .tagline { font-size: 16px; line-height: 1.35em; white-space: normal; }
-  .pps-site-footer .links a { font-size: 13px; }
-  .pps-site-footer h4 { font-size: 13px; white-space: normal; }
+  .pps-site-footer .links a { font-size: 12px; }
+  .pps-site-footer h4 { font-size: 11.5px; white-space: nowrap; }
 }
 </style>
 <meta name="description" content="Das professionelle Entwicklungssystem f&uuml;r Fotografen. 5 Module &ndash; KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO. 230 EUR.">
