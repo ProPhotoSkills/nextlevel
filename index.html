@@ -126,7 +126,7 @@ body { top: 0 !important; }
   gap: clamp(10px, 2vw, 24px);
   flex-wrap: nowrap;
 }
-.pps-site-header .logo { flex-shrink: 0; }
+.pps-site-header .logo { flex-shrink: 0; position: relative; top: -5px; }
 .pps-site-header .logo img { height: 36px; display: block; }
 .pps-site-header nav {
   display: flex;
@@ -135,6 +135,8 @@ body { top: 0 !important; }
   flex-wrap: nowrap;
   font-family: 'Inter', sans-serif;
   min-width: 0;
+  position: relative;
+  top: -3px;
 }
 .pps-site-header nav a {
   font-size: clamp(10px, 0.9vw, 13px);
@@ -177,6 +179,8 @@ body { top: 0 !important; }
   gap: 4px;
   flex-shrink: 0;
   margin-left: 32px;
+  position: relative;
+  top: -7px;
 }
 .pps-site-header .flags img { height: 13px; width: 18px; display: block; border-radius: 2px; }
 .pps-site-header .flags .flag-btn {
@@ -278,9 +282,14 @@ body { top: 0 !important; }
 }
 .pps-site-footer .copyright em { font-style: italic; }
 .pps-site-footer .col-logo { grid-area: logo; }
-.pps-site-footer .col-links { grid-area: links; margin-top: -20px; }
-.pps-site-footer .col-products { grid-area: products; margin-top: -20px; }
-.pps-site-footer .col-system { grid-area: system; margin-top: -20px; }
+.pps-site-footer .col-links { grid-area: links; }
+.pps-site-footer .col-products { grid-area: products; }
+.pps-site-footer .col-system { grid-area: system; }
+@media (min-width: 981px) {
+  .pps-site-footer .col-links,
+  .pps-site-footer .col-products,
+  .pps-site-footer .col-system { margin-top: -15px; }
+}
 @media (max-width: 980px) {
   /* iPad: Logo (mit Follow Us) volle Breite oben, darunter 3 gleich breite Spalten */
   .pps-site-footer .footer-grid {
