@@ -138,11 +138,11 @@ ALLE PROPHOTOSKILLS PRODUKTE
 Photoguide Next Level  : https://nextlevel.prophotoskills.com/       | dieses Produkt
 Photoguide OnLocation  : https://onlocation.prophotoskills.com/
 MemberAbo              : https://memberabo.prophotoskills.com/
-PPS System             : https://prophotoskills.com/pps-system/
-Photoguide Beginner    : https://prophotoskills.com/pps_photoguide_beginner/
-PPS Shop               : https://prophotoskills.com/pps_shop/
+PPS System             : https://prophotoskills.com/system/
+Photoguide Beginner    : https://prophotoskills.com/photoguide_beginner/
+PPS Shop               : https://prophotoskills.com/shop/
 1st Assistant          : https://prophotoskills.com/1st-assistant_program/
-PPS Guidelines         : https://prophotoskills.com/pps_guidelines/
+PPS Guidelines         : https://prophotoskills.com/guidelines/
 PPS Affiliate          : https://prophotoskills.com/affiliate/
 
 ==========================
@@ -206,20 +206,12 @@ https://nextlevel.prophotoskills.com/adaptive-professional-development/
 https://nextlevel.prophotoskills.com/predictive-development/
 https://nextlevel.prophotoskills.com/self-optimization/
 https://nextlevel.prophotoskills.com/semantic-system/
-https://nextlevel.prophotoskills.com/semantic-network/
-https://nextlevel.prophotoskills.com/runtime-architecture/
-https://nextlevel.prophotoskills.com/human-dynamics/
-https://nextlevel.prophotoskills.com/perception-system/
 
 ==========================
 CORE SEMANTIC HUBS
 ==========================
 
 https://nextlevel.prophotoskills.com/semantic-system/
-https://nextlevel.prophotoskills.com/semantic-network/
-https://nextlevel.prophotoskills.com/runtime-architecture/
-https://nextlevel.prophotoskills.com/human-dynamics/
-https://nextlevel.prophotoskills.com/perception-system/
 
 ==========================
 CORE PROFESSIONAL SYSTEMS
@@ -516,7 +508,7 @@ Impressum (EN)   : https://prophotoskills.com/site-notice
 Datenschutz (DE) : https://prophotoskills.com/datenschutz
 Datenschutz (EN) : https://prophotoskills.com/privacy-policy
 About            : https://prophotoskills.com/about_us
-Guidelines       : https://prophotoskills.com/pps_guidelines/
+Guidelines       : https://prophotoskills.com/guidelines/
 
 ==========================
 NUTZUNGSHINWEIS
