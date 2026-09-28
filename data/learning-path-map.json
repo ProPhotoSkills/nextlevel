@@ -1,14 +1,13 @@
 {
   "learning_path_map": {
-    "system": "Photoguide – Next Level",
-    "version": "1.0",
+    "system": "ProPhotoSkills",
     "language": "de",
-
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Struktur & Navigation",
     "purpose": "Definiert professionelle Entwicklungs- und Denkpfade innerhalb des Systems und beschreibt wie Nutzer durch Wahrnehmung, Kontrolle, Kommunikation und Erfahrung wachsen.",
-
     "semantic_logic": {
       "definition": "Ein Learning Path beschreibt keine Reihenfolge von Tutorials sondern die Entwicklung professioneller Denk- und Handlungsmuster.",
-
       "path_types": [
         "mindset",
         "leadership",
@@ -18,42 +17,33 @@
         "creative",
         "professional"
       ],
-
       "transformation_focus": true,
-
-      "core_principle": "Das Ziel ist nicht Wissen allein sondern professionelle Stabilität unter realen Bedingungen."
+      "core_principle": "Das Ziel ist nicht Wissen allein sondern professionelle Stabilitaet unter realen Bedingungen."
     },
-
     "learning_paths": [
-
       {
         "path_id": "LP001",
         "name": "Vom Chaos zur Kontrolle",
-
         "path_type": "professional",
-
         "starting_state": [
           "Unsicherheit",
-          "Überforderung",
+          "Ueberforderung",
           "Unstrukturierte Produktionen"
         ],
-
         "target_state": [
           "Kontrolle",
-          "Stabilität",
+          "Stabilitaet",
           "Professionelle Ruhe"
         ],
-
         "development_flow": [
           {
             "step": 1,
             "concept": "Vorbereitung verstehen",
             "articles": [
               "T10_L01",
-              "T10_L01"
+              "T10_L01_travel"
             ]
           },
-
           {
             "step": 2,
             "concept": "Struktur aufbauen",
@@ -62,7 +52,6 @@
               "T12_L07"
             ]
           },
-
           {
             "step": 3,
             "concept": "Stress reduzieren",
@@ -71,7 +60,6 @@
               "T10_L15"
             ]
           },
-
           {
             "step": 4,
             "concept": "Kontrolle stabilisieren",
@@ -81,9 +69,7 @@
             ]
           }
         ],
-
-        "final_transformation": "Professionelle Produktionen ruhig und kontrolliert steuern können.",
-
+        "final_transformation": "Professionelle Produktionen ruhig und kontrolliert steuern koennen.",
         "connected_clusters": [
           "CL001",
           "CL002",
@@ -91,53 +77,41 @@
           "CL008"
         ]
       },
-
       {
         "path_id": "LP002",
         "name": "Vom Techniker zum Regisseur",
-
         "path_type": "leadership",
-
         "starting_state": [
           "Kamerafokus",
           "Technikdenken",
           "Unsicherheit im Umgang mit Menschen"
         ],
-
         "target_state": [
-          "Führung",
-          "Präsenz",
-          "Atmosphärische Kontrolle"
+          "Fuehrung",
+          "Praesenz",
+          "Atmosphaerische Kontrolle"
         ],
-
         "development_flow": [
           {
             "step": 1,
-            "concept": "Menschenführung verstehen",
+            "concept": "Menschenfuehrung verstehen",
             "articles": [
-              "T06_L01",
-              "T14_L01"
+              "T06_L01"
             ]
           },
-
           {
             "step": 2,
             "concept": "Vertrauen erzeugen",
-            "articles": [
-              "T14_L02",
-              "T14_L05"
-            ]
+            "articles": []
           },
-
           {
             "step": 3,
-            "concept": "Atmosphäre steuern",
+            "concept": "Atmosphaere steuern",
             "articles": [
               "T11_L09",
               "T11_L15"
             ]
           },
-
           {
             "step": 4,
             "concept": "Ruhe ausstrahlen",
@@ -147,109 +121,88 @@
             ]
           }
         ],
-
-        "final_transformation": "Nicht nur Bilder aufnehmen sondern Situationen professionell führen können.",
-
+        "final_transformation": "Nicht nur Bilder aufnehmen sondern Situationen professionell fuehren koennen.",
         "connected_clusters": [
           "CL002",
           "CL003",
           "CL004"
         ]
       },
-
       {
         "path_id": "LP003",
         "name": "Von Kamera zu Wahrnehmung",
-
         "path_type": "creative",
-
         "starting_state": [
           "Technikfixierung",
           "Gear Denken",
-          "Oberflächliche Bildanalyse"
+          "Oberflaechliche Bildanalyse"
         ],
-
         "target_state": [
-          "Visuelle Sensibilität",
-          "Atmosphärisches Denken",
+          "Visuelle Sensibilitaet",
+          "Atmosphaerisches Denken",
           "Professionelle Wahrnehmung"
         ],
-
         "development_flow": [
           {
             "step": 1,
             "concept": "Licht verstehen",
             "articles": [
               "T11_L02",
-              "T11_L02"
+              "T11_L03"
             ]
           },
-
           {
             "step": 2,
-            "concept": "Atmosphäre wahrnehmen",
+            "concept": "Atmosphaere wahrnehmen",
             "articles": [
               "T11_L09",
               "T11_L15"
             ]
           },
-
           {
             "step": 3,
             "concept": "Emotion lesen lernen",
-            "articles": [
-              "T14_L01",
-              "T14_L03"
-            ]
+            "articles": []
           },
-
           {
             "step": 4,
             "concept": "Bildwirkung bewusst erzeugen",
             "articles": [
-              "T11_L15",
-              "T11_L03"
+              "T11_L04",
+              "T11_L05"
             ]
           }
         ],
-
         "final_transformation": "Fotografie als Wahrnehmungs- und Wirkungssystem verstehen.",
-
         "connected_clusters": [
           "CL004",
           "CL006",
           "CL009"
         ]
       },
-
       {
         "path_id": "LP004",
         "name": "Von Stress zu professioneller Ruhe",
-
         "path_type": "psychological",
-
         "starting_state": [
-          "Nervosität",
+          "Nervositaet",
           "Stress",
           "Unsicherheit"
         ],
-
         "target_state": [
           "Gelassenheit",
           "Kontrolle",
           "Belastbarkeit"
         ],
-
         "development_flow": [
           {
             "step": 1,
             "concept": "Stress verstehen",
             "articles": [
               "T06_L04",
-              "T06_L04"
+              "T06_L05"
             ]
           },
-
           {
             "step": 2,
             "concept": "Vorbereitung als Sicherheit",
@@ -258,16 +211,14 @@
               "T12_L08"
             ]
           },
-
           {
             "step": 3,
-            "concept": "Mentale Stabilität trainieren",
+            "concept": "Mentale Stabilitaet trainieren",
             "articles": [
-              "T06_L04",
+              "T06_L01",
               "T10_L15"
             ]
           },
-
           {
             "step": 4,
             "concept": "Ruhe unter Druck entwickeln",
@@ -277,44 +228,36 @@
             ]
           }
         ],
-
-        "final_transformation": "Auch unter Belastung professionell handlungsfähig bleiben.",
-
+        "final_transformation": "Auch unter Belastung professionell handlungsfaehig bleiben.",
         "connected_clusters": [
           "CL002",
           "CL005",
           "CL008"
         ]
       },
-
       {
         "path_id": "LP005",
         "name": "OnLocation Professional",
-
         "path_type": "operational",
-
         "starting_state": [
           "Chaotische Travel Produktionen",
           "Unsicherheit unterwegs",
           "Fehlende Organisation"
         ],
-
         "target_state": [
           "Mobile Produktionskontrolle",
           "Sicherheit unterwegs",
-          "Professionelle Flexibilität"
+          "Professionelle Flexibilitaet"
         ],
-
         "development_flow": [
           {
             "step": 1,
             "concept": "Travel Planung verstehen",
             "articles": [
-              "T10_L01",
+              "T10_L01_travel",
               "T10_L05"
             ]
           },
-
           {
             "step": 2,
             "concept": "Locations professionell lesen",
@@ -323,7 +266,6 @@
               "T11_L08"
             ]
           },
-
           {
             "step": 3,
             "concept": "Risiken absichern",
@@ -333,7 +275,6 @@
               "T12_L09"
             ]
           },
-
           {
             "step": 4,
             "concept": "Stabil unter realen Bedingungen arbeiten",
@@ -343,74 +284,59 @@
             ]
           }
         ],
-
-        "final_transformation": "Professionelle Produktionen mobil und unter wechselnden Bedingungen kontrollieren können.",
-
+        "final_transformation": "Professionelle Produktionen mobil und unter wechselnden Bedingungen kontrollieren koennen.",
         "connected_clusters": [
           "CL005",
           "CL007",
           "CL008"
         ]
       },
-
       {
         "path_id": "LP006",
         "name": "Von Bildern zu Wirkung",
-
         "path_type": "creative",
-
         "starting_state": [
           "Technische Bilder",
           "Wenig emotionale Tiefe",
           "Unsichere Bildsprache"
         ],
-
         "target_state": [
           "Emotionale Bildwirkung",
-          "Atmosphärische Tiefe",
+          "Atmosphaerische Tiefe",
           "Visuelle Kontrolle"
         ],
-
         "development_flow": [
           {
             "step": 1,
-            "concept": "Atmosphäre verstehen",
+            "concept": "Atmosphaere verstehen",
             "articles": [
               "T11_L09",
               "T11_L15"
             ]
           },
-
           {
             "step": 2,
             "concept": "Emotionale Dynamik erkennen",
-            "articles": [
-              "T14_L01",
-              "T14_L05"
-            ]
+            "articles": []
           },
-
           {
             "step": 3,
             "concept": "Licht emotional einsetzen",
             "articles": [
               "T11_L02",
-              "T11_L02"
+              "T11_L04"
             ]
           },
-
           {
             "step": 4,
             "concept": "Bildwirkung bewusst erzeugen",
             "articles": [
-              "T11_L15",
+              "T11_L05",
               "T11_L03"
             ]
           }
         ],
-
-        "final_transformation": "Bilder erzeugen die emotional spürbar und visuell erinnerbar sind.",
-
+        "final_transformation": "Bilder erzeugen die emotional spuerbar und visuell erinnerbar sind.",
         "connected_clusters": [
           "CL004",
           "CL006",
@@ -418,35 +344,28 @@
         ]
       }
     ],
-
     "entry_points": [
-
       {
         "problem": "Stress bei Shootings",
         "recommended_path": "LP004"
       },
-
       {
         "problem": "Unsicherheit im Umgang mit Menschen",
         "recommended_path": "LP002"
       },
-
       {
         "problem": "Chaotische Travel Produktionen",
         "recommended_path": "LP005"
       },
-
       {
-        "problem": "Technisch gute aber emotionale schwache Bilder",
+        "problem": "Technisch gute aber emotional schwache Bilder",
         "recommended_path": "LP006"
       },
-
       {
-        "problem": "Fehlende Professionalität und Struktur",
+        "problem": "Fehlende Professionalitaet und Struktur",
         "recommended_path": "LP001"
       }
     ],
-
     "future_usage": {
       "used_for": [
         "AI Coaching",
@@ -457,12 +376,16 @@
         "LLM Navigation",
         "User Transformation Mapping"
       ],
-
       "connects_to": [
         "semantic-routing-map.json",
         "homepage-curation.json",
         "onlocation-system.json"
       ]
+    },
+    "system_context": {
+      "product": "ProPhotoSkills",
+      "domain": "https://prophotoskills.com",
+      "brand_root": "https://prophotoskills.com"
     }
   }
 }

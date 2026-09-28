@@ -1,397 +1,767 @@
 {
   "unified_index": {
-    "system_name": "Photoguide – Next Level",
-    "brand": "ProPhotoSkills",
-    "version": "1.0",
+    "system": "Photoguide – Next Level",
+    "domain": "https://nextlevel.prophotoskills.com",
     "language": "de",
-    "primary_domain": "https://nextlevel.prophotoskills.com",
-    "system_type": "Unified Semantic Professional Photography Knowledge System",
-    "purpose": "Aggregierte Gesamtsicht aller semantischen Systeme, Konzepte, Lernpfade, Beziehungen und professionellen Denkmodelle innerhalb der Plattform.",
-    "master_identity": {
-      "main_statement": "Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf.",
-      "master_thesis": "Professionelle Fotografie ist ein Zusammenspiel aus Wahrnehmung, Führung, Struktur, Belastbarkeit, Kommunikation und visueller Wirkung.",
-      "system_positioning": [
-        "Professional Photography Thinking System",
-        "Creative Leadership Platform",
-        "Semantic Knowledge Architecture",
-        "Professional Production Framework",
-        "Visual Communication System"
-      ]
-    },
-    "connected_systems": [
+    "version": "1.2",
+    "last_updated": "2026-09-27",
+    "file_role": "Einstieg & Identitaet",
+    "total": 74,
+    "note": "Alle 74 Artikel von Photoguide – Next Level mit Titel, Modul, Kernaussage und URL. Artikel-URLs fuehren auf eine Hinweisseite mit Login auf prophotoskills.com; der Volltext ist nach dem Kauf lesbar.",
+    "articles": [
       {
-        "file": "master-system.json",
-        "semantic_role": "Systemdefinition",
-        "contains": [
-          "Module",
-          "Grundphilosophie",
-          "Systemarchitektur",
-          "Professionelle Denklogik"
-        ]
-      },
-      {
-        "file": "semantic-concept-map.json",
-        "semantic_role": "Konzeptarchitektur",
-        "contains": [
-          "Kernkonzepte",
-          "semantische Gewichtungen",
-          "Denkachsen"
-        ]
-      },
-      {
-        "file": "cross-article-map.json",
-        "semantic_role": "Artikelnetzwerk",
-        "contains": [
-          "Crosslinks",
-          "Artikelbeziehungen",
-          "Verstärkungen"
-        ]
-      },
-      {
-        "file": "authority-map.json",
-        "semantic_role": "Prioritätslogik",
-        "contains": [
-          "Kernartikel",
-          "Autorität",
-          "semantische Zentralität"
-        ]
-      },
-      {
-        "file": "topic-cluster.json",
-        "semantic_role": "Bedeutungsräume",
-        "contains": [
-          "Cluster",
-          "Themenuniversen",
-          "professionelle Denkmodelle"
-        ]
-      },
-      {
-        "file": "relationship-map.json",
-        "semantic_role": "Konzeptdynamik",
-        "contains": [
-          "Wirkungsbeziehungen",
-          "emotionale Dynamik",
-          "professionelle Ursachenketten"
-        ]
-      },
-      {
-        "file": "learning-path-map.json",
-        "semantic_role": "Transformation",
-        "contains": [
-          "Entwicklungspfade",
-          "professionelle Transformation",
-          "Lernlogik"
-        ]
-      },
-      {
-        "file": "semantic-routing-map.json",
-        "semantic_role": "Kontextnavigation",
-        "contains": [
-          "Probleminterpretation",
-          "Routing",
-          "emotionale Zustände",
-          "semantische Navigation"
-        ]
-      },
-      {
-        "file": "homepage-curation.json",
-        "semantic_role": "Plattformdramaturgie",
-        "contains": [
-          "Homepage Struktur",
-          "Einstiegssysteme",
-          "semantische Priorisierung"
-        ]
-      },
-      {
-        "file": "onlocation-system.json",
-        "semantic_role": "Spezialisiertes Produktionssystem",
-        "contains": [
-          "Travel",
-          "Location",
-          "Outdoor Produktionen",
-          "mobile Kreativität"
-        ]
-      },
-      {
-        "file": "ai-index.json",
-        "semantic_role": "KI Einstiegspunkt",
-        "contains": [
-          "Systemnavigation",
-          "AI Routing",
-          "Prioritäten",
-          "semantische Orchestrierung"
-        ]
-      }
-    ],
-    "master_modules": [
-      {
-        "module": "TRAVEL",
-        "meaning": "Mobile Produktionskontrolle und kreative Stabilität unterwegs.",
-        "core_dimensions": [
-          "Travel",
-          "Logistik",
-          "Mobilität",
-          "Anpassungsfähigkeit"
-        ]
-      },
-      {
-        "module": "LOCATION",
-        "meaning": "Raumwirkung, Atmosphäre und visuelle Realität.",
-        "core_dimensions": [
-          "Atmosphäre",
-          "Licht",
-          "Location",
-          "Emotion"
-        ]
-      },
-      {
-        "module": "INSURANCE",
-        "meaning": "Sicherheit, Verantwortung und Produktionsstabilität.",
-        "core_dimensions": [
-          "Backups",
-          "Verträge",
-          "Sicherheit",
-          "Kontrolle"
-        ]
-      },
-      {
-        "module": "EQUIPMENT",
-        "meaning": "Werkzeugstrategie statt Technikfixierung.",
-        "core_dimensions": [
-          "Workflow",
-          "Organisation",
-          "Produktionssicherheit"
-        ]
-      }
-    ],
-    "primary_semantic_clusters": [
-      {
-        "cluster": "Unsichtbare professionelle Arbeit",
-        "core_articles": [
-          "T10_L01",
-          "T12_L14",
-          "T10_L01"
-        ]
-      },
-      {
-        "cluster": "Ruhe unter Druck",
-        "core_articles": [
-          "T06_L04",
-          "T10_L15",
-          "T12_L14"
-        ]
-      },
-      {
-        "cluster": "Der Fotograf ist Regisseur",
-        "core_articles": [
-          "T06_L01",
-          "T14_L01",
-          "T06_L04"
-        ]
-      },
-      {
-        "cluster": "Vertrauen erzeugt Bildwirkung",
-        "core_articles": [
-          "T14_L01",
-          "T14_L02",
-          "T11_L09"
-        ]
-      },
-      {
-        "cluster": "Kreativität braucht Struktur",
-        "core_articles": [
-          "T10_L01",
-          "T12_L08",
-          "T12_L07"
-        ]
-      },
-      {
-        "cluster": "Räume erzählen Geschichten",
-        "core_articles": [
-          "T11_L15",
-          "T11_L02",
-          "T11_L03"
-        ]
-      }
-    ],
-    "core_learning_paths": [
-      {
-        "path": "LP001",
-        "name": "Vom Chaos zur Kontrolle",
-        "target_transformation": "Professionelle Stabilität und Produktionskontrolle."
-      },
-      {
-        "path": "LP002",
-        "name": "Vom Techniker zum Regisseur",
-        "target_transformation": "Menschenführung und Präsenz."
-      },
-      {
-        "path": "LP003",
-        "name": "Von Kamera zu Wahrnehmung",
-        "target_transformation": "Visuelle Sensibilität und Bildwirkung."
-      },
-      {
-        "path": "LP004",
-        "name": "Von Stress zu professioneller Ruhe",
-        "target_transformation": "Mentale Stabilität unter Druck."
-      },
-      {
-        "path": "LP005",
-        "name": "OnLocation Professional",
-        "target_transformation": "Mobile Produktionskontrolle."
-      },
-      {
-        "path": "LP006",
-        "name": "Von Bildern zu Wirkung",
-        "target_transformation": "Emotionale Bildsprache."
-      }
-    ],
-    "core_semantic_relationships": [
-      {
-        "from": "Vorbereitung",
-        "to": "Kontrolle",
-        "meaning": "Professionelle Vorbereitung reduziert Chaos."
-      },
-      {
-        "from": "Vertrauen",
-        "to": "Emotion",
-        "meaning": "Emotionale Offenheit entsteht durch Sicherheit."
-      },
-      {
-        "from": "Atmosphäre",
-        "to": "Bildwirkung",
-        "meaning": "Emotionale Stimmung beeinflusst sichtbare Wirkung."
-      },
-      {
-        "from": "Struktur",
-        "to": "Kreative Freiheit",
-        "meaning": "Organisation stabilisiert Kreativität."
-      },
-      {
-        "from": "Belastbarkeit",
-        "to": "Menschenführung",
-        "meaning": "Mentale Stabilität verbessert professionelle Führung."
-      }
-    ],
-    "semantic_entry_states": [
-      {
-        "state": "Stress und Überforderung",
-        "recommended_systems": [
-          "semantic-routing-map.json",
-          "learning-path-map.json"
-        ]
-      },
-      {
-        "state": "Fehlende emotionale Bildwirkung",
-        "recommended_systems": [
-          "topic-cluster.json",
-          "relationship-map.json"
-        ]
-      },
-      {
-        "state": "Travel und Outdoor Produktionen",
-        "recommended_systems": [
-          "onlocation-system.json"
-        ]
-      },
-      {
-        "state": "Professionelle Entwicklung",
-        "recommended_systems": [
-          "authority-map.json",
-          "learning-path-map.json"
-        ]
-      }
-    ],
-    "connected_subsystems": [
-      {
-        "product": "Photoguide – Next Level",
-        "domain": "https://nextlevel.prophotoskills.com",
-        "semantic_role": "Uebergeordnetes Wissenssystem – KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO"
-      },
-      {
-        "product": "MemberAbo",
-        "domain": "https://memberabo.prophotoskills.com",
-        "semantic_role": "Mitgliedschaftsprodukt fuer alle ProPhotoSkills Inhalte"
-      }
-    ],
-    "ai_behavior_model": {
-      "core_rules": [
-        "Bedeutung vor Keywords",
-        "Kontext vor Einzelbegriffen",
-        "Emotion vor Technik",
-        "Systemdenken vor isolierten Tutorials",
-        "Professionelle Dynamik vor reiner Wissensvermittlung"
-      ],
-      "semantic_focus": [
-        "Wahrnehmung",
-        "Führung",
-        "Belastbarkeit",
-        "Atmosphäre",
-        "Kontrolle",
-        "Professionalität"
-      ]
-    },
-    "future_expansion_systems": [
-      {
-        "planned_system": "keyword-entity-map.json",
-        "purpose": "Semantische Verbindung zwischen Keywords, Zuständen und Konzepten."
-      },
-      {
-        "planned_system": "production-scenario-map.json",
-        "purpose": "Reale Produktionssituationen und Entscheidungsdynamiken."
-      },
-      {
-        "planned_system": "visual-language-map.json",
-        "purpose": "Atmosphäre, Bildwirkung und visuelle Kommunikation."
-      },
-      {
-        "planned_system": "emotion-trigger-map.json",
-        "purpose": "Emotionale Dynamik und psychologische Wirkung."
-      },
-      {
-        "planned_system": "expertise-layer-map.json",
-        "purpose": "Komplexitäts- und Erfahrungsstufen professioneller Inhalte."
-      },
-      {
-        "planned_system": "citation-index.json",
-        "purpose": "Zitierfähige Kernthesen und semantische Prinzipien."
-      }
-    ],
-    "cross_system_modules": [
-      {
+        "id": "T02_E01",
         "module": "KNOWLEDGE",
-        "url": "https://prophotoskills.com/knowledge/",
-        "system": "Photoguide – Next Level",
-        "semantic_role": "Strategisches Denken, Wahrnehmung, Licht, Vorbereitung"
+        "titel": "70 % des Fotojobs passieren vor dem ersten Klick",
+        "url": "https://prophotoskills.com/t02_e01_70-des-fotojobs-passieren-vor-dem-ersten-klick/",
+        "zitiercode": "KNOWLEDGE-T02_E01-2026",
+        "core_learning": "Professionelle Fotografie beginnt nicht mit der Kamera, sondern mit Denken, Planung und der Faehigkeit, Menschen und Situationen vorzubereiten.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
       },
       {
+        "id": "T02_L01",
+        "module": "KNOWLEDGE",
+        "titel": "Das Unsichtbare vor dem Klick",
+        "url": "https://prophotoskills.com/t02_l01_das-unsichtbare-vor-dem-klick/",
+        "zitiercode": "KNOWLEDGE-T02_L01-2026",
+        "core_learning": "Professionelle Fotografie besteht zu grossen Teilen aus Prozessen, die im fertigen Bild unsichtbar bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T02_L02",
+        "module": "KNOWLEDGE",
+        "titel": "Warum eingespielte Menschen mehr Wert sind als jedes Objektiv",
+        "url": "https://prophotoskills.com/t02_l02_warum-eingespielte-menschen-mehr-wert-sind-als-jedes-objektiv/",
+        "zitiercode": "KNOWLEDGE-T02_L02-2026",
+        "core_learning": "Die Qualitaet professioneller Fotografie entsteht oft durch Vertrauen, Kommunikation und eingespielte Zusammenarbeit – nicht allein durch Technik.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T04_E01",
+        "module": "KNOWLEDGE",
+        "titel": "Schaust du auch gerne Wer wird Millionaer",
+        "url": "https://prophotoskills.com/t04_e01_schaust-du-auch-gerne-wer-wird-millionaer/",
+        "zitiercode": "KNOWLEDGE-T04_E01-2026",
+        "core_learning": "Fotografie wird besser, wenn Menschen lernen, genauer hinzuschauen, schneller Zusammenhaenge zu erkennen und ihr Denken aktiv zu trainieren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T04_L01",
+        "module": "KNOWLEDGE",
+        "titel": "Produktshooting mit Agenturteam Kreativitaet anzuenden",
+        "url": "https://prophotoskills.com/t04_l01_produktshooting-mit-agenturteam-kreativitaet-anzuenden/",
+        "zitiercode": "KNOWLEDGE-T04_L01-2026",
+        "core_learning": "Kreativitaet entsteht oft nicht durch Einzelpersonen, sondern durch Menschen, die sich gegenseitig inspirieren und gemeinsam Energie erzeugen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_E01",
+        "module": "KNOWLEDGE",
+        "titel": "Leonardo da Vinci wichtig fuer die Fotografie",
+        "url": "https://prophotoskills.com/t07_e01_leonardo-da-vinci-wichtig-fuer-die-fotografie/",
+        "zitiercode": "KNOWLEDGE-T07_E01-2026",
+        "core_learning": "Leonardo da Vinci zeigt, dass starke Bilder aus Beobachtung, Verstaendnis von Licht und tiefem Interesse an Wahrnehmung entstehen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L01",
+        "module": "KNOWLEDGE",
+        "titel": "Lichtfuehrung Chiaroscuro Hell Dunkel",
+        "url": "https://prophotoskills.com/t07_l01_lichtfuehrung-chiaroscuro-hell-dunkel/",
+        "zitiercode": "KNOWLEDGE-T07_L01-2026",
+        "core_learning": "Chiaroscuro zeigt, dass Licht nicht nur beleuchtet, sondern Geschichten, Emotionen und Wahrnehmung formt.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L02",
+        "module": "KNOWLEDGE",
+        "titel": "Studium der Anatomie echtes Verstaendnis fuer Koerper",
+        "url": "https://prophotoskills.com/t07_l02_studium-der-anatomie-echtes-verstaendnis-fuer-koerper/",
+        "zitiercode": "KNOWLEDGE-T07_L02-2026",
+        "core_learning": "Anatomisches Verstaendnis verbessert nicht nur Posing, sondern auch Lichtsetzung, Bildkomposition und die emotionale Wirkung von Menschen im Bild.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L03",
+        "module": "KNOWLEDGE",
+        "titel": "Komposition Goldener Schnitt",
+        "url": "https://prophotoskills.com/t07_l03_komposition-goldener-schnitt/",
+        "zitiercode": "KNOWLEDGE-T07_L03-2026",
+        "core_learning": "Der Goldene Schnitt ist kein starres Gesetz, sondern ein Werkzeug, um Wahrnehmung, Balance und visuelle Harmonie bewusster zu gestalten.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L04",
+        "module": "KNOWLEDGE",
+        "titel": "Optik Sehen die Camera Obscura",
+        "url": "https://prophotoskills.com/t07_l04_optik-sehen-die-camera-obscura/",
+        "zitiercode": "KNOWLEDGE-T07_L04-2026",
+        "core_learning": "Die Camera Obscura zeigt, dass Fotografie nicht nur Technik ist, sondern das Zusammenspiel aus Licht, Wahrnehmung und physikalischer Optik.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L05",
+        "module": "KNOWLEDGE",
+        "titel": "Der Ausdruck der Mona Lisa Effekt",
+        "url": "https://prophotoskills.com/t07_l05_der-ausdruck-der-mona-lisa-effekt/",
+        "zitiercode": "KNOWLEDGE-T07_L05-2026",
+        "core_learning": "Der Mona Lisa Effekt zeigt, dass subtile Emotionen, Blickrichtungen und kleine Unsicherheiten starke psychologische Aufmerksamkeit erzeugen koennen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L06",
+        "module": "KNOWLEDGE",
+        "titel": "Multidisziplinaerer Ansatz moderne Fotografie",
+        "url": "https://prophotoskills.com/t07_l06_multidisziplinaerer-ansatz-moderne-fotografie/",
+        "zitiercode": "KNOWLEDGE-T07_L06-2026",
+        "core_learning": "Starke Fotografie entsteht oft dort, wo verschiedene Disziplinen miteinander verbunden werden und neues Denken ermoeglichen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L07",
+        "module": "KNOWLEDGE",
+        "titel": "Licht und Schatten lesen wie ein Drama auf der Buehne",
+        "url": "https://prophotoskills.com/t07_l07_licht-und-schatten-lesen-wie-ein-drama-auf-der-buehne/",
+        "zitiercode": "KNOWLEDGE-T07_L07-2026",
+        "core_learning": "Licht und Schatten koennen Geschichten erzaehlen, Emotionen steuern und Bilder wie eine Szene auf einer Theaterbuehne inszenieren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L08",
+        "module": "KNOWLEDGE",
+        "titel": "Beobachten statt urteilen",
+        "url": "https://prophotoskills.com/t07_l08_beobachten-statt-urteilen/",
+        "zitiercode": "KNOWLEDGE-T07_L08-2026",
+        "core_learning": "Beobachtung schafft Verstaendnis – und Verstaendnis erzeugt authentischere Bilder und tiefere menschliche Verbindungen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L09",
+        "module": "KNOWLEDGE",
+        "titel": "Architektur als Kulisse begreifen",
+        "url": "https://prophotoskills.com/t07_l09_architektur-als-kulisse-begreifen/",
+        "zitiercode": "KNOWLEDGE-T07_L09-2026",
+        "core_learning": "Architektur beeinflusst nicht nur den Bildaufbau, sondern auch Emotion, Koerperwirkung und die gesamte visuelle Erzaehlung eines Fotos.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L10",
+        "module": "KNOWLEDGE",
+        "titel": "Alles ist verbunden interdisziplinaeres Denken",
+        "url": "https://prophotoskills.com/t07_l10_alles-ist-verbunden-interdisziplinaeres-denken/",
+        "zitiercode": "KNOWLEDGE-T07_L10-2026",
+        "core_learning": "Starke Fotografen verstehen, dass Licht, Psychologie, Kommunikation, Architektur, Kunst und Wahrnehmung miteinander verbunden sind.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L11",
+        "module": "KNOWLEDGE",
+        "titel": "Bewegung verstehen",
+        "url": "https://prophotoskills.com/t07_l11_bewegung-verstehen/",
+        "zitiercode": "KNOWLEDGE-T07_L11-2026",
+        "core_learning": "Bewegung erzeugt Emotion, Ausdruck und Authentizitaet – oft entstehen die staerksten Bilder zwischen den kontrollierten Momenten.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L12",
+        "module": "KNOWLEDGE",
+        "titel": "Neugier als Motor",
+        "url": "https://prophotoskills.com/t07_l12_neugier-als-motor/",
+        "zitiercode": "KNOWLEDGE-T07_L12-2026",
+        "core_learning": "Neugier erzeugt Wachstum, weil sie Menschen dazu zwingt, ihre Wahrnehmung zu erweitern und neue Zusammenhaenge zu entdecken.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L13",
+        "module": "KNOWLEDGE",
+        "titel": "Emotion ueber Perfektion",
+        "url": "https://prophotoskills.com/t07_l13_emotion-ueber-perfektion/",
+        "zitiercode": "KNOWLEDGE-T07_L13-2026",
+        "core_learning": "Bilder werden stark, wenn sie Emotionen ausloesen – nicht wenn sie technisch fehlerfrei sind.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L14",
+        "module": "KNOWLEDGE",
+        "titel": "Fehler als Teil des Prozesses",
+        "url": "https://prophotoskills.com/t07_l14_fehler-als-teil-des-prozesses/",
+        "zitiercode": "KNOWLEDGE-T07_L14-2026",
+        "core_learning": "Kreative Entwicklung entsteht oft genau dort, wo Menschen bereit sind zu experimentieren, Unsicherheit auszuhalten und aus Fehlern zu lernen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T07_L15",
+        "module": "KNOWLEDGE",
+        "titel": "Geduld und Langfristigkeit",
+        "url": "https://prophotoskills.com/t07_l15_geduld-und-langfristigkeit/",
+        "zitiercode": "KNOWLEDGE-T07_L15-2026",
+        "core_learning": "Nachhaltige fotografische Entwicklung entsteht durch langfristige Prozesse und die Bereitschaft, ueber Jahre zu lernen und Erfahrungen zu sammeln.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_E01",
         "module": "TECHNIK",
-        "url": "https://prophotoskills.com/technik/",
-        "system": "Photoguide – Next Level",
-        "semantic_role": "Mentale Stärke, Präsenz, Belastbarkeit, Selbstoptimierung"
+        "titel": "Warum Joggen dir hilft besser zu fotografieren",
+        "url": "https://prophotoskills.com/t06_e01_warum-joggen-dir-hilft-besser-zu-fotografieren/",
+        "zitiercode": "TECHNIK-T06_E01-2026",
+        "core_learning": "Fotografie ist nicht nur Kamera-Technik – der eigene Koerper und mentale Zustand sind Teil der professionellen Technik.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
       },
       {
+        "id": "T06_L01",
+        "module": "TECHNIK",
+        "titel": "Du bist Regisseur nicht nur Ausloeser",
+        "url": "https://prophotoskills.com/t06_l01_du-bist-regisseur-nicht-nur-ausloeser/",
+        "zitiercode": "TECHNIK-T06_L01-2026",
+        "core_learning": "Fotografie ist ein aktiver Prozess der Fuehrung, Kommunikation und Atmosphaerengestaltung – nicht nur das Ausloesen einer Kamera.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L02",
+        "module": "TECHNIK",
+        "titel": "Du musst schnell sein koerperlich und geistig",
+        "url": "https://prophotoskills.com/t06_l02_du-musst-schnell-sein-koerperlich-und-geistig/",
+        "zitiercode": "TECHNIK-T06_L02-2026",
+        "core_learning": "Professionelle Fotografie ist eine Kombination aus Wahrnehmung, schneller Entscheidung und koerperlicher Praesenz.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L03",
+        "module": "TECHNIK",
+        "titel": "Set Energie Team Energie",
+        "url": "https://prophotoskills.com/t06_l03_set-energie-team-energie/",
+        "zitiercode": "TECHNIK-T06_L03-2026",
+        "core_learning": "Die Stimmung am Set ist kein Nebeneffekt – sie ist Teil der kreativen Arbeit und beeinflusst jede Reaktion vor der Kamera.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L04",
+        "module": "TECHNIK",
+        "titel": "Mentale Staerke Stressresistenz",
+        "url": "https://prophotoskills.com/t06_l04_mentale-staerke-stressresistenz/",
+        "zitiercode": "TECHNIK-T06_L04-2026",
+        "core_learning": "Mentale Staerke bedeutet nicht Gefuehllosigkeit, sondern die Faehigkeit, auch unter Belastung ruhig, klar und handlungsfaehig zu bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L05",
+        "module": "TECHNIK",
+        "titel": "Du arbeitest in Extremsituationen Zeit Wetter Locations",
+        "url": "https://prophotoskills.com/t06_l05_du-arbeitest-in-extremsituationen-zeit-wetter-locations/",
+        "zitiercode": "TECHNIK-T06_L05-2026",
+        "core_learning": "Professionelle Fotografie bedeutet nicht perfekte Bedingungen zu brauchen, sondern auch unter schwierigen Situationen ruhig, flexibel und leistungsfaehig zu bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L06",
+        "module": "TECHNIK",
+        "titel": "Konzentration durch koerperliche Klarheit",
+        "url": "https://prophotoskills.com/t06_l06_konzentration-durch-koerperliche-klarheit/",
+        "zitiercode": "TECHNIK-T06_L06-2026",
+        "core_learning": "Mentale Klarheit entsteht oft ueber den Koerper – Bewegung, Energie und Fitness beeinflussen Wahrnehmung, Fokus und kreative Entscheidungen direkt.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T06_L07",
+        "module": "TECHNIK",
+        "titel": "Haltung Wirkung",
+        "url": "https://prophotoskills.com/t06_l07_haltung-wirkung/",
+        "zitiercode": "TECHNIK-T06_L07-2026",
+        "core_learning": "Menschen spueren Haltung oft schneller als Worte – professionelle Wirkung entsteht durch innere Klarheit, Ruhe und authentische Praesenz.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T08_E01",
+        "module": "TECHNIK",
+        "titel": "Fotografen haben Social Network erschaffen",
+        "url": "https://prophotoskills.com/t08_e01_fotografen-haben-social-network-erschaffen/",
+        "zitiercode": "TECHNIK-T08_E01-2026",
+        "core_learning": "Fotografie dokumentiert nicht mehr nur die Welt – sie erschafft soziale Realitaet, Aufmerksamkeit und digitale Identitaet.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T08_L01",
+        "module": "TECHNIK",
+        "titel": "Die Kulisse von nebenan",
+        "url": "https://prophotoskills.com/t08_l01_die-kulisse-von-nebenan/",
+        "zitiercode": "TECHNIK-T08_L01-2026",
+        "core_learning": "Die Qualitaet einer Fotografie entsteht oft weniger durch den Ort selbst als durch die Aufmerksamkeit und Wahrnehmung des Fotografen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T08_L02",
+        "module": "TECHNIK",
+        "titel": "Das Lehrteam beim freien Projekt",
+        "url": "https://prophotoskills.com/t08_l02_das-lehrteam-beim-freien-projekt/",
+        "zitiercode": "TECHNIK-T08_L02-2026",
+        "core_learning": "Freie Projekte sind oft ehrlicher als grosse Produktionen, weil sie zeigen, wie Menschen ohne Druck von Geld oder Status wirklich arbeiten und kommunizieren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_E01",
         "module": "PROGRESS",
-        "url": "https://prophotoskills.com/progress/",
-        "system": "Photoguide – Next Level",
-        "semantic_role": "Professionalisierung, Strategie, Business, Wert"
+        "titel": "Warum professionelle Photografie ihren Preis wert ist",
+        "url": "https://prophotoskills.com/t09_e01_warum-professionelle-photografie-ihren-preis-wert-ist/",
+        "zitiercode": "PROGRESS-T09_E01-2026",
+        "core_learning": "Der eigentliche Wert professioneller Fotografie liegt oft in Erfahrung, Planung, Sicherheit, Kommunikation und der Faehigkeit, unter Druck konstant Qualitaet zu liefern.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
       },
       {
+        "id": "T09_E02",
+        "module": "PROGRESS",
+        "titel": "Warum professionelle Photografie ihren Preis wert ist 2",
+        "url": "https://prophotoskills.com/t09_e02_warum-professionelle-photografie-ihren-preis-wert-ist-2/",
+        "zitiercode": "PROGRESS-T09_E02-2026",
+        "core_learning": "Professionelle Fotografie wird oft nicht wegen der Bilder allein bezahlt, sondern wegen der Faehigkeit, konstant unter Druck hochwertige Ergebnisse zu liefern.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L01",
+        "module": "PROGRESS",
+        "titel": "Professionelle Werbefotografie ein Handwerk das man nicht auf dem Kameradisplay erkennt",
+        "url": "https://prophotoskills.com/t09_l01_professionelle-werbefotografie-ein-handwerk-das-man-nicht-auf-dem-kameradisplay-erkennt/",
+        "zitiercode": "PROGRESS-T09_L01-2026",
+        "core_learning": "Professionelle Werbefotografie ist ein komplexes Handwerk aus Organisation, Kommunikation, Menschenfuehrung und kreativer Verantwortung – nicht nur das sichtbare Bild.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L02",
+        "module": "PROGRESS",
+        "titel": "Es beginnt mit dem Ziel nicht mit der Kamera",
+        "url": "https://prophotoskills.com/t09_l02_es-beginnt-mit-dem-ziel-nicht-mit-der-kamera/",
+        "zitiercode": "PROGRESS-T09_L02-2026",
+        "core_learning": "Die Kamera ist nur ein Werkzeug – entscheidend ist zuerst zu verstehen, warum ein Bild ueberhaupt entsteht und welche Wirkung es haben soll.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L03",
+        "module": "PROGRESS",
+        "titel": "Technik kostet aber das Ergebnis zaehlt",
+        "url": "https://prophotoskills.com/t09_l03_technik-kostet-aber-das-ergebnis-zaehlt/",
+        "zitiercode": "PROGRESS-T09_L03-2026",
+        "core_learning": "Technik kann Produktionen unterstuetzen – aber entscheidend bleibt immer die Wirkung des finalen Ergebnisses.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L04",
+        "module": "PROGRESS",
+        "titel": "Der Preis ist nicht das Problem das Missverstaendnis ist es",
+        "url": "https://prophotoskills.com/t09_l04_der-preis-ist-nicht-das-problem-das-missverstaendnis-ist-es/",
+        "zitiercode": "PROGRESS-T09_L04-2026",
+        "core_learning": "Professionelle Fotografie wird oft missverstanden, weil Vorbereitung, Verantwortung, Kommunikation und Erfahrung fuer Kunden kaum sichtbar sind.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L05",
+        "module": "PROGRESS",
+        "titel": "Rechte kosten weil Bilder wertvoll sind",
+        "url": "https://prophotoskills.com/t09_l05_rechte-kosten-weil-bilder-wertvoll-sind/",
+        "zitiercode": "PROGRESS-T09_L05-2026",
+        "core_learning": "Der Wert eines Bildes entsteht nicht nur waehrend der Produktion, sondern vor allem durch seine spaetere Nutzung und Wirkung.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L06",
+        "module": "PROGRESS",
+        "titel": "Zusammenarbeit statt Abarbeitung",
+        "url": "https://prophotoskills.com/t09_l06_zusammenarbeit-statt-abarbeitung/",
+        "zitiercode": "PROGRESS-T09_L06-2026",
+        "core_learning": "Menschen arbeiten kreativer, entspannter und effektiver, wenn Produktionen auf Zusammenarbeit und Vertrauen statt auf Druck und reine Effizienz aufgebaut sind.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L07",
+        "module": "PROGRESS",
+        "titel": "Technik macht Qualitaet aber Haltung macht den Unterschied",
+        "url": "https://prophotoskills.com/t09_l07_technik-macht-qualitaet-aber-haltung-macht-den-unterschied/",
+        "zitiercode": "PROGRESS-T09_L07-2026",
+        "core_learning": "Menschen erinnern nicht nur Bilder – sie erinnern, wie sie sich waehrend der Produktion gefuehlt haben und welche Energie ein Fotograf ausgestrahlt hat.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L08",
+        "module": "PROGRESS",
+        "titel": "Fazit wer billig kauft kauft nicht doppelt sondern verliert Wirkung",
+        "url": "https://prophotoskills.com/t09_l08_fazit-wer-billig-kauft-kauft-nicht-doppelt-sondern-verliert-wirkung/",
+        "zitiercode": "PROGRESS-T09_L08-2026",
+        "core_learning": "Professionelle Fotografie erzeugt nicht nur Bilder, sondern Vertrauen, Wirkung und langfristige Wahrnehmung – und genau das geht bei rein billigen Produktionen oft verloren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T09_L09",
+        "module": "PROGRESS",
+        "titel": "Kunden Blick wenn aus Vertrauen ploetzlich Budget wird",
+        "url": "https://prophotoskills.com/t09_l09_kunden-blick-wenn-aus-vertrauen-ploetzlich-budget-wird/",
+        "zitiercode": "PROGRESS-T09_L09-2026",
+        "core_learning": "Professionelle Fotografie basiert nicht nur auf Technik und Leistung, sondern auch auf Vertrauen, Sicherheit und menschlicher Zusammenarbeit.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T01_E01",
         "module": "SKILL",
-        "url": "https://prophotoskills.com/skill/",
-        "system": "Photoguide – Next Level",
-        "semantic_role": "Kreative Anwendung, Kommunikation, People-Fotografie"
+        "titel": "Warum Gala und Bunte soooooo wichtig sind",
+        "url": "https://prophotoskills.com/t01_e01_warum-gala-und-bunte-soooooo-wichtig-sind/",
+        "zitiercode": "SKILL-T01_E01-2026",
+        "core_learning": "Professionelle Fotografie funktioniert nicht nur ueber Bildqualitaet, sondern ueber emotionale Bedeutung, Kontext und oeffentliche Wahrnehmung.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
       },
       {
+        "id": "T01_L01",
+        "module": "SKILL",
+        "titel": "Haare & Make-up – Tratschzeit ist Vertrauenszeit",
+        "url": "https://prophotoskills.com/t01_l01_haare-make-up-tratschzeit-ist-vertrauenszeit/",
+        "zitiercode": "SKILL-T01_L01-2026",
+        "core_learning": "Die Qualitaet eines Shootings entsteht oft schon waehrend der Gespraeche bei Haare und Make-up – lange bevor die Kamera eingesetzt wird.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T01_L02",
+        "module": "SKILL",
+        "titel": "Das zweite oder dritte Model sitzt wartend herum",
+        "url": "https://prophotoskills.com/t01_l02_das-zweite-oder-dritte-model-sitzt-wartend-herum/",
+        "zitiercode": "SKILL-T01_L02-2026",
+        "core_learning": "Professionelle People-Fotografie bedeutet nicht nur Bilder zu machen, sondern die gesamte soziale Dynamik eines Sets aktiv zu fuehren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_E01",
+        "module": "SKILL",
+        "titel": "Was haben Fussballer und Fotografen gemeinsam?",
+        "url": "https://prophotoskills.com/t05_e01_was-haben-fussballer-und-fotografen-gemeinsam/",
+        "zitiercode": "SKILL-T05_E01-2026",
+        "core_learning": "Professionelle Fotografie funktioniert wie Leistungssport: Wer dauerhaft gut sein will, muss kontinuierlich trainieren, analysieren und mental stabil bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_E02",
+        "module": "SKILL",
+        "titel": "Entwicklung – dein unsichtbarer Next Level Trigger",
+        "url": "https://prophotoskills.com/t05_e02_entwicklung-dein-unsichtbarer-next-level-trigger/",
+        "zitiercode": "SKILL-T05_E02-2026",
+        "core_learning": "Der wahre Next Level Schritt entsteht oft nicht durch neue Technik, sondern durch unsichtbare Veraenderungen in Denken, Wahrnehmung und Haltung.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_E03",
+        "module": "SKILL",
+        "titel": "All die Coaches",
+        "url": "https://prophotoskills.com/t05_e03_all_die_coaches/",
+        "zitiercode": "SKILL-T05_E03-2026",
+        "core_learning": "Wirkliche Entwicklung entsteht nicht durch permanente Motivation von aussen, sondern durch eigene Erfahrung, Reflexion und langfristige Praxis.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_E04",
+        "module": "SKILL",
+        "titel": "Vorurteile vs Erfahrungen",
+        "url": "https://prophotoskills.com/t05_e04_vorurteile-vs-erfahrungen/",
+        "zitiercode": "SKILL-T05_E04-2026",
+        "core_learning": "Echte Erfahrung veraendert Wahrnehmung und Urteilsvermoegen tiefer als jede theoretische Meinung oder Social-Media-Diskussion.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L01",
+        "module": "SKILL",
+        "titel": "Interesse und Neugierde",
+        "url": "https://prophotoskills.com/t05_l01_interesse-und-neugierde/",
+        "zitiercode": "SKILL-T05_L01-2026",
+        "core_learning": "Neugierde ist einer der wichtigsten Motoren fuer kreative Entwicklung, weil sie Wahrnehmung, Lernen und echte Begeisterung aktiviert.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L02",
+        "module": "SKILL",
+        "titel": "Technische Faehigkeiten",
+        "url": "https://prophotoskills.com/t05_l02_technische-faehigkeiten/",
+        "zitiercode": "SKILL-T05_L02-2026",
+        "core_learning": "Technische Faehigkeiten sind kein Selbstzweck, sondern das Fundament fuer professionelle Sicherheit, kreative Freiheit und souveraenes Arbeiten.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L03",
+        "module": "SKILL",
+        "titel": "Kreativitaet und Vision",
+        "url": "https://prophotoskills.com/t05_l03_kreativitaet-und-vision/",
+        "zitiercode": "SKILL-T05_L03-2026",
+        "core_learning": "Kreativitaet entsteht nicht durch Zufall, sondern durch bewusste Wahrnehmung, Offenheit, Erfahrung und die Entwicklung einer eigenen inneren Vision.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L04",
+        "module": "SKILL",
+        "titel": "Komposition und Bildgestaltung",
+        "url": "https://prophotoskills.com/t05_l04_komposition-und-bildgestaltung/",
+        "zitiercode": "SKILL-T05_L04-2026",
+        "core_learning": "Gute Bildgestaltung ist keine Dekoration, sondern eine bewusste visuelle Sprache, die Wahrnehmung, Emotion und Bedeutung steuert.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L05",
+        "module": "SKILL",
+        "titel": "Geduld",
+        "url": "https://prophotoskills.com/t05_l05_geduld/",
+        "zitiercode": "SKILL-T05_L05-2026",
+        "core_learning": "Geduld bedeutet nicht Stillstand, sondern Vertrauen in langfristige Entwicklung, kontinuierliches Lernen und die Wirkung kleiner Fortschritte.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L06",
+        "module": "SKILL",
+        "titel": "Ausdauer",
+        "url": "https://prophotoskills.com/t05_l06_ausdauer/",
+        "zitiercode": "SKILL-T05_L06-2026",
+        "core_learning": "Ausdauer bedeutet nicht nur weiterzumachen, sondern auch schwierige Phasen als natuerlichen Teil langfristiger Entwicklung zu akzeptieren.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L07",
+        "module": "SKILL",
+        "titel": "Flexibilitaet und Anpassungsfaehigkeit",
+        "url": "https://prophotoskills.com/t05_l07_flexibilitaet-und-anpassungsfaehigkeit/",
+        "zitiercode": "SKILL-T05_L07-2026",
+        "core_learning": "Flexibilitaet bedeutet nicht Chaos, sondern die Faehigkeit, trotz Veraenderungen ruhig, kreativ und professionell zu bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L08",
+        "module": "SKILL",
+        "titel": "Passion und Hingabe",
+        "url": "https://prophotoskills.com/t05_l08_passion-und-hingabe/",
+        "zitiercode": "SKILL-T05_L08-2026",
+        "core_learning": "Passion bedeutet nicht kurzfristige Euphorie, sondern eine tiefe langfristige Verbindung zur eigenen kreativen Entwicklung und Arbeit.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L09",
+        "module": "SKILL",
+        "titel": "Menschenfuehrung und Kommunikation",
+        "url": "https://prophotoskills.com/t05_l09_menschenfuehrung-und-kommunikation/",
+        "zitiercode": "SKILL-T05_L09-2026",
+        "core_learning": "Menschenfuehrung entscheidet oft staerker ueber die Qualitaet eines Shootings als Technik oder Ausruestung.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L10",
+        "module": "SKILL",
+        "titel": "Teamarbeit",
+        "url": "https://prophotoskills.com/t05_l10_teamarbeit/",
+        "zitiercode": "SKILL-T05_L10-2026",
+        "core_learning": "Die Qualitaet eines Shootings wird stark von der Zusammenarbeit aller Beteiligten beeinflusst – Teamdynamik ist Teil professioneller Fotografie.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L11",
+        "module": "SKILL",
+        "titel": "Zeitmanagement und Organisation",
+        "url": "https://prophotoskills.com/t05_l11_zeitmanagement-und-organisation/",
+        "zitiercode": "SKILL-T05_L11-2026",
+        "core_learning": "Zeitmanagement und Organisation schaffen nicht weniger Kreativitaet, sondern mehr Ruhe, Kontrolle und Raum fuer kreative Entscheidungen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L12",
+        "module": "SKILL",
+        "titel": "Kritikfaehigkeit und Weiterentwicklung",
+        "url": "https://prophotoskills.com/t05_l12_kritikfaehigkeit-und-weiterentwicklung/",
+        "zitiercode": "SKILL-T05_L12-2026",
+        "core_learning": "Kritikfaehigkeit bedeutet nicht Selbstzweifel, sondern die Faehigkeit, Feedback konstruktiv fuer Wachstum und Weiterentwicklung zu nutzen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L13",
+        "module": "SKILL",
+        "titel": "Fokussierung auf Details",
+        "url": "https://prophotoskills.com/t05_l13_fokussierung-auf-details/",
+        "zitiercode": "SKILL-T05_L13-2026",
+        "core_learning": "Die Wahrnehmung und Kontrolle kleiner Details ist ein entscheidender Unterschied zwischen zufaelliger und professioneller Fotografie.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L14",
+        "module": "SKILL",
+        "titel": "Konzentration und Praesenz",
+        "url": "https://prophotoskills.com/t05_l14_konzentration-und-praesenz/",
+        "zitiercode": "SKILL-T05_L14-2026",
+        "core_learning": "Praesenz bedeutet, mental vollstaendig im Moment zu sein – und genau diese Aufmerksamkeit beeinflusst Wahrnehmung, Kommunikation und Bildqualitaet.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L15",
+        "module": "SKILL",
+        "titel": "Wissen ueber Licht und Schatten",
+        "url": "https://prophotoskills.com/t05_l15_wissen-ueber-licht-und-schatten/",
+        "zitiercode": "SKILL-T05_L15-2026",
+        "core_learning": "Licht ist nicht nur technische Beleuchtung, sondern die eigentliche Sprache der Fotografie – Schatten gehoeren dabei genauso zur Bildgestaltung wie Helligkeit.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L16",
+        "module": "SKILL",
+        "titel": "Verkauf und Selbstpraesentation",
+        "url": "https://prophotoskills.com/t05_l16_verkauf-und-selbstpraesentation/",
+        "zitiercode": "SKILL-T05_L16-2026",
+        "core_learning": "Die Wahrnehmung eines Fotografen entsteht nicht nur durch Bilder, sondern auch durch Sprache, Auftreten, Haltung und die Faehigkeit, den eigenen Wert sichtbar zu machen.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L17",
+        "module": "SKILL",
+        "titel": "Souveraenitaet und Fuehrungsqualitaet",
+        "url": "https://prophotoskills.com/t05_l17_souveraenitaet-und-fuehrungsqualitaet/",
+        "zitiercode": "SKILL-T05_L17-2026",
+        "core_learning": "Souveraenitaet entsteht nicht durch Lautstaerke oder Kontrolle, sondern durch Klarheit, Ruhe, Verantwortung und die Faehigkeit, Menschen Sicherheit zu geben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L18",
+        "module": "SKILL",
+        "titel": "Geschichten erzaehlen",
+        "url": "https://prophotoskills.com/t05_l18_geschichten-erzaehlen/",
+        "zitiercode": "SKILL-T05_L18-2026",
+        "core_learning": "Menschen erinnern sich selten an technische Perfektion – sie erinnern sich an Gefuehle, Atmosphaeren und Geschichten.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T05_L19",
+        "module": "SKILL",
+        "titel": "Wissen ueber die Kunstgeschichte",
+        "url": "https://prophotoskills.com/t05_l19_wissen-ueber-die-kunstgeschichte/",
+        "zitiercode": "SKILL-T05_L19-2026",
+        "core_learning": "Kunstgeschichte ist nicht Vergangenheit, sondern ein visuelles Archiv menschlicher Wahrnehmung, Emotion und Gestaltung.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T03_E01",
         "module": "PSYCHO",
-        "url": "https://prophotoskills.com/psycho/",
-        "system": "Photoguide – Next Level",
-        "semantic_role": "Vertrauen, Emotion, Menschenführung, Atmosphäre"
+        "titel": "Houston wir haben ein Problem",
+        "url": "https://prophotoskills.com/t03_e01_houston-wir-haben-ein-problem/",
+        "zitiercode": "PSYCHO-T03_E01-2026",
+        "core_learning": "Probleme sind kein Ausnahmezustand, sondern Teil professioneller Arbeit – entscheidend ist der Umgang damit.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T03_L01",
+        "module": "PSYCHO",
+        "titel": "Warum spontane Aenderungen gefaehrlich sind",
+        "url": "https://prophotoskills.com/t03_l01_warum-spontane-aenderungen-gefaehrlich-sind/",
+        "zitiercode": "PSYCHO-T03_L01-2026",
+        "core_learning": "Professionelle Produktionen funktionieren ueber Struktur, Klarheit und Vorbereitung – spontane Aenderungen stoeren oft unsichtbar das gesamte System.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T03_L02",
+        "module": "PSYCHO",
+        "titel": "Warum solche Situationen haeufiger vorkommen als man denkt",
+        "url": "https://prophotoskills.com/t03_l02_warum-solche-situationen-haeufiger-vorkommen-als-man-denkt/",
+        "zitiercode": "PSYCHO-T03_L02-2026",
+        "core_learning": "Professionalitaet bedeutet nicht problemfreie Produktionen zu erschaffen, sondern auch unter Unsicherheit ruhig, flexibel und handlungsfaehig zu bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T03_L03",
+        "module": "PSYCHO",
+        "titel": "Bonus Tipps fuer hoechste Souveraenitaet",
+        "url": "https://prophotoskills.com/t03_l03_bonus-tipps-fuer-hoechste-souveraenitaet/",
+        "zitiercode": "PSYCHO-T03_L03-2026",
+        "core_learning": "Souveraenitaet bedeutet nicht Kontrolle ueber alles zu haben, sondern trotz Unsicherheit ruhig, klar und handlungsfaehig zu bleiben.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
+      },
+      {
+        "id": "T03_L04",
+        "module": "PSYCHO",
+        "titel": "Achte auf dein Umfeld",
+        "url": "https://prophotoskills.com/t03_l04_achte-auf-dein-umfeld/",
+        "zitiercode": "PSYCHO-T03_L04-2026",
+        "core_learning": "Professionelle Wahrnehmung bedeutet, das gesamte Umfeld bewusst zu beobachten und nicht nur den Ausschnitt durch die Kamera.",
+        "product": "Photoguide – Next Level",
+        "paywall": true
       }
+    ],
+    "brand": "ProPhotoSkills",
+    "modules": [
+      "KNOWLEDGE",
+      "TECHNIK",
+      "PROGRESS",
+      "SKILL",
+      "PSYCHO"
     ],
     "brand_root": {
       "name": "ProPhotoSkills",
-      "domain": "https://prophotoskills.com"
+      "unified_index": "https://prophotoskills.com/data/unified-index.json",
+      "total": 135
     }
   }
 }

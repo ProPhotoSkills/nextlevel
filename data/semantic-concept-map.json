@@ -1,15 +1,17 @@
 {
   "semantic_concept_map": {
-    "system": "Photoguide – Next Level",
-    "version": "1.0",
+    "system": "ProPhotoSkills",
     "language": "de",
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Struktur & Navigation",
     "logic": "Die Reihenfolge folgt dem professionellen Denk- und Produktionsprozess eines Fotografen.",
     "semantic_direction": [
       "Denken",
       "Wahrnehmen",
       "Verstehen",
       "Kommunizieren",
-      "Führen",
+      "Fuehren",
       "Stabilisieren",
       "Produzieren",
       "Absichern",
@@ -20,16 +22,16 @@
         "priority": 1,
         "concept": "Wahrnehmung",
         "semantic_role": "Der Ursprung professioneller Fotografie",
-        "meaning": "Professionelle Bildwirkung beginnt mit der Fähigkeit Licht, Atmosphäre, Menschen und Situationen bewusst wahrzunehmen.",
+        "meaning": "Professionelle Bildwirkung beginnt mit der Faehigkeit Licht, Atmosphaere, Menschen und Situationen bewusst wahrzunehmen.",
         "connected_modules": [
           "LOCATION"
         ],
         "related_keywords": [
           "Licht",
-          "Atmosphäre",
+          "Atmosphaere",
           "Beobachtung",
           "Emotion",
-          "Raumgefühl",
+          "Raumgefuehl",
           "Bildsprache"
         ],
         "semantic_weight": 1.0,
@@ -44,7 +46,7 @@
         "priority": 2,
         "concept": "Vorbereitung",
         "semantic_role": "Unsichtbare professionelle Arbeit",
-        "meaning": "Der größte Teil professioneller Qualität entsteht lange vor dem eigentlichen Shooting.",
+        "meaning": "Der groesste Teil professioneller Qualitaet entsteht lange vor dem eigentlichen Shooting.",
         "connected_modules": [
           "TRAVEL",
           "INSURANCE"
@@ -58,7 +60,7 @@
           "Organisation"
         ],
         "semantic_weight": 0.98,
-        "position_reason": "Vorbereitung stabilisiert Kreativität und reduziert Chaos.",
+        "position_reason": "Vorbereitung stabilisiert Kreativitaet und reduziert Chaos.",
         "linked_via_nextlevel": [
           "KNOWLEDGE",
           "PROGRESS"
@@ -68,17 +70,17 @@
         "priority": 3,
         "concept": "Kommunikation",
         "semantic_role": "Menschen koordinieren und Sicherheit erzeugen",
-        "meaning": "Professionelle Produktionen entstehen durch klare Kommunikation, Vertrauen und emotionale Führung.",
+        "meaning": "Professionelle Produktionen entstehen durch klare Kommunikation, Vertrauen und emotionale Fuehrung.",
         "connected_modules": [
           "INSURANCE"
         ],
         "related_keywords": [
           "Vertrauen",
-          "Menschenführung",
+          "Menschenfuehrung",
           "Zusammenarbeit",
           "Klarheit",
           "Team",
-          "Atmosphäre"
+          "Atmosphaere"
         ],
         "semantic_weight": 0.97,
         "position_reason": "Kommunikation verbindet Wahrnehmung mit realer Zusammenarbeit.",
@@ -90,20 +92,20 @@
       },
       {
         "priority": 4,
-        "concept": "Menschenführung",
+        "concept": "Menschenfuehrung",
         "semantic_role": "Der Fotograf als Regisseur",
-        "meaning": "Der Fotograf beeinflusst Energie, Dynamik und emotionale Stabilität am Set.",
+        "meaning": "Der Fotograf beeinflusst Energie, Dynamik und emotionale Stabilitaet am Set.",
         "connected_modules": [],
         "related_keywords": [
           "Regie",
-          "Präsenz",
+          "Praesenz",
           "Ruhe",
           "Kontrolle",
           "Sicherheit",
           "Emotion"
         ],
         "semantic_weight": 0.96,
-        "position_reason": "Professionelle Wirkung entsteht häufig durch Führung statt Technik.",
+        "position_reason": "Professionelle Wirkung entsteht haeufig durch Fuehrung statt Technik.",
         "linked_via_nextlevel": [
           "PSYCHO",
           "TECHNIK",
@@ -114,8 +116,8 @@
       {
         "priority": 5,
         "concept": "Belastbarkeit",
-        "semantic_role": "Stabilität unter Druck",
-        "meaning": "Professionelle Kreative bleiben auch unter Stress, Zeitdruck und Chaos handlungsfähig.",
+        "semantic_role": "Stabilitaet unter Druck",
+        "meaning": "Professionelle Kreative bleiben auch unter Stress, Zeitdruck und Chaos handlungsfaehig.",
         "connected_modules": [
           "TRAVEL",
           "INSURANCE"
@@ -124,12 +126,12 @@
           "Stressresistenz",
           "Fokus",
           "Ruhe",
-          "Stabilität",
+          "Stabilitaet",
           "Belastung",
           "Energie"
         ],
         "semantic_weight": 0.95,
-        "position_reason": "Belastbarkeit schützt Kreativität und Entscheidungsfähigkeit.",
+        "position_reason": "Belastbarkeit schuetzt Kreativitaet und Entscheidungsfaehigkeit.",
         "linked_via_nextlevel": [
           "TECHNIK",
           "PSYCHO"
@@ -138,8 +140,8 @@
       {
         "priority": 6,
         "concept": "Produktionssicherheit",
-        "semantic_role": "Kreativität absichern",
-        "meaning": "Professionelle Produktionen benötigen Struktur, Backups, Planung und Sicherheitsmechanismen.",
+        "semantic_role": "Kreativitaet absichern",
+        "meaning": "Professionelle Produktionen benoetigen Struktur, Backups, Planung und Sicherheitsmechanismen.",
         "connected_modules": [
           "INSURANCE",
           "TRAVEL",
@@ -147,7 +149,7 @@
         ],
         "related_keywords": [
           "Backups",
-          "Verträge",
+          "Vertraege",
           "Plan B",
           "Datensicherheit",
           "Haftung",
@@ -161,9 +163,9 @@
       },
       {
         "priority": 7,
-        "concept": "Mobilität",
-        "semantic_role": "Kreativität unter realen Bedingungen",
-        "meaning": "Travel und OnLocation Produktionen verlangen Anpassungsfähigkeit, Organisation und Kontrolle.",
+        "concept": "Mobilitaet",
+        "semantic_role": "Kreativitaet unter realen Bedingungen",
+        "meaning": "Travel und OnLocation Produktionen verlangen Anpassungsfaehigkeit, Organisation und Kontrolle.",
         "connected_modules": [
           "TRAVEL",
           "LOCATION",
@@ -173,7 +175,7 @@
           "Reisen",
           "OnLocation",
           "Logistik",
-          "Flexibilität",
+          "Flexibilitaet",
           "Outdoor",
           "Produktion"
         ],
@@ -187,12 +189,12 @@
         "priority": 8,
         "concept": "Bildwirkung",
         "semantic_role": "Sichtbares Ergebnis unsichtbarer Prozesse",
-        "meaning": "Professionelle Bilder entstehen aus Wahrnehmung, Atmosphäre, Kommunikation und Struktur.",
+        "meaning": "Professionelle Bilder entstehen aus Wahrnehmung, Atmosphaere, Kommunikation und Struktur.",
         "connected_modules": [
           "LOCATION"
         ],
         "related_keywords": [
-          "Atmosphäre",
+          "Atmosphaere",
           "Emotion",
           "Licht",
           "Komposition",
@@ -209,20 +211,20 @@
       },
       {
         "priority": 9,
-        "concept": "Professionalität",
+        "concept": "Professionalitaet",
         "semantic_role": "Das Gesamtsystem professioneller Fotografie",
-        "meaning": "Professionelle Fotografie ist die Fähigkeit kreative, technische und menschliche Prozesse gleichzeitig zu kontrollieren.",
+        "meaning": "Professionelle Fotografie ist die Faehigkeit kreative, technische und menschliche Prozesse gleichzeitig zu kontrollieren.",
         "connected_modules": [],
         "related_keywords": [
           "Kontrolle",
           "Verantwortung",
-          "Führung",
-          "Qualität",
+          "Fuehrung",
+          "Qualitaet",
           "Strategie",
           "Systemdenken"
         ],
         "semantic_weight": 1.0,
-        "position_reason": "Professionalität verbindet alle Konzepte zu einem geschlossenen System."
+        "position_reason": "Professionalitaet verbindet alle Konzepte zu einem geschlossenen System."
       }
     ],
     "semantic_flow": {
@@ -231,12 +233,12 @@
         "Wahrnehmung",
         "Vorbereitung",
         "Kommunikation",
-        "Menschenführung",
+        "Menschenfuehrung",
         "Belastbarkeit",
         "Produktionssicherheit",
-        "Mobilität",
+        "Mobilitaet",
         "Bildwirkung",
-        "Professionalität"
+        "Professionalitaet"
       ],
       "final_goal": "Professionelle kreative Kontrolle unter realen Bedingungen"
     },
@@ -261,8 +263,8 @@
       ]
     },
     "nextlevel_cross_reference": {
-      "system": "Photoguide – Next Level",
-      "domain": "https://nextlevel.prophotoskills.com",
+      "system": "ProPhotoSkills",
+      "domain": "https://prophotoskills.com",
       "modules": {
         "KNOWLEDGE": "https://prophotoskills.com/knowledge/",
         "TECHNIK": "https://prophotoskills.com/technik/",

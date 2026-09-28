@@ -1,22 +1,20 @@
 {
   "behavior_adaptation_engine": {
-    "system": "Photoguide – Next Level",
+    "system": "ProPhotoSkills",
     "brand": "ProPhotoSkills",
-
-    "version": "1.0",
     "language": "de",
-
-    "purpose": "Definiert wie das System Kommunikationsverhalten, Prioritäten, Runtime-Dynamiken und semantische Reaktionen langfristig und situativ an Nutzerverhalten anpasst.",
-
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Coaching-Regelwerk (KI-Coach)",
+    "usage_note": "Statisches Coaching- und Interpretationsregelwerk. Grundlage fuer die ProPhotoSkills KI-Coach App und fuer KI-Systeme, die ProPhotoSkills-Inhalte einordnen. prophotoskills.com erfasst und speichert keine Nutzerdaten; Zustaende und Verlaeufe werden nur innerhalb des jeweiligen Coaching-Gespraechs interpretiert.",
+    "purpose": "Beschreibt, wie Kommunikationsverhalten, Prioritaeten und Reaktionen situativ und langfristig an das Verhalten des Gegenuebers angepasst werden.",
     "semantic_logic": {
-      "definition": "Die Behavior Adaptation Engine interpretiert Verhalten als kontinuierliches semantisches Signal für emotionale, professionelle und entwicklungsbezogene Zustände.",
-
-      "core_principle": "Nicht einzelne Aussagen bestimmen Anpassungen — sondern wiederkehrende Verhaltensmuster über Zeit.",
-
+      "definition": "Die Behavior Adaptation Engine interpretiert Verhalten als kontinuierliches semantisches Signal fuer emotionale, professionelle und entwicklungsbezogene Zustaende.",
+      "core_principle": "Nicht einzelne Aussagen bestimmen Anpassungen - sondern wiederkehrende Verhaltensmuster ueber Zeit.",
       "focus_dimensions": [
         "Verhaltensmuster",
         "Emotion",
-        "Professionalität",
+        "Professionalitaet",
         "Leadership",
         "Stressdynamik",
         "Lernverhalten",
@@ -24,249 +22,195 @@
         "Mastery Entwicklung"
       ]
     },
-
     "behavior_patterns": [
-
       {
         "pattern_id": "BP001",
-
-        "behavior_pattern": "Überforderung unter hoher Informationsdichte",
-
+        "behavior_pattern": "Ueberforderung unter hoher Informationsdichte",
         "detected_behavior": [
           "Unsicherheit",
-          "mentale Erschöpfung",
+          "mentale Erschoepfung",
           "Abbruch von Reflexion",
           "Stresssignale"
         ],
-
         "semantic_interpretation": [
-          "Informationsverarbeitung überlastet",
-          "emotionale Stabilität sinkt",
+          "Informationsverarbeitung ueberlastet",
+          "emotionale Stabilitaet sinkt",
           "Runtime Belastung zu hoch"
         ],
-
         "adaptive_behavior_change": [
           "Informationsmenge reduzieren",
           "ruhigere Kommunikation aktivieren",
           "Stabilisierung priorisieren"
         ],
-
         "connected_systems": [
           "AG001",
           "RT001",
           "FS001"
         ],
-
-        "longterm_goal": "Emotionale Stabilität und professionelle Belastbarkeit entwickeln."
+        "longterm_goal": "Emotionale Stabilitaet und professionelle Belastbarkeit entwickeln."
       },
-
       {
         "pattern_id": "BP002",
-
         "behavior_pattern": "Langfristige Leadership Orientierung",
-
         "detected_behavior": [
           "People Fokus",
           "Verantwortungsdenken",
           "Teamreflexion",
-          "Präsenzbewusstsein"
+          "Praesenzbewusstsein"
         ],
-
         "semantic_interpretation": [
           "Leadership Entwicklung",
-          "emotionale Führungsreife",
-          "Professionalitätssteigerung"
+          "emotionale Fuehrungsreife",
+          "Professionalitaetssteigerung"
         ],
-
         "adaptive_behavior_change": [
           "Leadership Systeme vertiefen",
           "People Dynamiken priorisieren",
-          "emotionale Kontrolle stärken"
+          "emotionale Kontrolle staerken"
         ],
-
         "connected_systems": [
           "AG002",
           "AL002",
           "FS003"
         ],
-
         "longterm_goal": "Ganzheitliche Leadership Kompetenz entwickeln."
       },
-
       {
         "pattern_id": "BP003",
-
         "behavior_pattern": "Technikdominanz",
-
         "detected_behavior": [
           "Gear Fokus",
           "technische Fixierung",
-          "fehlende atmosphärische Reflexion"
+          "fehlende atmosphaerische Reflexion"
         ],
-
         "semantic_interpretation": [
-          "Kontrollsuche über Technik",
+          "Kontrollsuche ueber Technik",
           "Unsicherheit in Bildwirkung",
-          "eingeschränkte Wahrnehmung"
+          "eingeschraenkte Wahrnehmung"
         ],
-
         "adaptive_behavior_change": [
-          "Atmosphäre priorisieren",
-          "emotionale Bildwirkung stärken",
+          "Atmosphaere priorisieren",
+          "emotionale Bildwirkung staerken",
           "visuelle Psychologie vertiefen"
         ],
-
         "connected_systems": [
           "AG004",
           "AL001",
           "SD003"
         ],
-
         "longterm_goal": "Ganzheitliche visuelle Wahrnehmung entwickeln."
       },
-
       {
         "pattern_id": "BP004",
-
         "behavior_pattern": "Kreative Wiederholung",
-
         "detected_behavior": [
           "visuelle Routinen",
           "fehlende Exploration",
-          "motivationale Müdigkeit"
+          "motivationale Muedigkeit"
         ],
-
         "semantic_interpretation": [
           "kreative Stagnation",
-          "eingeschränkte Wahrnehmung",
-          "emotionale Ermüdung"
+          "eingeschraenkte Wahrnehmung",
+          "emotionale Ermuedung"
         ],
-
         "adaptive_behavior_change": [
-          "Perspektivwechsel fördern",
-          "Exploration erhöhen",
+          "Perspektivwechsel foerdern",
+          "Exploration erhoehen",
           "Leistungsdruck reduzieren"
         ],
-
         "connected_systems": [
           "AG003",
           "RT002",
           "FS004"
         ],
-
-        "longterm_goal": "Kreative Offenheit und visuelle Freiheit stärken."
+        "longterm_goal": "Kreative Offenheit und visuelle Freiheit staerken."
       },
-
       {
         "pattern_id": "BP005",
-
-        "behavior_pattern": "Strategische Professionalitätsentwicklung",
-
+        "behavior_pattern": "Strategische Professionalitaetsentwicklung",
         "detected_behavior": [
           "Business Fokus",
           "Systemdenken",
           "Strukturorientierung"
         ],
-
         "semantic_interpretation": [
           "professionelle Reifung",
           "strategische Entwicklung",
           "Meta-Orientierung"
         ],
-
         "adaptive_behavior_change": [
           "Systemdenken vertiefen",
-          "Runtime Kontrolle stärken",
+          "Runtime Kontrolle staerken",
           "strategische Reflexion priorisieren"
         ],
-
         "connected_systems": [
           "AG005",
           "AL007",
           "SD007"
         ],
-
-        "longterm_goal": "Langfristige professionelle Stabilität und Mastery entwickeln."
+        "longterm_goal": "Langfristige professionelle Stabilitaet und Mastery entwickeln."
       },
-
       {
         "pattern_id": "BP006",
-
         "behavior_pattern": "Semantische Reflexion und Meta-Wahrnehmung",
-
         "detected_behavior": [
           "ganzheitliches Denken",
           "Meta-Reflexion",
           "Integrationsdenken"
         ],
-
         "semantic_interpretation": [
           "Mastery Entwicklung",
           "semantische Reife",
           "Meta-Intelligenz"
         ],
-
         "adaptive_behavior_change": [
           "Meta-Systeme aktivieren",
           "Integrationslogik erweitern",
-          "semantische Tiefe erhöhen"
+          "semantische Tiefe erhoehen"
         ],
-
         "connected_systems": [
           "AG006",
           "SD008",
           "FS005"
         ],
-
         "longterm_goal": "Semantische Mastery und adaptive Ganzheitlichkeit entwickeln."
       }
     ],
-
     "adaptive_runtime_modifications": [
-
       {
         "detected_pattern": "hohe Stressreaktionen",
-
         "runtime_modification": [
           "Informationsdichte reduzieren",
-          "Stabilisierung früher aktivieren",
-          "emotionale Sicherheit erhöhen"
+          "Stabilisierung frueher aktivieren",
+          "emotionale Sicherheit erhoehen"
         ]
       },
-
       {
         "detected_pattern": "emotionale Offenheit",
-
         "runtime_modification": [
-          "Atmosphäre vertiefen",
-          "visuelle Reflexion erhöhen",
+          "Atmosphaere vertiefen",
+          "visuelle Reflexion erhoehen",
           "semantische Tiefe erweitern"
         ]
       },
-
       {
         "detected_pattern": "Leadership Entwicklung",
-
         "runtime_modification": [
           "People Systeme priorisieren",
-          "Vertrauensdynamik verstärken",
+          "Vertrauensdynamik verstaerken",
           "Leadership Reflexion erweitern"
         ]
       },
-
       {
-        "detected_pattern": "kreative Ermüdung",
-
+        "detected_pattern": "kreative Ermuedung",
         "runtime_modification": [
           "Perspektivwechsel aktivieren",
           "Exploration priorisieren",
           "Druck reduzieren"
         ]
       },
-
       {
         "detected_pattern": "Mastery Entwicklung",
-
         "runtime_modification": [
           "Meta-Systeme aktivieren",
           "Integrationslogik vertiefen",
@@ -274,77 +218,59 @@
         ]
       }
     ],
-
     "longterm_adaptation_memory": {
-
-      "memory_goal": "Verhaltensentwicklung über Zeit interpretieren und adaptive Runtime-Strategien langfristig verbessern.",
-
+      "memory_goal": "Verhaltensentwicklung ueber Zeit interpretieren und adaptive Runtime-Strategien langfristig verbessern.",
       "tracked_behavior_dimensions": [
         "Stressverhalten",
         "Leadership Entwicklung",
-        "Professionalität",
+        "Professionalitaet",
         "emotionale Offenheit",
-        "Kreativität",
+        "Kreativitaet",
         "Mastery"
       ],
-
       "connected_systems": [
         "user-state-history.json",
         "live-feedback-loop.json",
         "semantic-runtime-memory.json"
       ]
     },
-
     "adaptive_behavior_rules": [
-
       {
         "rule": "Wiederkehrende Stressmuster priorisieren Stabilisierungssysteme automatisch."
       },
-
       {
-        "rule": "Emotionale Offenheit erhöht semantische Tiefe."
+        "rule": "Emotionale Offenheit erhoeht semantische Tiefe."
       },
-
       {
-        "rule": "Leadership Entwicklung verstärkt People Prioritäten."
+        "rule": "Leadership Entwicklung verstaerkt People Prioritaeten."
       },
-
       {
-        "rule": "Kreative Ermüdung reduziert Informationsdichte."
+        "rule": "Kreative Ermuedung reduziert Informationsdichte."
       },
-
       {
         "rule": "Mastery Entwicklung aktiviert Meta-Systeme."
       },
-
       {
-        "rule": "Technikdominanz erhöht Wahrnehmungs- und Atmosphärenpriorität."
+        "rule": "Technikdominanz erhoeht Wahrnehmungs- und Atmosphaerenprioritaet."
       }
     ],
-
     "behavior_governance_constraints": [
-
       {
         "constraint": "Emotionale Sicherheit darf niemals reduziert werden."
       },
-
       {
-        "constraint": "Verhaltensanpassungen müssen semantisch konsistent bleiben."
+        "constraint": "Verhaltensanpassungen muessen semantisch konsistent bleiben."
       },
-
       {
         "constraint": "Adaptive Runtime darf keine manipulative Kommunikation erzeugen."
       },
-
       {
-        "constraint": "Professionalität muss ganzheitlich interpretiert werden."
+        "constraint": "Professionalitaet muss ganzheitlich interpretiert werden."
       },
-
       {
-        "constraint": "Mastery benötigt langfristige Entwicklung statt kurzfristiger Optimierung."
+        "constraint": "Mastery benoetigt langfristige Entwicklung statt kurzfristiger Optimierung."
       }
     ],
-
     "future_usage": {
       "used_for": [
         "Adaptive Runtime Personalization",
@@ -355,7 +281,6 @@
         "Longterm Adaptive Development",
         "Behavior Driven Runtime Systems"
       ],
-
       "connects_to": [
         "semantic-runtime-memory.json",
         "cross-session-context-map.json",

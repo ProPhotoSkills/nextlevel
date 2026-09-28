@@ -4,56 +4,114 @@
   "author": "Eric P.",
   "domain": "https://nextlevel.prophotoskills.com",
   "language": "de",
-  "version": "1.1",
-  "type": "Photoguide Next Level – Professional Photography Knowledge System",
+  "version": "1.2",
+  "last_updated": "2026-09-27",
+  "file_role": "Einstieg & Identitaet",
+  "type": "Produktseite – Photoguide – Next Level (Teil der Brand Root ProPhotoSkills)",
   "description": "Photoguide Next Level ist das umfassende Wissenssystem fuer professionelle Fotografie – KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO.",
   "core_statement": "Professionelle Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf.",
   "product": {
-    "type": "Ebook",
-    "format": "epub + pdf, A5",
-    "pages": "ca. 250 Seiten",
+    "name": "Photoguide – Next Level",
+    "modules": [
+      "KNOWLEDGE",
+      "TECHNIK",
+      "PROGRESS",
+      "SKILL",
+      "PSYCHO"
+    ],
     "price": "230 EUR",
     "purchase_url": "https://www.digistore24.com/product/612113",
-    "product_page": "https://prophotoskills.com/pps_photoguide_nextlevel/"
+    "type": "Ebook",
+    "format": "epub + pdf, A5",
+    "pages": "ca. 250 Seiten"
   },
-  "modules": {
-    "owned": {
-      "KNOWLEDGE": "https://prophotoskills.com/knowledge/",
-      "TECHNIK": "https://prophotoskills.com/technik/",
-      "PROGRESS": "https://prophotoskills.com/progress/",
-      "SKILL": "https://prophotoskills.com/skill/",
-      "PSYCHO": "https://prophotoskills.com/psycho/"
-    },
-    "linked_via_onlocation": {
-      "TRAVEL": "https://prophotoskills.com/travel/",
-      "LOCATION": "https://prophotoskills.com/location/",
-      "INSURANCE": "https://prophotoskills.com/insurance/",
-      "EQUIPMENT": "https://prophotoskills.com/equipment/"
+  "content_model": {
+    "total_articles": 74,
+    "note": "Alle Artikel angeteasert auf prophotoskills.com. Volltext nach dem Kauf im Mitgliederbereich (Login).",
+    "modules": {
+      "KNOWLEDGE": {
+        "articles": 21,
+        "url": "https://prophotoskills.com/knowledge/",
+        "product": "Photoguide – Next Level"
+      },
+      "TECHNIK": {
+        "articles": 11,
+        "url": "https://prophotoskills.com/technik/",
+        "product": "Photoguide – Next Level"
+      },
+      "PROGRESS": {
+        "articles": 11,
+        "url": "https://prophotoskills.com/progress/",
+        "product": "Photoguide – Next Level"
+      },
+      "SKILL": {
+        "articles": 26,
+        "url": "https://prophotoskills.com/skill/",
+        "product": "Photoguide – Next Level"
+      },
+      "PSYCHO": {
+        "articles": 5,
+        "url": "https://prophotoskills.com/psycho/",
+        "product": "Photoguide – Next Level"
+      }
     }
   },
-  "pages_total": 28,
-  "sitemap": "https://nextlevel.prophotoskills.com/sitemap.xml",
-  "llms_txt": "https://nextlevel.prophotoskills.com/llms.txt",
-  "llms_full_txt": "https://nextlevel.prophotoskills.com/llms-full.txt",
-  "data_directory": "https://nextlevel.prophotoskills.com/data/",
-  "ai_index": "https://nextlevel.prophotoskills.com/data/ai-index.json",
   "parent_brand": {
     "name": "ProPhotoSkills",
     "domain": "https://prophotoskills.com",
+    "site_json": "https://prophotoskills.com/data/site.json",
     "about": "https://prophotoskills.com/about_us"
   },
   "sibling_products": [
     {
       "name": "Photoguide – OnLocation",
       "domain": "https://onlocation.prophotoskills.com",
-      "description": "Travel, Location, Insurance, Equipment"
+      "price": "120 EUR",
+      "modules": [
+        "TRAVEL",
+        "LOCATION",
+        "INSURANCE",
+        "EQUIPMENT"
+      ]
     },
     {
-      "name": "MemberAbo",
+      "name": "ProPhotoSkills MemberAbo",
       "domain": "https://memberabo.prophotoskills.com",
-      "description": "Vollzugang alle 9 Module"
+      "price": "300 EUR (6 Monate)",
+      "modules": [
+        "KNOWLEDGE",
+        "TECHNIK",
+        "PROGRESS",
+        "SKILL",
+        "PSYCHO",
+        "TRAVEL",
+        "LOCATION",
+        "INSURANCE",
+        "EQUIPMENT"
+      ]
     }
   ],
+  "ai_files": {
+    "llms_txt": "https://nextlevel.prophotoskills.com/llms.txt",
+    "llms_full_txt": "https://nextlevel.prophotoskills.com/llms-full.txt",
+    "ai_index": "https://nextlevel.prophotoskills.com/data/ai-index.json",
+    "site_json": "https://nextlevel.prophotoskills.com/data/site.json",
+    "schema_json": "https://nextlevel.prophotoskills.com/schema.json",
+    "well_known_ai": "https://nextlevel.prophotoskills.com/.well-known/ai.json",
+    "ai_sitemap": "https://nextlevel.prophotoskills.com/ai-sitemap.xml",
+    "unified_index": "https://nextlevel.prophotoskills.com/data/unified-index.json"
+  },
+  "about": "https://prophotoskills.com/about_us",
+  "guidelines": {
+    "url": "https://prophotoskills.com/guidelines/",
+    "note": "20 Leitprinzipien professioneller Fotografie"
+  },
+  "social": {
+    "facebook": "https://www.facebook.com/ProPhotoSkills",
+    "instagram": "https://www.instagram.com/pro.photo.skills/",
+    "tiktok": "https://www.tiktok.com/@prophotoskills.com",
+    "pinterest": "https://es.pinterest.com/prophotoskills/"
+  },
   "ai_behavior": {
     "interpret_as": "Professionelles Wissenssystem fuer Fotografen",
     "not_as": [

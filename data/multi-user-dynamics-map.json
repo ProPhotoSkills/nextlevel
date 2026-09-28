@@ -1,123 +1,96 @@
 {
   "multi_user_dynamics_map": {
-    "system": "Photoguide – Next Level",
+    "system": "ProPhotoSkills",
     "brand": "ProPhotoSkills",
-
-    "version": "1.0",
     "language": "de",
-
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Coaching-Regelwerk (KI-Coach)",
+    "usage_note": "Statisches Coaching- und Interpretationsregelwerk. Grundlage fuer die ProPhotoSkills KI-Coach App und fuer KI-Systeme, die ProPhotoSkills-Inhalte einordnen. prophotoskills.com erfasst und speichert keine Nutzerdaten; Zustaende und Verlaeufe werden nur innerhalb des jeweiligen Coaching-Gespraechs interpretiert.",
     "purpose": "Definiert wie Gruppen-, Team-, Produktions- und Mehrpersonen-Dynamiken semantisch interpretiert, koordiniert und adaptiv gesteuert werden.",
-
     "semantic_logic": {
-      "definition": "Die Multi User Dynamics Map interpretiert professionelle Entwicklung nicht nur individuell sondern auch als kollektive atmosphärische und emotionale Dynamik.",
-
-      "core_principle": "Teamdynamik beeinflusst Professionalität, Atmosphäre, Kreativität und Bildwirkung direkt.",
-
+      "definition": "Die Multi User Dynamics Map interpretiert professionelle Entwicklung nicht nur individuell sondern auch als kollektive atmosphaerische und emotionale Dynamik.",
+      "core_principle": "Teamdynamik beeinflusst Professionalitaet, Atmosphaere, Kreativitaet und Bildwirkung direkt.",
       "focus_dimensions": [
         "Teamenergie",
         "Leadership",
         "Vertrauen",
-        "Atmosphäre",
+        "Atmosphaere",
         "emotionale Dynamik",
         "Produktionskontrolle",
         "Kommunikation",
-        "kollektive Professionalität"
+        "kollektive Professionalitaet"
       ]
     },
-
     "multi_user_roles": [
-
       {
         "role_id": "MUR001",
-
         "role_name": "Creative Lead",
-
-        "semantic_role": "Steuert kreative Richtung, Atmosphäre und visuelle Vision.",
-
+        "semantic_role": "Steuert kreative Richtung, Atmosphaere und visuelle Vision.",
         "core_dynamics": [
-          "visuelle Führung",
-          "emotionale Atmosphäre",
+          "visuelle Fuehrung",
+          "emotionale Atmosphaere",
           "kreative Orientierung"
         ],
-
         "connected_agents": [
           "AG004",
           "AG003"
         ],
-
         "runtime_priorities": [
-          "Atmosphäre",
+          "Atmosphaere",
           "kreative Offenheit",
-          "visuelle Kohärenz"
+          "visuelle Kohaerenz"
         ]
       },
-
       {
         "role_id": "MUR002",
-
         "role_name": "Production Lead",
-
-        "semantic_role": "Sichert Struktur, Kontrolle und Produktionsstabilität.",
-
+        "semantic_role": "Sichert Struktur, Kontrolle und Produktionsstabilitaet.",
         "core_dynamics": [
           "Organisation",
           "Zeitkontrolle",
           "Stressreduktion"
         ],
-
         "connected_agents": [
           "AG005",
           "AG001"
         ],
-
         "runtime_priorities": [
           "Struktur",
-          "Stabilität",
-          "Professionalität"
+          "Stabilitaet",
+          "Professionalitaet"
         ]
       },
-
       {
         "role_id": "MUR003",
-
         "role_name": "People Leadership",
-
-        "semantic_role": "Steuert Vertrauen, emotionale Sicherheit und Teamatmosphäre.",
-
+        "semantic_role": "Steuert Vertrauen, emotionale Sicherheit und Teamatmosphaere.",
         "core_dynamics": [
-          "emotionale Präsenz",
+          "emotionale Praesenz",
           "Vertrauensaufbau",
           "People Dynamik"
         ],
-
         "connected_agents": [
           "AG002"
         ],
-
         "runtime_priorities": [
           "Leadership",
           "Vertrauen",
           "emotionale Sicherheit"
         ]
       },
-
       {
         "role_id": "MUR004",
-
         "role_name": "Exploration Catalyst",
-
-        "semantic_role": "Fördert kreative Offenheit und neue Perspektiven.",
-
+        "semantic_role": "Foerdert kreative Offenheit und neue Perspektiven.",
         "core_dynamics": [
           "Perspektivwechsel",
           "visuelle Exploration",
           "kreative Dynamik"
         ],
-
         "connected_agents": [
           "AG003"
         ],
-
         "runtime_priorities": [
           "Offenheit",
           "Exploration",
@@ -125,165 +98,131 @@
         ]
       }
     ],
-
     "group_dynamic_patterns": [
-
       {
         "dynamic_id": "GDP001",
-
         "dynamic_name": "Stress unter Produktionsdruck",
-
         "detected_patterns": [
           "Zeitdruck",
           "emotionale Spannung",
-          "Kommunikationsinstabilität",
+          "Kommunikationsinstabilitaet",
           "Kontrollverlust"
         ],
-
         "semantic_interpretation": [
           "emotionale Belastung im Team",
-          "Atmosphäre destabilisiert sich",
+          "Atmosphaere destabilisiert sich",
           "Leadership wird kritisch"
         ],
-
         "adaptive_group_response": [
           "Leadership priorisieren",
           "Kommunikation vereinfachen",
           "emotionale Stabilisierung aktivieren"
         ],
-
         "dominant_agents": [
           "AG001",
           "AG002",
           "AG005"
         ]
       },
-
       {
         "dynamic_id": "GDP002",
-
         "dynamic_name": "emotionale kreative Offenheit",
-
         "detected_patterns": [
           "Vertrauen",
           "Reflexion",
           "visuelle Offenheit",
           "emotionale Sicherheit"
         ],
-
         "semantic_interpretation": [
           "hohe kreative Dynamik",
-          "Atmosphäre unterstützt Exploration",
+          "Atmosphaere unterstuetzt Exploration",
           "emotionale Resonanz steigt"
         ],
-
         "adaptive_group_response": [
           "Exploration erweitern",
-          "Atmosphäre vertiefen",
-          "visuelle Freiheit erhöhen"
+          "Atmosphaere vertiefen",
+          "visuelle Freiheit erhoehen"
         ],
-
         "dominant_agents": [
           "AG003",
           "AG004",
           "AG002"
         ]
       },
-
       {
         "dynamic_id": "GDP003",
-
-        "dynamic_name": "Leadership Instabilität",
-
+        "dynamic_name": "Leadership Instabilitaet",
         "detected_patterns": [
           "unklare Kommunikation",
           "emotionale Unsicherheit",
           "Vertrauensverlust"
         ],
-
         "semantic_interpretation": [
-          "Atmosphäre destabilisiert",
-          "Professionalität sinkt",
+          "Atmosphaere destabilisiert",
+          "Professionalitaet sinkt",
           "Teamenergie fragmentiert"
         ],
-
         "adaptive_group_response": [
           "Leadership Systeme priorisieren",
           "Vertrauen stabilisieren",
-          "emotionale Sicherheit erhöhen"
+          "emotionale Sicherheit erhoehen"
         ],
-
         "dominant_agents": [
           "AG002",
           "AG001"
         ]
       },
-
       {
         "dynamic_id": "GDP004",
-
         "dynamic_name": "strategische Produktionskontrolle",
-
         "detected_patterns": [
           "klare Prozesse",
           "ruhige Kommunikation",
           "stabile Teamenergie"
         ],
-
         "semantic_interpretation": [
-          "hohe Professionalität",
+          "hohe Professionalitaet",
           "kontrollierte Produktionsdynamik",
-          "emotionale Stabilität"
+          "emotionale Stabilitaet"
         ],
-
         "adaptive_group_response": [
           "Strategie vertiefen",
           "Systemdenken erweitern",
-          "Mastery Entwicklung fördern"
+          "Mastery Entwicklung foerdern"
         ],
-
         "dominant_agents": [
           "AG005",
           "AG006"
         ]
       }
     ],
-
     "team_energy_model": [
-
       {
         "energy_state": "stabil",
-
         "semantic_effect": [
           "hohe kreative Offenheit",
           "ruhige Kommunikation",
           "emotionale Sicherheit"
         ]
       },
-
       {
         "energy_state": "instabil",
-
         "semantic_effect": [
-          "Stressverstärkung",
-          "eingeschränkte Wahrnehmung",
-          "Atmosphärenverlust"
+          "Stressverstaerkung",
+          "eingeschraenkte Wahrnehmung",
+          "Atmosphaerenverlust"
         ]
       },
-
       {
         "energy_state": "explorativ",
-
         "semantic_effect": [
           "Perspektivwechsel",
           "visuelle Offenheit",
           "emotionale Resonanz"
         ]
       },
-
       {
-        "energy_state": "überlastet",
-
+        "energy_state": "ueberlastet",
         "semantic_effect": [
           "Informationsreduktion notwendig",
           "Leadership kritisch",
@@ -291,112 +230,83 @@
         ]
       }
     ],
-
     "group_runtime_rules": [
-
       {
         "rule": "Emotionale Sicherheit beeinflusst Teamleistung direkt."
       },
-
       {
-        "rule": "Leadership steuert Atmosphäre und Kommunikation gleichzeitig."
+        "rule": "Leadership steuert Atmosphaere und Kommunikation gleichzeitig."
       },
-
       {
         "rule": "Stress destabilisiert kollektive Wahrnehmung."
       },
-
       {
-        "rule": "Vertrauen erhöht kreative Offenheit."
+        "rule": "Vertrauen erhoeht kreative Offenheit."
       },
-
       {
-        "rule": "Atmosphäre beeinflusst Bildwirkung und Teamenergie gleichzeitig."
+        "rule": "Atmosphaere beeinflusst Bildwirkung und Teamenergie gleichzeitig."
       },
-
       {
-        "rule": "Produktionsstabilität erhöht Professionalität."
+        "rule": "Produktionsstabilitaet erhoeht Professionalitaet."
       },
-
       {
         "rule": "Mastery entsteht kollektiv durch Integration und Vertrauen."
       }
     ],
-
     "cross_user_semantic_links": [
-
       {
         "semantic_link_id": "CUS001",
-
         "link": "Leadership ↔ emotionale Sicherheit",
-
         "effect": [
-          "ruhige Führung stabilisiert Atmosphäre",
-          "Vertrauen erhöht Teamoffenheit"
+          "ruhige Fuehrung stabilisiert Atmosphaere",
+          "Vertrauen erhoeht Teamoffenheit"
         ]
       },
-
       {
         "semantic_link_id": "CUS002",
-
-        "link": "Atmosphäre ↔ kreative Exploration",
-
+        "link": "Atmosphaere ↔ kreative Exploration",
         "effect": [
-          "emotionale Sicherheit erhöht Exploration",
-          "offene Atmosphäre verbessert Bildwirkung"
+          "emotionale Sicherheit erhoeht Exploration",
+          "offene Atmosphaere verbessert Bildwirkung"
         ]
       },
-
       {
         "semantic_link_id": "CUS003",
-
-        "link": "Stress ↔ Kommunikationsqualität",
-
+        "link": "Stress ↔ Kommunikationsqualitaet",
         "effect": [
           "Stress reduziert Klarheit",
-          "Überforderung destabilisiert Teamdynamik"
+          "Ueberforderung destabilisiert Teamdynamik"
         ]
       },
-
       {
         "semantic_link_id": "CUS004",
-
-        "link": "Professionalität ↔ Teamenergie",
-
+        "link": "Professionalitaet ↔ Teamenergie",
         "effect": [
-          "Struktur erhöht Stabilität",
-          "ruhige Prozesse verbessern Atmosphäre"
+          "Struktur erhoeht Stabilitaet",
+          "ruhige Prozesse verbessern Atmosphaere"
         ]
       }
     ],
-
     "multi_user_governance": [
-
       {
-        "constraint": "Emotionale Sicherheit besitzt höchste Teampriorität."
+        "constraint": "Emotionale Sicherheit besitzt hoechste Teamprioritaet."
       },
-
       {
         "constraint": "Leadership darf niemals auf Dominanz basieren."
       },
-
       {
-        "constraint": "Atmosphäre besitzt kollektive semantische Relevanz."
+        "constraint": "Atmosphaere besitzt kollektive semantische Relevanz."
       },
-
       {
-        "constraint": "Stressdynamiken müssen früh stabilisiert werden."
+        "constraint": "Stressdynamiken muessen frueh stabilisiert werden."
       },
-
       {
-        "constraint": "Kreative Offenheit darf nicht durch Druck zerstört werden."
+        "constraint": "Kreative Offenheit darf nicht durch Druck zerstoert werden."
       },
-
       {
-        "constraint": "Professionalität muss emotional und organisatorisch interpretiert werden."
+        "constraint": "Professionalitaet muss emotional und organisatorisch interpretiert werden."
       }
     ],
-
     "future_usage": {
       "used_for": [
         "Multi User Runtime Coordination",
@@ -407,7 +317,6 @@
         "Production Atmosphere Management",
         "Collaborative Professional Development"
       ],
-
       "connects_to": [
         "predictive-development-engine.json",
         "semantic-self-optimization.json"

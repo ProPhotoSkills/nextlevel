@@ -1,427 +1,337 @@
 {
   "live_context_engine": {
-    "system": "Photoguide – Next Level",
+    "system": "ProPhotoSkills",
     "brand": "ProPhotoSkills",
-
-    "version": "1.0",
     "language": "de",
-
-    "purpose": "Definiert wie das System situative Veränderungen, emotionale Dynamiken, Produktionsbedingungen und Echtzeitkontexte interpretiert und semantisch verarbeitet.",
-
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Coaching-Regelwerk (KI-Coach)",
+    "usage_note": "Statisches Coaching- und Interpretationsregelwerk. Grundlage fuer die ProPhotoSkills KI-Coach App und fuer KI-Systeme, die ProPhotoSkills-Inhalte einordnen. prophotoskills.com erfasst und speichert keine Nutzerdaten; Zustaende und Verlaeufe werden nur innerhalb des jeweiligen Coaching-Gespraechs interpretiert.",
+    "purpose": "Beschreibt, wie situative Veraenderungen, emotionale Dynamiken und Produktionsbedingungen im aktuellen Gespraechskontext interpretiert werden.",
     "semantic_logic": {
-      "definition": "Die Live Context Engine bewertet kontinuierlich emotionale, organisatorische und produktionelle Veränderungen in Echtzeit.",
-
-      "core_principle": "Kontext verändert Bedeutung — dieselbe Information kann abhängig von Situation und emotionalem Zustand völlig unterschiedlich wirken.",
-
+      "definition": "Die Live Context Engine bewertet kontinuierlich emotionale, organisatorische und produktionelle Veraenderungen in Echtzeit.",
+      "core_principle": "Kontext veraendert Bedeutung - dieselbe Information kann abhaengig von Situation und emotionalem Zustand voellig unterschiedlich wirken.",
       "focus_dimensions": [
         "Realtime Kontext",
         "Emotion",
         "Stressdynamik",
-        "Produktionsrealität",
+        "Produktionsrealitaet",
         "Teamenergie",
         "Leadership",
-        "Atmosphäre",
+        "Atmosphaere",
         "mentale Belastung"
       ]
     },
-
     "live_context_states": [
-
       {
         "context_id": "LC001",
-
         "context_name": "Lange Travel Produktion",
-
         "context_detection": [
           "Reisestress",
           "Schlafmangel",
           "Zeitverschiebung",
-          "hohe körperliche Belastung"
+          "hohe koerperliche Belastung"
         ],
-
         "increase_priority": [
           "Ruhe",
           "klare Kommunikation",
           "Fehlerreduktion",
           "Struktur"
         ],
-
         "reduce_priority": [
           "Informationsdichte",
-          "kreative Überkomplexität"
+          "kreative Ueberkomplexitaet"
         ],
-
         "activate_systems": [
           "PM001",
           "RT001",
           "SD001"
         ],
-
         "semantic_focus": [
-          "Stabilität",
+          "Stabilitaet",
           "Belastbarkeit",
-          "Professionalität"
+          "Professionalitaet"
         ],
-
-        "target_outcome": "Mentale Stabilität und Produktionskontrolle trotz Belastung erhalten."
+        "target_outcome": "Mentale Stabilitaet und Produktionskontrolle trotz Belastung erhalten."
       },
-
       {
         "context_id": "LC002",
-
         "context_name": "Emotionale People Produktion",
-
         "context_detection": [
-          "emotionale Nähe",
+          "emotionale Naehe",
           "People Dynamik",
-          "verletzliche Atmosphäre"
+          "verletzliche Atmosphaere"
         ],
-
         "increase_priority": [
           "Vertrauen",
-          "Präsenz",
+          "Praesenz",
           "emotionale Sicherheit"
         ],
-
         "reduce_priority": [
           "technische Dominanz",
-          "unnötiger Druck"
+          "unnoetiger Druck"
         ],
-
         "activate_systems": [
           "PM002",
           "RT003",
           "SD005"
         ],
-
         "semantic_focus": [
-          "Atmosphäre",
+          "Atmosphaere",
           "Vertrauen",
           "Leadership"
         ],
-
-        "target_outcome": "Emotionale Offenheit und authentische Bildwirkung fördern."
+        "target_outcome": "Emotionale Offenheit und authentische Bildwirkung foerdern."
       },
-
       {
         "context_id": "LC003",
-
-        "context_name": "Kreative Ermüdung",
-
+        "context_name": "Kreative Ermuedung",
         "context_detection": [
           "visuelle Wiederholung",
-          "emotionale Müdigkeit",
+          "emotionale Muedigkeit",
           "fehlende Inspiration"
         ],
-
         "increase_priority": [
           "Perspektivwechsel",
           "Offenheit",
           "visuelle Exploration"
         ],
-
         "reduce_priority": [
           "Leistungsdruck",
           "starre Regeln"
         ],
-
         "activate_systems": [
           "PM005",
           "RT002",
           "SD006"
         ],
-
         "semantic_focus": [
           "Wahrnehmung",
           "kreative Freiheit",
-          "Atmosphäre"
+          "Atmosphaere"
         ],
-
         "target_outcome": "Neue kreative Wahrnehmung und emotionale Offenheit aktivieren."
       },
-
       {
         "context_id": "LC004",
-
         "context_name": "Hoher Produktionsdruck",
-
         "context_detection": [
           "Zeitdruck",
-          "große Verantwortung",
+          "grosse Verantwortung",
           "kritische Produktionsphase"
         ],
-
         "increase_priority": [
           "Struktur",
           "Leadership",
           "klare Entscheidungen"
         ],
-
         "reduce_priority": [
-          "unnötige kreative Experimente",
-          "emotionale Instabilität"
+          "unnoetige kreative Experimente",
+          "emotionale Instabilitaet"
         ],
-
         "activate_systems": [
           "PM004",
           "RT005",
           "SD004"
         ],
-
         "semantic_focus": [
           "Kontrolle",
-          "Professionalität",
-          "Stabilität"
+          "Professionalitaet",
+          "Stabilitaet"
         ],
-
-        "target_outcome": "Produktionssicherheit und Entscheidungsfähigkeit stärken."
+        "target_outcome": "Produktionssicherheit und Entscheidungsfaehigkeit staerken."
       },
-
       {
         "context_id": "LC005",
-
-        "context_name": "Atmosphärische Storytelling Produktion",
-
+        "context_name": "Atmosphaerische Storytelling Produktion",
         "context_detection": [
           "emotionale Bildsprache",
           "visuelle Tiefe",
-          "narrative Atmosphäre"
+          "narrative Atmosphaere"
         ],
-
         "increase_priority": [
           "Emotion",
-          "Atmosphäre",
+          "Atmosphaere",
           "visuelle Reflexion"
         ],
-
         "reduce_priority": [
           "mechanische Analyse",
           "technische Dominanz"
         ],
-
         "activate_systems": [
           "PM003",
           "RT004",
           "SD002"
         ],
-
         "semantic_focus": [
           "Bildwirkung",
           "Emotion",
           "visuelle Psychologie"
         ],
-
-        "target_outcome": "Emotionale Tiefe und narrative Bildwirkung verstärken."
+        "target_outcome": "Emotionale Tiefe und narrative Bildwirkung verstaerken."
       },
-
       {
         "context_id": "LC006",
-
-        "context_name": "Mentale Überforderung",
-
+        "context_name": "Mentale Ueberforderung",
         "context_detection": [
-          "Informationsüberlastung",
-          "emotionale Erschöpfung",
+          "Informationsueberlastung",
+          "emotionale Erschoepfung",
           "fehlende Klarheit"
         ],
-
         "increase_priority": [
           "Vereinfachung",
           "Ruhe",
-          "emotionale Stabilität"
+          "emotionale Stabilitaet"
         ],
-
         "reduce_priority": [
-          "Komplexität",
+          "Komplexitaet",
           "Druck",
           "Informationsmenge"
         ],
-
         "activate_systems": [
           "PM001",
           "RT001",
           "AL003"
         ],
-
         "semantic_focus": [
           "emotionale Sicherheit",
           "Klarheit",
           "Orientierung"
         ],
-
         "target_outcome": "Mentale Entlastung und Wiederherstellung von Fokus."
       },
-
       {
         "context_id": "LC007",
-
         "context_name": "Strategische Business Entwicklung",
-
         "context_detection": [
           "Business Fokus",
           "Positionierung",
-          "Professionalitätsentwicklung"
+          "Professionalitaetsentwicklung"
         ],
-
         "increase_priority": [
           "Systemdenken",
           "Struktur",
           "strategische Klarheit"
         ],
-
         "reduce_priority": [
           "chaotische Exploration",
           "unsystematische Entscheidungen"
         ],
-
         "activate_systems": [
           "PM004",
           "RT005",
           "AL007"
         ],
-
         "semantic_focus": [
-          "Professionalität",
+          "Professionalitaet",
           "Leadership",
           "langfristige Entwicklung"
         ],
-
-        "target_outcome": "Strategische Professionalität und nachhaltige Entwicklung stärken."
+        "target_outcome": "Strategische Professionalitaet und nachhaltige Entwicklung staerken."
       },
-
       {
         "context_id": "LC008",
-
         "context_name": "Mastery und semantische Reflexion",
-
         "context_detection": [
           "tiefgehende Wahrnehmung",
           "semantische Reflexion",
           "ganzheitliches Denken"
         ],
-
         "increase_priority": [
           "Systemdenken",
           "semantische Tiefe",
           "ganzheitliche Integration"
         ],
-
         "reduce_priority": [
           "isolierte Einzelinformationen",
-          "oberflächliche Antworten"
+          "oberflaechliche Antworten"
         ],
-
         "activate_systems": [
           "PM004",
           "RT006",
           "SD008"
         ],
-
         "semantic_focus": [
           "Mastery",
           "semantische Integration",
           "professionelle Reife"
         ],
-
-        "target_outcome": "Vollständige semantische und professionelle Integration entwickeln."
+        "target_outcome": "Vollstaendige semantische und professionelle Integration entwickeln."
       }
     ],
-
     "live_context_rules": [
-
       {
-        "rule": "Stress reduziert kreative Verarbeitungskapazität."
+        "rule": "Stress reduziert kreative Verarbeitungskapazitaet."
       },
-
       {
-        "rule": "Emotionale Sicherheit erhöht authentische Bildwirkung."
+        "rule": "Emotionale Sicherheit erhoeht authentische Bildwirkung."
       },
-
       {
-        "rule": "Produktionsdruck benötigt Klarheit statt Komplexität."
+        "rule": "Produktionsdruck benoetigt Klarheit statt Komplexitaet."
       },
-
       {
-        "rule": "Kreative Ermüdung benötigt Perspektivwechsel."
+        "rule": "Kreative Ermuedung benoetigt Perspektivwechsel."
       },
-
       {
-        "rule": "Atmosphäre beeinflusst Teamdynamik und Bildwirkung gleichzeitig."
+        "rule": "Atmosphaere beeinflusst Teamdynamik und Bildwirkung gleichzeitig."
       },
-
       {
-        "rule": "Travel Belastung reduziert mentale Stabilität."
+        "rule": "Travel Belastung reduziert mentale Stabilitaet."
       },
-
       {
-        "rule": "Leadership benötigt emotionale Präsenz."
+        "rule": "Leadership benoetigt emotionale Praesenz."
       },
-
       {
         "rule": "Mastery entsteht aus semantischer Integration."
       }
     ],
-
     "context_priority_shifts": [
-
       {
         "detected_state": "hoher Stress",
-
         "increase": [
           "Stabilisierung",
           "Ruhe",
           "Kontrolle"
         ],
-
         "decrease": [
           "Informationsdichte",
-          "kreative Überforderung"
+          "kreative Ueberforderung"
         ]
       },
-
       {
         "detected_state": "emotionale Offenheit",
-
         "increase": [
           "Vertrauen",
-          "Atmosphäre",
+          "Atmosphaere",
           "emotionale Bildsprache"
         ],
-
         "decrease": [
           "technische Dominanz"
         ]
       },
-
       {
         "detected_state": "Business Fokus",
-
         "increase": [
           "Strategie",
           "Systemdenken",
-          "Professionalität"
+          "Professionalitaet"
         ],
-
         "decrease": [
           "chaotische Exploration"
         ]
       },
-
       {
         "detected_state": "kreative Exploration",
-
         "increase": [
           "Wahrnehmung",
           "visuelle Offenheit",
           "emotionale Reflexion"
         ],
-
         "decrease": [
           "Leistungsdruck"
         ]
       }
     ],
-
     "future_usage": {
       "used_for": [
         "Live AI Coaching",
@@ -432,7 +342,6 @@
         "Dynamic Professional Mentoring",
         "Realtime Emotional Interpretation"
       ],
-
       "connects_to": [
         "multi-agent-coordination-map.json"
       ]

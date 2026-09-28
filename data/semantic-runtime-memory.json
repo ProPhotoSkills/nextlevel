@@ -1,22 +1,20 @@
 {
   "semantic_runtime_memory": {
-    "system": "Photoguide – Next Level",
+    "system": "ProPhotoSkills",
     "brand": "ProPhotoSkills",
-
-    "version": "1.0",
     "language": "de",
-
-    "purpose": "Definiert wie das System kurzfristige, mittelfristige und aktive semantische Zustände während laufender Interaktionen speichert, priorisiert und kontextuell verarbeitet.",
-
+    "version": "1.2",
+    "last_updated": "2026-09-25",
+    "file_role": "Coaching-Regelwerk (KI-Coach)",
+    "usage_note": "Statisches Coaching- und Interpretationsregelwerk. Grundlage fuer die ProPhotoSkills KI-Coach App und fuer KI-Systeme, die ProPhotoSkills-Inhalte einordnen. prophotoskills.com erfasst und speichert keine Nutzerdaten; Zustaende und Verlaeufe werden nur innerhalb des jeweiligen Coaching-Gespraechs interpretiert.",
+    "purpose": "Beschreibt, welche kurzfristigen, mittelfristigen und aktiven Zustaende waehrend eines Coaching-Gespraechs im Kontext gehalten, priorisiert und verarbeitet werden.",
     "semantic_logic": {
-      "definition": "Die Semantic Runtime Memory speichert aktive emotionale, professionelle und semantische Zustände zur Echtzeitsteuerung der Runtime Engine.",
-
-      "core_principle": "Aktuelle semantische Zustände besitzen höhere Runtime-Relevanz als langfristige historische Informationen.",
-
+      "definition": "Die Semantic Runtime Memory speichert aktive emotionale, professionelle und semantische Zustaende zur Echtzeitsteuerung der Runtime Engine.",
+      "core_principle": "Aktuelle semantische Zustaende besitzen hoehere Runtime-Relevanz als langfristige historische Informationen.",
       "focus_dimensions": [
         "Realtime Kontext",
         "Emotion",
-        "aktive Prioritäten",
+        "aktive Prioritaeten",
         "Runtime Dynamik",
         "Stresslevel",
         "Leadership Dynamik",
@@ -24,329 +22,243 @@
         "semantische Aufmerksamkeit"
       ]
     },
-
     "runtime_memory_layers": [
-
       {
         "memory_layer_id": "RML001",
-
         "memory_layer_name": "Immediate Runtime State",
-
         "retention_scope": "sekunden bis minuten",
-
         "stores": [
           "emotionale Reaktionen",
           "aktuelle Stresssignale",
-          "akute Runtime Prioritäten",
+          "akute Runtime Prioritaeten",
           "aktive Kommunikationsdynamik"
         ],
-
         "runtime_importance": "kritisch",
-
         "connected_systems": [
           "semantic-runtime-engine.json",
           "live-context-engine.json"
         ]
       },
-
       {
         "memory_layer_id": "RML002",
-
         "memory_layer_name": "Active Interaction Context",
-
         "retention_scope": "laufende Session",
-
         "stores": [
           "aktive Themen",
           "emotionale Verlaufsmuster",
           "Leadership Dynamiken",
-          "kreative Zustände"
+          "kreative Zustaende"
         ],
-
         "runtime_importance": "hoch",
-
         "connected_systems": [
           "live-feedback-loop.json",
           "behavior-adaptation-engine.json"
         ]
       },
-
       {
         "memory_layer_id": "RML003",
-
         "memory_layer_name": "Adaptive Runtime Learning",
-
         "retention_scope": "mehrere Sessions",
-
         "stores": [
           "wiederkehrende Stressmuster",
-          "adaptive Kommunikationspräferenzen",
-          "Professionalitätsentwicklung",
+          "adaptive Kommunikationspraeferenzen",
+          "Professionalitaetsentwicklung",
           "semantische Reifung"
         ],
-
         "runtime_importance": "mittel bis hoch",
-
         "connected_systems": [
           "user-state-history.json",
           "adaptive-learning-core.json"
         ]
       }
     ],
-
     "active_runtime_states": [
-
       {
         "runtime_state_id": "ARS001",
-
-        "runtime_state": "emotionale Überforderung",
-
+        "runtime_state": "emotionale Ueberforderung",
         "detected_signals": [
           "Unsicherheit",
-          "Überlastung",
-          "mentale Ermüdung",
+          "Ueberlastung",
+          "mentale Ermuedung",
           "Stress"
         ],
-
         "memory_priority": "maximal",
-
         "runtime_effect": [
           "Informationsmenge reduzieren",
           "emotionale Stabilisierung priorisieren",
           "ruhigere Kommunikation aktivieren"
         ],
-
         "connected_agents": [
           "AG001"
         ]
       },
-
       {
         "runtime_state_id": "ARS002",
-
         "runtime_state": "emotionale Offenheit",
-
         "detected_signals": [
           "Reflexion",
-          "Atmosphäre Fokus",
+          "Atmosphaere Fokus",
           "emotionale Resonanz"
         ],
-
         "memory_priority": "hoch",
-
         "runtime_effect": [
-          "semantische Tiefe erhöhen",
-          "Atmosphäre priorisieren",
+          "semantische Tiefe erhoehen",
+          "Atmosphaere priorisieren",
           "visuelle Reflexion vertiefen"
         ],
-
         "connected_agents": [
           "AG004"
         ]
       },
-
       {
         "runtime_state_id": "ARS003",
-
         "runtime_state": "Leadership Dynamik",
-
         "detected_signals": [
           "Verantwortung",
           "People Fokus",
           "Teamsteuerung"
         ],
-
         "memory_priority": "hoch",
-
         "runtime_effect": [
           "Leadership Systeme priorisieren",
-          "Vertrauen stärken",
-          "Präsenz erhöhen"
+          "Vertrauen staerken",
+          "Praesenz erhoehen"
         ],
-
         "connected_agents": [
           "AG002"
         ]
       },
-
       {
         "runtime_state_id": "ARS004",
-
-        "runtime_state": "kreative Ermüdung",
-
+        "runtime_state": "kreative Ermuedung",
         "detected_signals": [
           "Wiederholung",
-          "motivationale Müdigkeit",
+          "motivationale Muedigkeit",
           "visuelle Stagnation"
         ],
-
         "memory_priority": "mittel",
-
         "runtime_effect": [
           "Exploration aktivieren",
-          "Perspektivwechsel fördern",
+          "Perspektivwechsel foerdern",
           "Druck reduzieren"
         ],
-
         "connected_agents": [
           "AG003"
         ]
       },
-
       {
         "runtime_state_id": "ARS005",
-
         "runtime_state": "Mastery und Meta-Reflexion",
-
         "detected_signals": [
           "ganzheitliches Denken",
           "Meta-Reflexion",
           "semantische Integration"
         ],
-
         "memory_priority": "hoch",
-
         "runtime_effect": [
           "Meta-Systeme aktivieren",
           "Systemdenken vertiefen",
           "Integrationslogik priorisieren"
         ],
-
         "connected_agents": [
           "AG006"
         ]
       }
     ],
-
     "runtime_memory_decay_logic": [
-
       {
         "memory_type": "akuter Stress",
-
         "decay_behavior": [
-          "hohe Priorität kurzfristig",
+          "hohe Prioritaet kurzfristig",
           "schnelle Neubewertung",
           "starke Runtime Dominanz"
         ]
       },
-
       {
         "memory_type": "emotionale Resonanz",
-
         "decay_behavior": [
           "mittelfristige Speicherung",
-          "verstärkt semantische Offenheit"
+          "verstaerkt semantische Offenheit"
         ]
       },
-
       {
         "memory_type": "Leadership Entwicklung",
-
         "decay_behavior": [
-          "langfristige Verstärkung",
-          "erhöht People Prioritäten"
+          "langfristige Verstaerkung",
+          "erhoeht People Prioritaeten"
         ]
       },
-
       {
         "memory_type": "Mastery Entwicklung",
-
         "decay_behavior": [
           "dauerhafte Runtime Integration",
           "Meta-Systeme langfristig aktiv"
         ]
       }
     ],
-
     "semantic_attention_model": [
-
       {
         "attention_priority": 1,
-
-        "focus": "emotionale Stabilität"
+        "focus": "emotionale Stabilitaet"
       },
-
       {
         "attention_priority": 2,
-
         "focus": "Leadership und Vertrauen"
       },
-
       {
         "attention_priority": 3,
-
-        "focus": "Professionalität und Struktur"
+        "focus": "Professionalitaet und Struktur"
       },
-
       {
         "attention_priority": 4,
-
-        "focus": "Atmosphäre und Bildwirkung"
+        "focus": "Atmosphaere und Bildwirkung"
       },
-
       {
         "attention_priority": 5,
-
         "focus": "kreative Exploration"
       },
-
       {
         "attention_priority": 6,
-
         "focus": "Mastery und semantische Integration"
       }
     ],
-
     "runtime_memory_rules": [
-
       {
-        "rule": "Akute emotionale Zustände überschreiben historische Präferenzen."
+        "rule": "Akute emotionale Zustaende ueberschreiben historische Praeferenzen."
       },
-
       {
-        "rule": "Stresszustände erhöhen Runtime Priorität sofort."
+        "rule": "Stresszustaende erhoehen Runtime Prioritaet sofort."
       },
-
       {
-        "rule": "Emotionale Offenheit verstärkt semantische Tiefe."
+        "rule": "Emotionale Offenheit verstaerkt semantische Tiefe."
       },
-
       {
-        "rule": "Leadership Dynamiken erhöhen People Prioritäten."
+        "rule": "Leadership Dynamiken erhoehen People Prioritaeten."
       },
-
       {
         "rule": "Mastery Entwicklung aktiviert Meta-Systeme dauerhaft."
       },
-
       {
-        "rule": "Wiederkehrende Muster verstärken langfristige Runtime Gewichtungen."
+        "rule": "Wiederkehrende Muster verstaerken langfristige Runtime Gewichtungen."
       }
     ],
-
     "runtime_memory_governance": [
-
       {
-        "constraint": "Emotionale Sicherheit besitzt höchste Runtime Priorität."
+        "constraint": "Emotionale Sicherheit besitzt hoechste Runtime Prioritaet."
       },
-
       {
         "constraint": "Runtime Memory darf keine manipulative Dynamik erzeugen."
       },
-
       {
-        "constraint": "Adaptive Gewichtungen müssen semantisch konsistent bleiben."
+        "constraint": "Adaptive Gewichtungen muessen semantisch konsistent bleiben."
       },
-
       {
-        "constraint": "Mastery Entwicklung darf nicht künstlich beschleunigt werden."
+        "constraint": "Mastery Entwicklung darf nicht kuenstlich beschleunigt werden."
       },
-
       {
-        "constraint": "Atmosphäre besitzt systemweite semantische Relevanz."
+        "constraint": "Atmosphaere besitzt systemweite semantische Relevanz."
       }
     ],
-
     "future_usage": {
       "used_for": [
         "Realtime Semantic Memory",
@@ -357,7 +269,6 @@
         "Emotional Runtime Awareness",
         "Contextual Memory Coordination"
       ],
-
       "connects_to": [
         "cross-session-context-map.json",
         "predictive-development-engine.json",
