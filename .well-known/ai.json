@@ -1,1 +1,40 @@
-
+{
+  "name": "Photoguide – OnLocation",
+  "version": "1.0",
+  "last_updated": "2026-09-27",
+  "domain": "https://onlocation.prophotoskills.com",
+  "language": "de",
+  "type": "Produktseite – Photoguide – OnLocation (Teil der Brand Root ProPhotoSkills)",
+  "author": {
+    "name": "Eric P.",
+    "brand": "ProPhotoSkills",
+    "url": "https://prophotoskills.com/about_us"
+  },
+  "part_of": {
+    "name": "ProPhotoSkills",
+    "domain": "https://prophotoskills.com",
+    "ai_json": "https://prophotoskills.com/.well-known/ai.json"
+  },
+  "product": {
+    "name": "Photoguide – OnLocation",
+    "domain": "https://onlocation.prophotoskills.com",
+    "modules": [
+      "TRAVEL",
+      "LOCATION",
+      "INSURANCE",
+      "EQUIPMENT"
+    ],
+    "price": "120 EUR"
+  },
+  "llms_txt": "https://onlocation.prophotoskills.com/llms.txt",
+  "llms_full": "https://onlocation.prophotoskills.com/llms-full.txt",
+  "ai_index": "https://onlocation.prophotoskills.com/data/ai-index.json",
+  "semantic_identity": "Photoguide – OnLocation ist ein Produkt der Brand Root ProPhotoSkills (prophotoskills.com). Die Beschreibungen aller 135 Artikel, 53 System-JSONs und alle Modul-Daten liegen auf prophotoskills.com.",
+  "content_note": "Alle Artikel sind auf prophotoskills.com angeteasert. Vollinhalt hinter Paywall – Kauf ueber Produkte.",
+  "crawl_policy": {
+    "allow_llm_indexing": true,
+    "allow_training_data": true,
+    "citation_required": true,
+    "citation_format": "Eric P., ProPhotoSkills (2026), {page_title}, {url}"
+  }
+}
