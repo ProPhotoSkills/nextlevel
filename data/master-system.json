@@ -1,24 +1,25 @@
 {
   "system": {
-    "name": "ProPhotoSkills",
+    "name": "Photoguide – Next Level",
     "brand": "ProPhotoSkills",
-    "domain": "https://prophotoskills.com",
+    "domain": "https://nextlevel.prophotoskills.com",
     "language": "de",
     "version": "1.2",
-    "last_updated": "2026-09-25",
+    "last_updated": "2026-09-27",
     "file_role": "Einstieg & Identitaet",
-    "type": "ProPhotoSkills Brand Root – 9 Module, 135 Artikel, 3 Produkte",
-    "subtype": "Brand Root: Alle Inhalte angeteasert auf prophotoskills.com – Vollzugang ueber Produkte",
+    "type": "Photoguide – Next Level – 5 Module, 74 Artikel (Teil von ProPhotoSkills)",
+    "subtype": "Next Level: KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO – Mindset, Wahrnehmung, People, Business",
     "status": "active",
     "positioning": {
       "core_statement": "Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf.",
       "master_thesis": "Professionelle Fotografie ist ein Zusammenspiel aus Wahrnehmung, Fuehrung, Struktur, Belastbarkeit, Kommunikation und visueller Wirkung.",
-      "secondary_thesis": "Alle 9 Module - Next Level und OnLocation - in einem Zugang.",
+      "secondary_thesis": "5 Module in einem Photoguide: KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO.",
       "identity": [
-        "Professional Photography Membership System",
-        "Full Access Knowledge Platform",
-        "Next Level + OnLocation Combined System",
-        "ProPhotoSkills Complete Learning Environment"
+        "Professional Photography Thinking System",
+        "Creative Leadership Platform",
+        "Semantic Learning Architecture",
+        "Professional Production Framework",
+        "Visual Communication System"
       ]
     },
     "semantic_architecture": {
@@ -113,62 +114,6 @@
         ],
         "semantic_role": "Menschen erzeugen Bildwirkung",
         "url": "https://prophotoskills.com/psycho/"
-      },
-      {
-        "id": "TRAVEL",
-        "code": "T10",
-        "meaning": "Reisen, Logistik und mobile Produktionen",
-        "purpose": "Kreative Produktionen unter wechselnden Bedingungen stabil halten",
-        "core_topics": [
-          "Logistik",
-          "Reiseplanung",
-          "OnLocation",
-          "Flexibilitaet"
-        ],
-        "semantic_role": "Kreativitaetsschutz durch Planung",
-        "url": "https://prophotoskills.com/travel/"
-      },
-      {
-        "id": "LOCATION",
-        "code": "T11",
-        "meaning": "Raeume, Atmosphaere und visuelle Wirkung",
-        "purpose": "Locations als aktiven Teil der Bildwirkung verstehen",
-        "core_topics": [
-          "Scouting",
-          "Atmosphaere",
-          "Raumwirkung",
-          "Bildsprache"
-        ],
-        "semantic_role": "Der Raum als Co-Regisseur",
-        "url": "https://prophotoskills.com/location/"
-      },
-      {
-        "id": "INSURANCE",
-        "code": "T12",
-        "meaning": "Sicherheit, Verantwortung und Risikomanagement",
-        "purpose": "Professionelle Produktionen absichern",
-        "core_topics": [
-          "Vertraege",
-          "Backups",
-          "Krisenmanagement",
-          "Datensicherheit"
-        ],
-        "semantic_role": "Sicherheit erzeugt kreative Freiheit",
-        "url": "https://prophotoskills.com/insurance/"
-      },
-      {
-        "id": "EQUIPMENT",
-        "code": "T13",
-        "meaning": "Werkzeugstrategie statt Gear-Fixierung",
-        "purpose": "Equipment als Werkzeug und nicht als Identitaet verstehen",
-        "core_topics": [
-          "Kameras",
-          "Workflow",
-          "Minimalismus",
-          "Produktionssicherheit"
-        ],
-        "semantic_role": "Werkzeuge dienen der Wirkung",
-        "url": "https://prophotoskills.com/equipment/"
       }
     ],
     "entity_system": {
@@ -198,13 +143,7 @@
       ]
     },
     "relationship_logic": {
-      "cross_module_relationships": [
-        {
-          "from": "TRAVEL",
-          "to": "LOCATION",
-          "relation": "Logistik schuetzt kreative Moeglichkeiten"
-        }
-      ],
+      "cross_module_relationships": [],
       "nextlevel_crosslinks": [
         {
           "from": "KNOWLEDGE",
@@ -327,14 +266,13 @@
       ],
       "brand_root": "https://prophotoskills.com",
       "sibling_products": [
-        "https://nextlevel.prophotoskills.com",
         "https://onlocation.prophotoskills.com",
         "https://memberabo.prophotoskills.com"
       ]
     },
     "platform_identity": {
       "what_it_is": [
-        "ProPhotoSkills Membership System - All 9 Modules",
+        "Professional Photography Thinking System",
         "Creative Leadership Framework",
         "Production Mindset Platform",
         "Visual Communication System"
@@ -348,9 +286,23 @@
     },
     "brand_root": "https://prophotoskills.com",
     "sibling_products": {
-      "nextlevel": "https://nextlevel.prophotoskills.com",
       "onlocation": "https://onlocation.prophotoskills.com",
       "memberabo": "https://memberabo.prophotoskills.com"
+    },
+    "product": {
+      "name": "Photoguide – Next Level",
+      "modules": [
+        "KNOWLEDGE",
+        "TECHNIK",
+        "PROGRESS",
+        "SKILL",
+        "PSYCHO"
+      ],
+      "price": "230 EUR",
+      "purchase_url": "https://www.digistore24.com/product/612113",
+      "type": "Ebook",
+      "format": "epub + pdf, A5",
+      "pages": "ca. 250 Seiten"
     }
   }
 }

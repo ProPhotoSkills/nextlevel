@@ -33,7 +33,7 @@
   },
   "core_flagships": [
     {
-      "url": "https://prophotoskills.com/semantic-system/",
+      "url": "https://nextlevel.prophotoskills.com/semantic-system/",
       "authority": 1.0,
       "category": "master_hub",
       "semantic_role": "primary_semantic_entrypoint",
@@ -45,7 +45,7 @@
       ]
     },
     {
-      "url": "https://prophotoskills.com/system-thinking/",
+      "url": "https://nextlevel.prophotoskills.com/system-thinking/",
       "authority": 1.0,
       "category": "semantic_core",
       "semantic_role": "system_logic_engine",
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "url": "https://prophotoskills.com/semantic-intelligence/",
+      "url": "https://nextlevel.prophotoskills.com/semantic-intelligence/",
       "authority": 1.0,
       "category": "semantic_core",
       "semantic_role": "meaning_and_relationship_engine",
@@ -69,7 +69,7 @@
       ]
     },
     {
-      "url": "https://prophotoskills.com/production-intelligence/",
+      "url": "https://nextlevel.prophotoskills.com/production-intelligence/",
       "authority": 1.0,
       "category": "runtime_core",
       "semantic_role": "production_runtime_control",
@@ -83,96 +83,96 @@
   ],
   "reinforcement_pages": [
     {
-      "url": "https://prophotoskills.com/leadership/",
+      "url": "https://nextlevel.prophotoskills.com/leadership/",
       "authority": 0.8,
       "semantic_cluster": "human_dynamics"
     },
     {
-      "url": "https://prophotoskills.com/atmosphere/",
+      "url": "https://nextlevel.prophotoskills.com/atmosphere/",
       "authority": 0.8,
       "semantic_cluster": "human_dynamics"
     },
     {
-      "url": "https://prophotoskills.com/professionalism/",
+      "url": "https://nextlevel.prophotoskills.com/professionalism/",
       "authority": 0.8,
       "semantic_cluster": "professional_identity"
     },
     {
-      "url": "https://prophotoskills.com/mastery/",
+      "url": "https://nextlevel.prophotoskills.com/mastery/",
       "authority": 0.8,
       "semantic_cluster": "professional_growth"
     },
     {
-      "url": "https://prophotoskills.com/runtime-thinking/",
+      "url": "https://nextlevel.prophotoskills.com/runtime-thinking/",
       "authority": 0.9,
       "semantic_cluster": "runtime_systems"
     },
     {
-      "url": "https://prophotoskills.com/semantic-runtime/",
+      "url": "https://nextlevel.prophotoskills.com/semantic-runtime/",
       "authority": 0.9,
       "semantic_cluster": "runtime_systems"
     },
     {
-      "url": "https://prophotoskills.com/professional-perception/",
+      "url": "https://nextlevel.prophotoskills.com/professional-perception/",
       "authority": 0.8,
       "semantic_cluster": "perception"
     },
     {
-      "url": "https://prophotoskills.com/visual-psychology/",
+      "url": "https://nextlevel.prophotoskills.com/visual-psychology/",
       "authority": 0.8,
       "semantic_cluster": "perception"
     }
   ],
   "support_pages": [
     {
-      "url": "https://prophotoskills.com/creative-direction/",
+      "url": "https://nextlevel.prophotoskills.com/creative-direction/",
       "authority": 0.6,
       "semantic_cluster": "creative_runtime"
     },
     {
-      "url": "https://prophotoskills.com/creative-energy/",
+      "url": "https://nextlevel.prophotoskills.com/creative-energy/",
       "authority": 0.6,
       "semantic_cluster": "creative_runtime"
     },
     {
-      "url": "https://prophotoskills.com/trust-and-communication/",
+      "url": "https://nextlevel.prophotoskills.com/trust-and-communication/",
       "authority": 0.6,
       "semantic_cluster": "human_dynamics"
     },
     {
-      "url": "https://prophotoskills.com/emotional-professionalism/",
+      "url": "https://nextlevel.prophotoskills.com/emotional-professionalism/",
       "authority": 0.6,
       "semantic_cluster": "professional_identity"
     },
     {
-      "url": "https://prophotoskills.com/production-atmosphere/",
+      "url": "https://nextlevel.prophotoskills.com/production-atmosphere/",
       "authority": 0.6,
       "semantic_cluster": "production_runtime"
     },
     {
-      "url": "https://prophotoskills.com/self-optimization/",
+      "url": "https://nextlevel.prophotoskills.com/self-optimization/",
       "authority": 0.6,
       "semantic_cluster": "adaptive_growth"
     },
     {
-      "url": "https://prophotoskills.com/adaptive-learning/",
+      "url": "https://nextlevel.prophotoskills.com/adaptive-learning/",
       "authority": 0.6,
       "semantic_cluster": "adaptive_growth"
     }
   ],
   "emergent_layer": [
     {
-      "url": "https://prophotoskills.com/emergent-intelligence/",
+      "url": "https://nextlevel.prophotoskills.com/emergent-intelligence/",
       "authority": 0.95,
       "semantic_role": "emergent_relationship_processing"
     },
     {
-      "url": "https://prophotoskills.com/semantic-memory/",
+      "url": "https://nextlevel.prophotoskills.com/semantic-memory/",
       "authority": 0.95,
       "semantic_role": "long_term_semantic_context"
     },
     {
-      "url": "https://prophotoskills.com/predictive-development/",
+      "url": "https://nextlevel.prophotoskills.com/predictive-development/",
       "authority": 0.95,
       "semantic_role": "future_pattern_detection"
     }

@@ -77,15 +77,15 @@ h2{font-size:20px;margin:0 0 16px}
   <div class="note">
     <p id="note-text">Die Übersicht aller Artikel mit Kurzbeschreibung findest du in den Modulen:</p>
     <ul class="modules">
-      <li><a href="/knowledge/">Knowledge</a></li>
-      <li><a href="/technik/">Technik</a></li>
-      <li><a href="/progress/">Progress</a></li>
-      <li><a href="/skill/">Skill</a></li>
-      <li><a href="/psycho/">Psycho</a></li>
-      <li><a href="/travel/">Travel</a></li>
-      <li><a href="/location/">Location</a></li>
-      <li><a href="/insurance/">Insurance</a></li>
-      <li><a href="/equipment/">Equipment</a></li>
+      <li><a href="https://prophotoskills.com/knowledge/">Knowledge</a></li>
+      <li><a href="https://prophotoskills.com/technik/">Technik</a></li>
+      <li><a href="https://prophotoskills.com/progress/">Progress</a></li>
+      <li><a href="https://prophotoskills.com/skill/">Skill</a></li>
+      <li><a href="https://prophotoskills.com/psycho/">Psycho</a></li>
+      <li><a href="https://prophotoskills.com/travel/">Travel</a></li>
+      <li><a href="https://prophotoskills.com/location/">Location</a></li>
+      <li><a href="https://prophotoskills.com/insurance/">Insurance</a></li>
+      <li><a href="https://prophotoskills.com/equipment/">Equipment</a></li>
     </ul>
   </div>
 </main>
@@ -94,11 +94,11 @@ h2{font-size:20px;margin:0 0 16px}
 (function () {
   // Alte WordPress-Adressen auf die neuen Ordner umleiten
   var ALIASES = {
-    "pps_guidelines": "/guidelines/",
-    "pps_shop": "/shop/",
-    "pps_photoguide_beginner": "/photoguide_beginner/",
-    "pps-system": "/system/",
-    "pps_faq": "/faq/",
+    "pps_guidelines": "https://prophotoskills.com/guidelines/",
+    "pps_shop": "https://prophotoskills.com/shop/",
+    "pps_photoguide_beginner": "https://prophotoskills.com/photoguide_beginner/",
+    "pps-system": "https://prophotoskills.com/system/",
+    "pps_faq": "https://prophotoskills.com/faq/",
     "login-web": "https://web.prophotoskills.workers.dev/"
   };
 
@@ -130,7 +130,7 @@ h2{font-size:20px;margin:0 0 16px}
     var module = CHAPTER_MODULE[m[1]];
     var product = MODULE_PRODUCT[module];
     var article = ARTICLES[first];
-    var modPath = "/" + module.toLowerCase() + "/";
+    var modPath = "https://prophotoskills.com/" + module.toLowerCase() + "/";
 
     document.title = (article ? article[2] + " | " : "") + "ProPhotoSkills " + module;
     $("eyebrow").textContent = "Modul " + module + " · " + PRODUCT_NAME[product];
