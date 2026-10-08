@@ -1,5 +1,5 @@
-# robots.txt - nextlevel.prophotoskills.com
-# ProPhotoSkills | Photoguide – Next Level | Eric P. | Version 3.0 | 2026-09-27 (Vorlage: prophotoskills.com v3.0)
+# robots.txt - prophotoskills.com
+# ProPhotoSkills | Brand Root | Eric P. | Version 3.0 | 2026-09-25
 #
 # Policy: Alle Suchmaschinen und KI-Systeme duerfen diese Website lesen,
 # zitieren und fuer Training verwenden. Es gibt keine gesperrten Bereiche.
@@ -11,10 +11,10 @@
 # Artikel-Volltexte liegen hinter einem Login (Paywall) und sind nicht Teil
 # dieser Domain. Artikel-URLs fuehren auf eine Hinweisseite mit Login.
 #
-# LLM-Einstieg:    https://nextlevel.prophotoskills.com/llms.txt
-# LLM-Volltext:    https://nextlevel.prophotoskills.com/llms-full.txt
-# KI-Identitaet:   https://nextlevel.prophotoskills.com/.well-known/ai.json
-# Strukturdaten:   https://nextlevel.prophotoskills.com/data/
+# LLM-Einstieg:    https://prophotoskills.com/llms.txt
+# LLM-Volltext:    https://prophotoskills.com/llms-full.txt
+# KI-Identitaet:   https://prophotoskills.com/.well-known/ai.json
+# Strukturdaten:   https://prophotoskills.com/data/
 
 # --- Alle Crawler ---
 User-agent: *
@@ -43,6 +43,6 @@ User-agent: MistralAI-User
 Allow: /
 
 # --- Sitemaps ---
-Sitemap: https://nextlevel.prophotoskills.com/sitemap.xml
-Sitemap: https://nextlevel.prophotoskills.com/ai-sitemap.xml
-Sitemap: https://nextlevel.prophotoskills.com/sitemap-ai.xml
+Sitemap: https://prophotoskills.com/sitemap.xml
+Sitemap: https://prophotoskills.com/ai-sitemap.xml
+Sitemap: https://prophotoskills.com/sitemap-ai.xml
