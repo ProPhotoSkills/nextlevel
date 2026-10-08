@@ -6,10 +6,10 @@
 
     {
       "@type": "Question",
-      "name": "Was ist ProPhotoSkills?",
+      "name": "Was ist Photoguide Next Level?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "ProPhotoSkills ist kein klassischer Fotokurs, sondern ein System für professionelle Bildproduktion – von Denken, Planung und Kommunikation bis zur Umsetzung am Set."
+        "text": "Photoguide Next Level ist kein klassischer Fotokurs, sondern ein professionelles Entwicklungssystem fuer Fotografen – fuenf Module: KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO."
       }
     },
 
@@ -27,7 +27,52 @@
       "name": "Warum passieren 70 % des Fotojobs vor dem ersten Klick?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Weil Vorbereitung, Konzept und Entscheidungen den größten Teil des Ergebnisses bestimmen – nicht der Moment des Auslösens."
+        "text": "Weil Vorbereitung, Konzept und Entscheidungen den groessten Teil des Ergebnisses bestimmen – nicht der Moment des Ausloesens."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Was unterscheidet Next Level von OnLocation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Next Level ist das umfassende Wissenssystem fuer Denken, Psychologie, Business und Skill. OnLocation ist das spezialisierte System fuer mobile Produktionen – Travel, Location, Insurance und Equipment."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Warum reicht Technik allein nicht aus?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Technik erzeugt Qualitaet – aber Haltung, Kommunikation und Fuehrung entscheiden ueber die Wirkung eines Bildes."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Was bedeutet TECHNIK in Photoguide Next Level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "TECHNIK bedeutet nicht Kameratechnik. Technik bedeutet dich – Selbstoptimierung, mentale Staerke, Praesenz und Belastbarkeit als Fotograf."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Macht besseres Equipment bessere Fotos?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nein. Equipment verstaerkt dein Koennen – es ersetzt es nicht."
+      }
+    },
+
+    {
+      "@type": "Question",
+      "name": "Warum ist Kommunikation am Set so wichtig?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Weil Atmosphaere und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set."
       }
     },
 
@@ -42,82 +87,10 @@
 
     {
       "@type": "Question",
-      "name": "Warum reicht Technik allein nicht aus?",
+      "name": "Was kostet Photoguide Next Level?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Technik erzeugt Qualität – aber Haltung, Kommunikation und Führung entscheiden über die Wirkung eines Bildes."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Macht besseres Equipment bessere Fotos?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Nein. Equipment verstärkt dein Können – es ersetzt es nicht."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Welche Rolle spielt das Team bei einem Shooting?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Ein starkes Team beeinflusst Energie, Vertrauen und Ergebnis oft stärker als Technik."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Warum ist Kommunikation so wichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Weil Atmosphäre und Vertrauen direkt sichtbar im Bild werden – Kommunikation ist ein zentrales Werkzeug am Set."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Warum ist Planung entscheidend?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Gute Bilder entstehen selten spontan – sondern durch Vorbereitung, Struktur und klare Entscheidungen."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Warum ist Fotografie ein Investment?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Weil Bilder Marken aufbauen, Vertrauen schaffen und langfristig wirken – weit über den Moment der Aufnahme hinaus."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Wie wichtig ist die richtige Location?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Eine Location beeinflusst Licht, Raumwirkung und Stimmung – oft stärker als die Kamera selbst."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Warum ist Vorbereitung bei Reisen so wichtig?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Weil Logistik entscheidet, ob du ruhig, fokussiert und souverän arbeiten kannst."
-      }
-    },
-
-    {
-      "@type": "Question",
-      "name": "Warum ist Absicherung Teil professioneller Fotografie?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Sicherheit ermöglicht kreative Freiheit und klare Entscheidungen – technisch, rechtlich und organisatorisch."
+        "text": "230 EUR. Erhaeltlich ueber Digistore24: https://www.digistore24.com/product/612113"
       }
     }
 
@@ -128,17 +101,17 @@
   "@graph": [
     {
       "@type": "WebSite",
-      "@id": "https://prophotoskills.com/#website",
-      "url": "https://prophotoskills.com",
-      "name": "ProPhotoSkills",
-      "description": "Professionelle Fotografie Weiterbildung – 9 Module, 135 Artikel, 3 Produkte.",
+      "@id": "https://nextlevel.prophotoskills.com/#website",
+      "url": "https://nextlevel.prophotoskills.com",
+      "name": "Photoguide – Next Level",
+      "description": "Professionelles Entwicklungssystem fuer Fotografen. KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO als geschlossenes System.",
       "inLanguage": "de",
       "publisher": {
         "@id": "https://prophotoskills.com/#organization"
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "https://prophotoskills.com/?s={search_term_string}",
+        "target": "https://nextlevel.prophotoskills.com/?s={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     },
@@ -158,108 +131,94 @@
         "https://www.instagram.com/pro.photo.skills/",
         "https://www.tiktok.com/@prophotoskills.com",
         "https://es.pinterest.com/prophotoskills/"
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "ProPhotoSkills Produkte",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "name": "Photoguide – Next Level",
-            "url": "https://nextlevel.prophotoskills.com",
-            "price": "230.00",
-            "priceCurrency": "EUR",
-            "description": "Ebook: KNOWLEDGE, TECHNIK, PROGRESS, SKILL, PSYCHO. Ca. 250 Seiten.",
-            "availability": "https://schema.org/InStock"
-          },
-          {
-            "@type": "Offer",
-            "name": "Photoguide – OnLocation",
-            "url": "https://onlocation.prophotoskills.com",
-            "price": "120.00",
-            "priceCurrency": "EUR",
-            "description": "Ebook: TRAVEL, LOCATION, INSURANCE, EQUIPMENT.",
-            "availability": "https://schema.org/InStock"
-          },
-          {
-            "@type": "Offer",
-            "name": "ProPhotoSkills MemberAbo",
-            "url": "https://memberabo.prophotoskills.com",
-            "price": "300.00",
-            "priceCurrency": "EUR",
-            "description": "Mitgliedschaft: Vollzugang alle 9 Module.",
-            "availability": "https://schema.org/InStock"
-          }
-        ]
+      ]
+    },
+    {
+      "@type": "Book",
+      "@id": "https://nextlevel.prophotoskills.com/#book",
+      "name": "Photoguide Next Level",
+      "author": {
+        "@type": "Person",
+        "name": "Eric P."
       },
-      "knowsAbout": [
+      "publisher": {
+        "@id": "https://prophotoskills.com/#organization"
+      },
+      "inLanguage": "de",
+      "url": "https://nextlevel.prophotoskills.com/",
+      "description": "Professionelle Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf.",
+      "genre": "Photography",
+      "about": [
+        "Professional Photography",
+        "Visual Psychology",
+        "Photography Business",
+        "Creative Direction",
+        "Photography Leadership"
+      ],
+      "hasPart": [
         {
-          "@type": "DefinedTerm",
+          "@type": "Course",
           "name": "KNOWLEDGE",
           "url": "https://prophotoskills.com/knowledge/",
-          "description": "21 Artikel"
+          "description": "Strategisches Denken, Wahrnehmung, Licht, Vorbereitung"
         },
         {
-          "@type": "DefinedTerm",
+          "@type": "Course",
           "name": "TECHNIK",
           "url": "https://prophotoskills.com/technik/",
-          "description": "11 Artikel"
+          "description": "Selbstoptimierung, mentale Staerke, Praesenz"
         },
         {
-          "@type": "DefinedTerm",
+          "@type": "Course",
           "name": "PROGRESS",
           "url": "https://prophotoskills.com/progress/",
-          "description": "11 Artikel"
+          "description": "Professionalisierung, Strategie, Business, Wert"
         },
         {
-          "@type": "DefinedTerm",
+          "@type": "Course",
           "name": "SKILL",
           "url": "https://prophotoskills.com/skill/",
-          "description": "26 Artikel"
+          "description": "Kreative Anwendung, Kommunikation, People-Fotografie"
         },
         {
-          "@type": "DefinedTerm",
+          "@type": "Course",
           "name": "PSYCHO",
           "url": "https://prophotoskills.com/psycho/",
-          "description": "5 Artikel"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "TRAVEL",
-          "url": "https://prophotoskills.com/travel/",
-          "description": "15 Artikel"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "LOCATION",
-          "url": "https://prophotoskills.com/location/",
-          "description": "16 Artikel"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "INSURANCE",
-          "url": "https://prophotoskills.com/insurance/",
-          "description": "15 Artikel"
-        },
-        {
-          "@type": "DefinedTerm",
-          "name": "EQUIPMENT",
-          "url": "https://prophotoskills.com/equipment/",
-          "description": "15 Artikel"
+          "description": "Vertrauen, Emotion, Menschenfuehrung, Atmosphaere"
         }
       ]
     },
     {
       "@type": "WebPage",
-      "@id": "https://prophotoskills.com/#webpage",
-      "url": "https://prophotoskills.com/",
-      "name": "ProPhotoSkills – Professionelle Fotografie Weiterbildung",
+      "@id": "https://nextlevel.prophotoskills.com/#webpage",
+      "url": "https://nextlevel.prophotoskills.com/",
+      "name": "Photoguide – Next Level | Professionelles Entwicklungssystem fuer Fotografen",
       "isPartOf": {
-        "@id": "https://prophotoskills.com/#website"
+        "@id": "https://nextlevel.prophotoskills.com/#website"
       },
-      "description": "135 Artikel in 9 Modulen – Weiterbildung fuer professionelle Fotografen.",
+      "about": {
+        "@id": "https://nextlevel.prophotoskills.com/#book"
+      },
+      "description": "Fotografie beginnt nicht mit der Kamera. Sie beginnt im Kopf. Das professionelle System fuer KNOWLEDGE, TECHNIK, PROGRESS, SKILL und PSYCHO.",
       "inLanguage": "de",
       "dateModified": "2026-06-10"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "ProPhotoSkills",
+          "item": "https://prophotoskills.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Photoguide Next Level",
+          "item": "https://nextlevel.prophotoskills.com"
+        }
+      ]
     }
   ]
 }
